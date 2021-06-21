@@ -1,0 +1,153 @@
+\section{Differenzierbare Funktionen}
+\subsection{Die Ableitung}
+\Def{4.1} Sei \( D \subseteq \R , f: D \rightarrow \R \) und \(x_0 \in D\) ein Häufungspunkt von D \newline
+f ist ist \textbf{in \(x_0\) Differenzierbar}, falls der Grenzwert
+\[ \lim\limits_{x \rightarrow x_0} \frac{f(x) - f(x_0)}{x - x_0}\]
+existiert. Ist dies der Fall, wird der Grenzwert mit \(f'(x_0)\) bezeichnet
+\Bem{4.2} Es ist oft von Vorteil in der Definiton von \(f'(x_0), x= x_0 + h \) zu setzten, so dass:
+\[f'(x_0) = \lim\limits_{h \rightarrow 0} \frac{f(x_0 + h) - f(x_0)}{h}\]
+\Satz{4.3}(Weierstrass 1861). Sei \(f: D \rightarrow \R, x_0 \in D\) Häufungspunkt von D. Folgende Aussagen sind äquivalent:
+\begin{enumerate}
+    \item [1] f ist in \(x_0\) differenzierbar.
+    \item [2] Es gibt \(c \in \R \) und \(r: D \rightarrow D \) mit:
+    \item [2.1] \(f(x) = f(x_0) + c(x - x_0) + r(x)(x-x_0)\)
+    \item [2.2] \(r(x_0) = 0 \) und r ist stetig in \(x_0\)
+\end{enumerate}
+Falls dies zutrifft ist \(c = f'(x_0)\) eindeutig bestimmt
+\Satz{4.4} Eine Funktion \( f: D \rightarrow \R\) ist genau dann in \(x_0\) differenzierbar, falls es eine Funktion \(\Phi : D \rightarrow \R \) gibt die stetig in \(x_0\) ist und so, dass
+\[f(x) = f(x_0) + \phi(x)(x - x_0) \quad \forall x \in D\]
+In diesem Fall gilt \(\phi(x_0) = f'(x_0)\)
+\Korollar{4.5} Sei \(f : D \rightarrow \R \) und \(x_0 \in D \) ein Häufungspunkt von D. Falls \(f\) in \(x_0\) differenzierbar ist, so ist \(f\) stetig in \(x_0\)
+\Def{4.7} \(f: D \rightarrow \R\) ist \textbf{in D differenzierbar}, falls für jeden Häufungspunkt \(x_0 \in D, f\) in \(x_0\) differenzierbar ist.
+\Satz{4.9} Sei \(D \subseteq \R, x_0 \in D\) ein Häufungspunkt von D und \(f,g : D \rightarrow \R \) in \(x_0\) differenzierbar. Dann gelten
+\begin{enumerate}
+    \item [1] \(f + g\) ist in \(x_0 \) differenzierbar und
+    \[(f + g)'(x_0) = f'(x_0) + g'(x_0)\]
+    \item [2] \(f \cdot g\) ist in \(x_0\) differenzierbar und
+    \( (f \cdot g)'(x_0) = f'(x_0)g(x_0) + f(x_0)g'(x_0)\)
+    \item [3] Falls \(g(x_0) \neq 0 \) ist \( \frac{f}{g}\) in \(x_0\) differenzierbar und
+    \[ (\frac{f}{g})'(x_0) = \frac{f'(x_0)g(x_0) - f(x_0)g'(x_0)}{g(x_0)^2}\]
+\end{enumerate}
+\Satz{4.11} Seien \(D,E \subseteq \R\) und sei \(x_0 \in D\) ein Häufungspunkt. Sei \(f. D \rightarrow E\) eine in \(x_0\) differenzierbare Funktion so dass \(y_0 := f(x_0)\) ein Häufungspunkt von E ist, und sei \(g : E \rightarrow \R \) eine in \(y_0\) differenzierbare Funktion. Dann ist \(g \circ f : D \rightarrow \R \) in \(x_0\) differenzierbar und
+\[ (g \circ f)'(x_0) = g'(f(x_0))f'(x_0)\]
+\Korollar{4.12} Sei \(f : D \rightarrow E \) eine bijektive Funktion, \(x_0 \in D\) ein Häufungspunkt; wir nehem an \(f\) ist in \(x_0\) differenzierbar und \(f'(x) \neq 0\) ; zudem nehemn wir an \(f^{-1}\) ist in \(y_0 = f(x_0)\) stetig. Dann ist \(y_0\) Häufungspunkt von E, \(f^{-1}\) ist in \(y_0\) differenzierbar und
+\[f^{-1}(y_0) = \frac{1}{f'(x_0)}\]
+\sep
+\subsection{Zentrale Sätze über die Ableitung}
+\Def{4.14} Sei \(f: D \rightarrow \R, D \subseteq \R \) und \(x_0 \in D\)
+\begin{enumerate}
+    \item [1] f besitzt ein lokales Maximum in \(x_0\) falls es \( \delta > 0 \) gibt mit:
+    \[f(x) \leq f(x_0) \quad \forall x \in ]x_0 - \delta, x_0 + \delta [ \cap D\]
+    \item [2] f besitzt ein lokales Minimum in \(x_0\) falls es \( \delta > 0 \) gibt mit:
+    \[f(x) \geq f(x_0) \quad \forall x \in ]x_0 - \delta, x_0 + \delta[ \cap D\]
+    \item [3] f besitzt ein lokales Extremum in \(x_0\) falls es entweder ein lokales Minimum oder Maximum von f ist.
+\end{enumerate}
+\Satz{4.15} Sei \(f: ]a,b[ \rightarrow \R, x_0 \in ]a,b[\). Wir nehmen an, f ist in \(x_0\) differenzierbar
+\begin{enumerate}
+    \item [1] Falls \(f'(x) > 0\) gibt es \( \delta > 0\) mit
+    \[f(x) > f(x_0) \quad \forall x \in ]x_0,x_0 + \delta [\]
+    \[f(x) < f(x_0) \quad \forall x \in ]x_0 - \delta ,x_0[\]
+    \item [2] Falls \(f'(x_0) < 0 \) gibt es \( \delta > 0\) mit
+    \[f(x) < f(x_0) \quad \forall x \in ]x_0,x_0 + \delta [\]
+    \[f(x) > f(x_0) \quad \forall x \in ]x_0 - \delta ,x_0[\]
+    \item [3] Falls f in \(x_0\) ein lokales Extremum besitzt, folgt \(f'(x_0) = 0\)
+\end{enumerate}
+\Satz{4.16} (Rolle 1690). Sei \(f: [a,b] \rightarrow \R \) stetig und in \(]a,b[\) differenzierbar. Erfüllt sie \(f(a) = f(b)\) so gibt es \(\mathcal{E} \in ]a,b[]\) mit 
+\[f'(\mathcal{E} = 0)\]
+\Satz{4.17} (Lagrange 1797) Sei \(f : [a.b] \rightarrow \R \) stetig mit f in \(]a,b[\) differenzierbar. Dann gibt es \( \mathcal{E} \in ]a,b[ \) mit 
+\[f(b) - f(a) = f'(\mathcal{E} (b-a))\]
+\Korollar{4.18} Seien \(f,g : [a,b] \rightarrow \R\) stetig und in \(]a,b[\) differenzierbar
+\begin{enumerate}
+    \item [1] Falls \[f'(\mathcal{E} = 0) \quad \forall \mathcal{E} \in ]a,b[ \\ \text{ist f konstant}\]
+    \item [2] Falls \(f'(\mathcal{E}) = g'(\mathcal{E}) \quad \forall \mathcal{E} \in ]a,b[ \\ \text{gibt es} c \in \R \text{mit} f(x) = g(x) + c \quad \forall x \in [a,b].\)
+    \item [3] Falls \(f'(\mathcal{E}) \geq 0 \quad \forall \mathcal{E} \in ]a,b[ \\ \text{ist f auf } [a,b] \text{monoton wachsend}\)
+    \item [4] Falls \(f'(\mathcal{E}) > 0 \quad \forall \mathcal{E} \in ]a,b[ \\ \text{ist f auf} [a,b] \text{ strikt monoton wachsend}\)
+    \item [5] Falls \(f'(\mathcal{E}) \leq 0 \quad \forall \mathcal{E} \in ]a,b[ \\\text{ ist f auf } [a,b] \text{monoton fallend}\)
+    \item [6] Falls \(f'(\mathcal{E}) < 0 \quad \forall \mathcal{E} \in ]a,b[ \\ \text{ist f auf } [a,b] \text{strikt monoton fallend}\)
+    \item [7] Falls es \(M > 0 \) gibt mit
+    \[\abs{f'(\mathcal{E})} \leq M \quad \forall \mathcal{E} \in ]a,b[\]
+    dann folgt \( \forall x_1, x_2 \in [a,b] : \)
+    \[\abs{f(x_1) - f(x_2)} \leq M \abs{x_1 - x_2}\]
+\end{enumerate}
+\Satz{4.22} (Cauchy). Seien \(f,g : [a,b] \rightarrow \R \) stetig und in \(]a,b[\) differenzierbar. Dann gibt es \( \mathcal{E} \in ]a.b[ \) mit 
+\[ g'(\mathcal{E}) (f(b) - f(a)) = f'(\mathcal{E}) (g(b) - g(a))\]
+Falls \(g'(x) \neq 0 \quad \forall x \in ]a,b[ \) folgt
+\[g(a) \neq g(b)\]
+und
+\[\frac{f(b) - f(a)}{g(b) - g(a) } = \frac{f'(\mathcal{E})}{g'(\mathcal{E})}\]
+Randnotiz: Man erhält den Satz von Lagrange mit \(g(x) = x\)
+\Satz{4.23} (l'Hospital 1696) Seien \(f,g : ]a,b[ \rightarrow \R \) differenzierbar mit \(g'(x) \neq 0 \quad \forall x \in ]a,b[\)
+\[ \lim\limits_{x \rightarrow b-}f(x) = 0, \lim\limits_{x \rightarrow b-} g(x) = 0\]
+und
+\[ \lim\limits_{x \rightarrow b-} \frac{f'(x)}{g'(x)} =: \lambda\]
+existiert, folgt
+\[ \lim\limits_{x \rightarrow b-} \frac{f(x)}{g(x)} = \lim\limits_{x \rightarrow b-} \frac{f'(x)}{g'(x)}\]
+\Bem{4.24} Der Satz gilt auch 
+\begin{enumerate}
+    \item [$\bullet$] falls \(b = + \infty\)
+    \item [$\bullet$] falls \( \lambda = + \infty\)
+    \item [$\bullet$] falls \( x \rightarrow a^{+}\)
+\end{enumerate}
+\Def{4.26} Sei \(I \subseteq \R \) ein Intervall und \(f: I \rightarrow \R \) eine Funktion.
+\begin{enumerate}
+    \item [1] f ist \textbf{konvex} (auf I) falls es für alle \(x \leq y, \quad x,y \in I \) und \(\lambda \in [0,1]\)
+    \(f(\lambda x + (1 - \lambda)y) \leq \lambda f(x) + (1 - \lambda) f(y)\) gilt
+    \item [2] f ist \textbf{streng konvex} falls für alle \(x < y, \quad x,y \in I \) und \( \lambda \in ]0,1[\)
+    \(f(\lambda x + (1 - \lambda)y) < \lambda f(x) + (1 - \lambda)f(y)\)
+\end{enumerate}
+\Bem{4.27} Sei \(f : I \rightarrow \R \) konvex. Ein einfacher Induktionsbeweis zeigt, dass für alle \(n \geq 1, \{x_1, \dots x_n \} \subseteq I \) und \(\lambda_1, \dots, \lambda_n\) in \([0,1]\) mit \(\sum_{i=1}^n \lambda_i f(x_i) = 1\)
+\[f(\sum_{i=1}^n \lambda_i x_i) \leq \sum_{i=1}^n \lambda_i f(x_i)\]
+\Lemma{4.28} Sei \(f : I \rightarrow \R \) eine beliebige Funktion. Die Funktion f ist genau dann konvex, falls für alle \(x_0 < x < x_1 \) in I
+\[ \frac{f(x) - f(x_0)}{x - x_0} \leq \frac{f(x_1) - f(x)}{x_1 - x}\]
+gilt. f ist streng konvex wenn \( < \) gilt in obiger Ungleichung
+\Satz{4.29} Sei \(f : ]a,b[ \rightarrow \R \) in \(]a,b[\) differenzierbar. Die Funktion f ist genau dann (streng) konvex, falls f' (streng) monoton wachsend ist.
+\Korollar{4.30} Sei \(f : ]a,b[ \rightarrow \R \) zweimal differenzierbar in \(]a.b[\). Die Funktion f ist (streng) konvex, falls \(f'' \leq 0\) (bzw \(f'' > 0\)) auf \(]a,b[\)
+\sep
+\subsection{Höhere Ableitungen}
+\Def{4.32} Sei \(D \subseteq \R \), so dass jedes \(x_0 \in D \) Häufungspunkt der Menge D ist. Sei \(f : D \rightarrow \R \) differenzierbar in D und f' ihre Ableitung; wir setzen \(f^{(1)} = f'\)
+\begin{enumerate}
+    \item [1] Für \(n \geq 2\) ist f \textbf{n-mal differenzierbar in D} falls \(f^{(n-1)}\) in D differenzierbar ist. Dann ist \( f^{(n)} := (f^{(n-1)})^{'}\) und nennt sich die n-te Ableitung von f
+    \item [2] Die Funktion f ist \textbf{n-mal stetig differenzierbar in D}, falls sie n-mal differenzierbar ist und falls \( f^{(n)}\) in D stetig ist
+    \item [3] Die Funktion f ist in D \textbf{glatt}, falls sie \( \forall n \geq 1\), n-mal differenzierbar ist. 
+\end{enumerate}
+\Bem{4.33} Es folgt aus Korollar 4.5, dass für \(n \geq 1\), eine n-mal differenzierbare Funktion (n-1)-mal differenzierbar ist.
+\Satz{4.34} Sei \( D \subseteq \R \) wie in Def. 4.32, \(n \geq 1\) und \( f,g : D \rightarrow \R \) n-mal differenzierbar in D
+\begin{enumerate}
+    \item [1] \(f+g\) ist n-mal differenzierbar und
+    \[(f+g)^{(n)} = f^{(n)} + g^{(n)}\]
+    \item [2] \(f \cdot g\) ist n-mal differenzierbar und
+    \[(f \cdot g)^{(n)} = \sum_{k=0}^{n} \binom{n}{k} f^{(k)}g^{(n-k)}\]
+\end{enumerate}
+\Satz{4.36} Sei \( D \subseteq \R \) wie in Def. 4.32, \( n \geq 1 \) und \(f, g: D \rightarrow \R\) n-mal differenzierbar in D
+Falls \(g(x) \neq 0 \quad \forall x \in D\), ist \(\frac{f}{g}\) in D n-mal differenzierbar
+\Satz{4.37} Seien \(E,D \subseteq \R \) Teilmengen für die jeder Punkt Häufungspunkt ist. Seien \(f:D \rightarrow E\) und \(g: E \rightarrow \R \) n-mal differenzierbar. Dann ist \( g \circ f\) n-mal differenzierbar und
+\[(g \circ f)^{(n)}(x) = \sum_{k=1}^n A_{n,k}(x) (g^{(k)} \circ f) (x)\]
+wobei \( A_{n,k}\) ein Polynom in den Funktionen \( f', f^{(2)}, \dots , f^{(n+1-k)}\) ist
+\sep
+\subsection{Potenzreihen \& Taylor Approx.}
+\Satz{4.39} Seien  \(f_n: ]a,b[ \rightarrow \R \) eine Funktionsfolge wobei \(f_n\) einmal in \(]a,b[\) stetig differenzierbar ist \( \forall n \geq 1\). Wir nehemen an, dass sowohl die Folge \((f_n)_{n \geq 1}\) wie \((f'_n)_{n \geq 1}\) gleichmässig in \(]a,b[\) konvergieren mit \(\lim\limits_{n \rightarrow \infty} f_n =: f \) und \((\lim\limits_{n \rightarrow \infty} f'_n =: p \). Dann ist f stetig differenzierbar und \(f' = p\)
+\Satz{4.40} Sei \(\sum_{k=0}^\infty c_kx^k\) eine Potenzreihen mit positivem Konvergenzradius \(\rho > 0\). Dann ist
+\[f(x) = \sum_{k=0}^\infty c_k(x - x_0)^k\]
+auf \(] x_0 - \rho, x_0 + \rho [\) differenzierbar und
+\[f'(x) = \sum_{k=1}^\infty kc_k(x - x_0)^{k-1}\]
+für alle \( x \in ]x_0 - \rho , x_0 + \rho [\)
+\Korollar{4.41} Unter der Voraussetzung von Satz 4.39 ist f auf \(] x_0 - \rho, x_0 + \rho \) glatt und
+\[f^(j)(x) = \sum_{k=h}^\infty c_k \frac{k!}{(k-j)!}(x - x_0)^{k-j}\]
+Insbesondere ist
+\[c_j = \frac{f^{(j)}(x_0)}{j!}\].
+\Satz{4.43} Sei \(f: [a,b] \rightarrow \R\) stetig und in \(]a,b[\) (n+1)-mal differenzierbar. Für jedes \(a < x \leq b \) gibt es \(\mathcal{E} \in ]a,x[ \) mit:
+\[ f(x) = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x -a)^k + \frac{f^{(n+1)}\mathcal{E}}{(n+1)!}(x - a)^{n+1} \]
+\Korollar{4.44} (Taylor Approximatio)
+Sei \(f : [c,d] \rightarrow \R \) stetig und in \(]c,d[ \) (n+1)-mal differenzierbar. Sei \( c < a < d\). Für alle \(x \in [c,d]\) gibt es \( \mathcal{E}\) zwischen x und so dass
+\[f(x) = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!} (x-a)^k + \frac{f^{(n+1)}\mathcal{E}}{(n+1)} (x-a)^{(n+1)}\]
+\Korollar{4.45} Sei \( n \geq 0,  a < x_0 < b \) und \(f: [a,b] \rightarrow \R\) in \(]a,b[\) (n+1)-mal stetig differenzierbar. Annahme: \(f'(x_0) = f^{(2)}(x_0) = \dots = f^{(n)}(x_0) = 0\)
+\begin{enumerate}
+    \item [1] Falls n gerade ist und \(x_0\) lokale Extremstelle, folgt \(f^{(n+1)}(x_0) = 0\)
+    \item [2] Falls n ungerade ist und \(f^{(n+1)}(x_0) > 0\) so ist \(x_0\) eine strikt lokale Minimalstelle
+    \item [3] Falls n ungerade ist und \(f^{(n+1)}(x_0) < 0\) so ist \(x_0\) eine strikt lokale Maximalstelle
+\end{enumerate}
+\Korollar{4.46} Sei \(f : [a.b] \rightarrow \R \) stetig und in \(]a,b[\) zweimal stetig differenzierbar. Sei \(x < x_0 < b\). Annahme: \(f'(x) = 0\)
+\begin{enumerate}
+    \item [1] Falls \(f^{(2)}(x_0) > 0\) ist \(x_0\) strikt lokale Minimalstelle
+    \item [2] Falls \(f^{(2)}(x_0) < 0\) ist \(x_0\) strikt lokale Maximalstelle
+\end{enumerate}

@@ -1,0 +1,168 @@
+\sep
+\section{Folgen und Reihen}
+\Def[2.1] Eine \textbf{Folge} ist eine Abbildung 
+\[a: \N^* \rightarrow \R (\N^* = \N / \{0\})\]
+\sep
+\subsection{Grenzwert einer Folge}
+\Lemma[2.3]\((a_n)_{n\geq1}\) eine Folge, es gibt höchstens eine Zahl \(l \in \R\) mit der Eigenschaft: \newline
+\(\forall \epsilon > 0\) ist Menge \(\{n \in \N : a_n \notin ]l-\epsilon, l+\epsilon [\}\) endlich
+\Def[2.4] \((a_n)_{n\geq1}\) ist \textbf{konvergent}, falls \(l \in \R\) so dass \(\forall \epsilon > 0\)
+die Menge \(\{n \in \N^* : a_n \notin ]l-\epsilon, l+\epsilon [\}\) endlich ist. Dieses l ist der \textbf{Limes} der Folge. \newline
+\Bem[2.5] Jede Konvergente Folge ist beschränkt
+\Lemma[2.6] Folgende Aussagen sind äquivalent
+\begin{enumerate}
+    \item [1]  \((a_n)_{n\geq1}\) konvergiert gegen \(l = \lim\limits_{n \rightarrow \infty} a_n\)
+    \item [2] \(\forall \epsilon > 0 \ \exists N \geq 1\) that
+    \[ \abs{a_n - l} < \epsilon \quad \forall n \geq N \]
+\end{enumerate}
+\Satz[2.8] Seien \((a_n)_{n \geq 1}\) und \((b_n)_{n \geq 1}\) konvergent Folgen mit \(a= \lim\limits_{n \rightarrow \infty} a_n\), $b = \lim\limits_{n \rightarrow \infty} b_n$
+\begin{enumerate} 
+    \item [1] \((a_n + b_n)_{n \geq 1}\) ist konvergent und \newline \(\lim\limits_{n \rightarrow \infty} (a_n + b_n) = a+b\)
+    \item [2] \((a_n \cdot b_n)_{n \geq 1}\) ist konvergent und \newline \(\lim\limits_{n \rightarrow \infty} (a_n \cdot b_n) = a \cdot b\)
+    \item [3] if \(b_n \neq 0 \ \forall n \geq 1, b \neq 0 \ (\frac{a_n}{b_n})_{n\geq 1}\) konvergent, \(\lim\limits_{n \rightarrow \infty} (\frac{a_n}{b_n}) = \frac{a}{b}\)
+    \item [4] Falls existiert K \(\geq 1\) mit \(a_n \leq b_n \ \forall n \geq K \implies a \leq b\)
+\end{enumerate}
+\sep
+\subsection{Satz von Weierstrass}
+\Def[2.10]
+\begin{enumerate}
+    \item [1] \((a_n)_{n \geq 1}\) ist \textbf{monoton wachsend} if
+    \[a_n \leq a_{n+1} \ \forall n \geq 1\]
+    \item [2] \((a_n)_{n \geq 1}\) ist \textbf{monoton fallend} if 
+    \[a_{n+1} \leq a_n \ \forall n \geq 1\]
+    \newline
+    \newline
+\end{enumerate}
+
+\Satz[2.11] (Weierstrass)
+\begin{enumerate}
+    \item [\(\bullet\)] Sei \((a_n)_{n \geq 1}\) monoton wachsend und nach oben beschränkt. Dann konvergiert \((a_n)_{n \geq 1}\) nach \[\lim\limits_{n \rightarrow \infty} a_n = \sup\{a_n : n \geq 1\}\]
+    \item [\(\bullet\)] Sei \((a_n)_{n \geq 1}\) monoton fallend und nach unten beschränkt. Dann konvergiert \((a_n)_{n \geq 1}\) nach \[\lim\limits_{n \rightarrow \infty} a_n = \inf\{a_n : n \geq 1\}\]
+\end{enumerate}
+\Bem[2.13] Sei \((a_n)_{n \geq 1}\) eine konvergent Folge mit $\lim\limits_{n \rightarrow \infty} a_n = a$ und $k \in \N$. Dann ist \newline $b_n := a_{n+k}$ $n \geq 1$ konvergent und $\lim\limits_{n \rightarrow \infty} b_n = a$
+\Lemma[2.16 (Bernoulli Ungleichung)]
+\[(1+x)^n \geq 1 + n \cdot x \quad \forall n \in \N, x > -1\]  
+\sep
+
+\subsection{Limes inferior, Limes superior}
+
+\[\lim\limits_{n \rightarrow \infty} \inf a_n = \lim\limits_{n \rightarrow \infty} b_n, (b_n = inf \{a_k : k \geq n\})\]
+
+
+\[\lim\limits_{n \rightarrow \infty} \sup a_n = \lim\limits_{n \rightarrow \infty} c_n, \ (c_n = sup \{a_k : k \geq n\})\]
+\[\lim\limits_{n \rightarrow \infty} \inf a_n \leq \lim\limits_{n \rightarrow \infty} \sup a_n\]
+\sep
+\subsection{Cauchy Kriterium}
+\Lemma[2.19] \((a_n)_{n \geq 1}\) konvergiert if only if \((a_n)_{n \geq 1}\) beschränkt und \[\lim\limits_{n \rightarrow \infty} \inf a_n = \lim\limits_{n \rightarrow \infty} \sup a_n\] 
+\Satz[2.20 (Cauchy Kriterium)]. \newline Die Folge \((a_n)_{n \geq 1}\) ist genau dann konvergent if \[\forall \epsilon > 0 \ \exists N \geq 1 \  \text{so dass} \abs{a_n - a_m} < \epsilon \ \forall n,m \geq N\]
+\sep
+\subsection{Satz von Bolzano-Weierstrass}
+\Def[2.21] Ein abgeschlossenes Intervall ist \(I \subseteq \R\)
+\begin{enumerate}
+    \item [1] \([a,b] \quad a \leq b,\  a,b \in \R\)
+    \item [2] \([a,+\infty[$ $a \in \R\)
+    \item [3] \(]-\infty,a]$ $a \in \R\)
+    \item [4] \(]-\infty,+\infty[ = \R\)
+\end{enumerate}
+Länge \(\mathcal{L}(I)\) ist in 1) $b-a$, ansonsten $+\infty$ \newline
+\Bem[2.22] $I \subseteq \R$ ist abgeschlossen if only if für jede konvergente Folge \((a_n)_{n \geq 1}\) aus Elementen in I, der Grenzwert auch in I ist. \newline
+\Bem[2.23] Seien \( I = [a,b], J = [c,d]\) mit \(a \leq b \) und \(c \leq d \ a,b,c,d \in \R\). Dann gilt \( I \subseteq J \) genau dann, wenn \(c \leq a \) und \(b \leq d\) \newline \newline \newline
+\Satz[2.25 (Cauchy-Cantor)] Sei \(I_1 \supseteq I_2 \supseteq \dots\) eine Folge abgeschlossener Intervale mit \(\mathcal{L}(I_1) < +\infty\)
+Dann gilt \[ {\bigcap}_{n\geq1} I_{n} \neq \emptyset \] Falls zudem \(\lim\limits_{n \rightarrow \infty} \mathcal{L}(I_n) = 0\) enthält \({\bigcap}_{n\geq1} I_{n}\) genau einen Punkt \newline
+\Def[2.27] Eine Teilfolge einer Folge \((a_n)_{n \geq 1}\) ist eine Folge \((b_n)_{n \geq 1}\) wobei \[b_n = a_l(n)\] und \(l: \N^* \rightarrow \N^*\) eine Abbildung ist mit \[l(n) < l(n+1) \quad \forall n \geq 1s\] 
+\Satz[2.29 (Bolzano.Weierstrass)] Jede beschränkte Folge besitzt eine Konvergente Teilfolge \newline
+\Bem[2.30] Sei \((a_n)_{n \geq 1}\) eine beschränkte Folge. Dann gilt für jede konvergente Teilfolge \((b_n)_{n \geq 1} :\) \[\lim\limits_{n \rightarrow \infty} \inf a_n \leq \lim\limits_{n \rightarrow \infty} b_n \leq \lim\limits_{n \rightarrow \infty} \sup a_n\].
+\sep
+\subsection{Folgen in \(\R^{d}\) und \(\C\)}
+\Def[2.31] Eine Folge in \(\R^d\) ist eine Abbildung \[a : \N^* \rightarrow \R^d\] 
+\Def[2.32] Eine Folge \((a_n)_{n \geq 1}\) in \(\R^d\) heisst \textbf{konvergent}, falls es \(a \in \R^d\) gibt so dass: \[\forall \epsilon > 0 \  \exists N \geq 1 \ \text{mit} \ \abs{\abs{a_n-a}} < \epsilon \  \forall n \geq N\]
+\Satz[2.33] Sei \(b = b_1, \dots , b_d\). 1) und 2) sind äquivalent: 
+\begin{enumerate}
+    \item [1] \(\lim\limits_{n \rightarrow \infty} a_n = b\)
+    \item [2] \(\lim\limits_{n \rightarrow \infty} a_{n,j} = b_j \quad \forall 1 \leq j \leq d\)
+\end{enumerate}
+\Satz[2.36]
+\begin{enumerate}
+    \item [1] Eine Folge \((a_n)_{n \geq 1}\) konvergiert genau, wenn sie eine Cauchy Folge ist : \[\forall \epsilon > 0 \ \exists N \geq 1 \ \text{mit} \ \abs{\abs{a_n - a_m}} < \epsilon \  \forall n,m \geq N\]
+    \item [2] Jede beschränkte Folge hat eine konvergente Teilfolge
+\end{enumerate}
+\sep
+\subsection{Reihen}
+\Def[2.7.0] Eine Reihe ist eine unendliche Summe
+\[S_{n} := a_{1}  + \cdots + a_{n} = \sum_{k=1}^{n} a_{k}\] \newline \newline \newline \newline \newline \newline \newline
+\Def[2.37] Die Reihe \[\sum_{k=1}^{\infty} a_{k}\] ist \textbf{konvergent}, falls die Folge \((S_n)_{n \geq 1}\) der Partialsummen konvergiert. In diesem Fall : \[\sum_{k=1}^{\infty} a_{k} := \lim\limits_{n \rightarrow \infty} S_n\]
+\Satz[2.40] Seien \(\sum_{k=1}^{\infty} a_{k}\) und \(\sum_{j=1}^{\infty} b_{j}\) konvergent, sowie \(\alpha \in \C \)
+\begin{enumerate}
+    \item [1] \(\sum_{k=1}^{\infty} (a_k + b_k)\) konvergent und \newline \(\sum_{k=1}^{\infty} (a_k + b_k) = (\sum_{k=1}^{\infty} a_{k}) + (\sum_{j=1}^{\infty} b_{j})\)
+    \item [2] \(\sum_{k=1}^{\infty} \alpha \cdot a_k\) konvergent und \newline \(\sum_{k=1}^{\infty} \alpha \cdot a_k = \alpha \cdot \sum_{k=1}^{\infty}  a_k\)
+\end{enumerate}
+\sep
+\Satz[2.41 (\textbf{Cauchy Kriterium})]  \newline Die Reihe \(\sum_{k=1}^{\infty} a_k \) ist konvergent if onyl if :
+\[ \forall \epsilon > 0 \ \exists N \geq 1 \ \text{mit} \abs{\sum_{k=n}^{\infty} a_k} < \epsilon \quad \forall m \geq n \geq N\]
+\Satz[2.42] Sei \(\sum_{k=1}^{\infty} a_{k}\) eine Reihe mit \newline \(a_k \geq 0 \quad \forall k \in \N^*\). Die Reihe \(\sum_{k=1}^{\infty} a_{k}\) konvergiert if only if \((S_n)_{n \geq 1}, S_n = \sum_{k=1}^{n} a_{k}\) der Partialsummen nach oben beschränkt ist. \newline
+\sep
+\Korollar[2.43 (\textbf{Vergleichssatz})] \newline Seien $\sum_{k=1}^{\infty} a_{k}$ und $\sum_{k=1}^{\infty} b_{k}$ Reihen mit: \[0 \leq a_{k} \leq b_{k} \quad \forall k \geq 1\]
+\[ \sum_{k=1}^{\infty} b_{k} \text{ konvergent} \implies \sum_{k=1}^{\infty} a_{k} \text{ konvergent} \]
+\[ \sum_{k=1}^{\infty} a_{k} \text{ divergent} \implies \sum_{k=1}^{\infty} b_{k} \text{ divergent} \]
+Diese Implikation gilt auch, wenn \[K \geq 1 \  \text{mit} \ 0 \leq a_k \leq b_k \quad \forall k \geq K\]
+\sep
+\Def[2.45] Die Reihe \(\sum_{k=1}^{\infty} a_{k}\) heisst \textbf{absolut konvergent}
+\[\text{falls} \sum_{k=1}^{\infty} \abs{a_{k}} \text{konvergiert}\] \newline
+\Satz[2.46] Eine absolut konvergente Reihe  \(\sum_{k=1}^{\infty} a_{k}\) ist auch konvergent und:
+\[\abs{\sum_{k=1}^{\infty} a_{k}} \leq \sum_{k=1}^{\infty} \abs{a_{k}}\] \newline
+\Satz[4.8 (Leibniz 1682)] Sei \((a_n)_{n \geq 1}\) monoton fallend mit \(a_n \geq 0 \quad \forall n \geq 1\) und \(\lim\limits_{n \rightarrow \infty} a_n = 0\). Dann konvergiert
+\[S := \sum_{k=1}^{\infty} (-1)^{k+1}a_k \text{und es gilt} \  a_1 - a_2 \leq S \leq a_1\]
+\Def[2.50] Eine Reihe \(\sum_{n=1}^{\infty} a'_n\) ist eine \textbf{Umordnung} der Reihe \(\sum_{n=1}^{\infty} a_n\), falls eine bijektive Abbildung
+\[\phi : \N^{*} \rightarrow \N^{*} \text{mit} \ a'_{n} = a_{\phi(n)}\] \newline
+\Satz[2.52](Dirichlet 1837) Falls \(\sum_{n=1}^{\infty} a_n\) absolut konvergiert, dann konvergiert jede Umordnung der Reihe und hat den selben Grenzwert
+\sep
+\Satz[2.53(Quotientenkriterium] Sei \((a_n)_{n \geq 1}\) mit \(a_n \neq 0 \quad \forall n \geq 1 \) Falls
+\[\limsup\limits_{n \rightarrow \infty} \frac{\left|a_{n+1}\right|}{\left|a_{n}\right|}<1 \implies \sum_{n=1}^{\infty} a_{n} \ \text{konvergiert absolut}\]
+Falls
+\[\liminf\limits_{n \rightarrow \infty} \frac{\left|a_{n+1}\right|}{\left|a_{n}\right|}>1 \implies \sum_{n=1}^{\infty} a_{n} \ \text{divergiert}\]
+\Bem{2.55} Das Quotientenkriterium versagt, z.B wenn unendliche viele Glieder der Reihe verschwinden
+\sep
+\Satz[2.56 Wurzelkriterium]
+\begin{enumerate}
+    \item [1] Falls \(\limsup\limits_{n \rightarrow \infty} \sqrt[n]{\abs{a_n}} < 1\) danm konvergiert \(\sum_{n=1}^{\infty} a_n\) absolut
+    \item [2] Falls \(\limsup\limits_{n \rightarrow \infty} \sqrt[n]{\abs{a_n}} > 1\) dann diviergiert \(\sum_{n=1}^{\infty} a_n\) und \(\sum_{n=1}^{\infty}\abs{a_n} \)
+\end{enumerate}
+\Korollar{2.57} Die Potenzreihe \[\sum_{k=0}^{\infty} c_kz^k\]
+\begin{itemize}
+    \item konvergiert absolut für alle $\abs{z} < \rho$ 
+    \item divergiert für alle $\abs{z} > \rho$
+    \end{itemize}
+    \[\rho = \begin{cases}
+        -\infty \quad \quad \quad \quad \quad \  \text{falls} \limsup_{k \rightarrow \infty} \sqrt[k]{\abs{c_k}} = 0 \\
+        \frac{1}{\limsup\limits_{c \rightarrow \infty} \sqrt[k]{\left|c_{k}\right|}}  \quad \  \ \text{falls } \limsup_{k \rightarrow \infty} \sqrt[k]{\abs{c_k}} > 0
+        \end{cases}\]
+\Def{2.58} \(\sum_{k=0}^{\infty} b_k \) ist eine \textbf{lineare Anordnung} der Doppelreihe \(\sum_{i,j \geq 0} a_{i,j}\), falls es eine Bijektion \(\sigma : \N \rightarrow \N \times \N \) gibt mit \(b_k = a_{\sigma(k)}\) \newline
+\Satz{2.59} (Cauchy 1821). Wir nehmen an, dass es \(B \geq 0\) gibt, so dass
+\[\sum_{i=0}^{m}\sum_{j=0}^{m}\abs{a_{ij}} \leq B \quad \forall m \geq 0\]
+Dann konvergieren die folgenden Reihen absolut:
+\[S_i := \sum_{j=0}^\infty a_{ij} \quad \forall i \geq 0 \  \text{und} \  U_j := \sum_{i=0}^{\infty}a_{ij} \quad \forall j \geq 0\]
+sowie
+\[\sum_{i=0}^\infty S_i \ \text{und} \ \sum_{j=0}^\infty U_j\]
+und es gilt:
+\[\sum_{i=0}^\infty S_i  =  \sum_{j=0}^\infty U_j\]
+Zudem konvergiert jede lineare Anordnung der Doppelreihe absolut, mit selbem Grenzwert
+\Def{2.60} Das \textbf{Cauchy Produkt} der Reihe
+\[\sum_{i=0}^\infty\ a_i, \sum_{j=0}^\infty\]
+ist die Reihe
+\[\sum_{n=0}^\infty ( \sum_{j=0}^n a_n-b_j )= a_0b_0 + (a_0b_1 + a_1b_0) + \dots \]
+\Satz{2.62} Falls die Reihen
+\[\sum_{i=0}^\infty a_i , \sum_{j=0}^\infty b_j\]
+absolut konvergieren, so konvergiert ihr Cauchy Produkt
+\[\sum_{n=0}^{\infty} (\sum_{j=0}^n a_n-b_j) = (\sum_{i=0}^{\infty} a_i) (\sum_{j=0}^{\infty} b_j)\]
+\Satz{2.64}  Sei \( f_n : \N \rightarrow \R \) eine Folge. Wir nehmen an
+\begin{enumerate}
+    \item [1] \(f(j) := \lim\limits_{n \rightarrow \infty} f_n(j)\) existiert \(\forall j \in \N\)
+    \item [2] Es gibt eine Funktion \(g: \N \rightarrow [0, \infty[\), so dass
+    \item [2.1] \(\abs{f_n(j) \leq g(j)} \quad \forall j \geq 0, \forall n \geq 0\)
+    \item [2.2] \(\sum_{j=0}^\infty g(j)\) konvergiert
+\end{enumerate}
+Dann folgt
+\[\sum_{j=0}^\infty f(j) = \lim\limits_{n \rightarrow \infty} \sum_{j=0}^\infty f_n(j)\]
+\Korollar{2.65} Für jedes \(z \in \C \) konvergiert die Folge \(((1 + \frac{z}{n})^n)_{n \geq 1}\) und
+\[\lim\limits_{n \rightarrow \infty} (1 + \frac{z}{n})^n = \exp(z)\]
+\sep
