@@ -116,7 +116,7 @@ Diese Implikation gilt auch, wenn \[K \geq 1 \  \text{mit} \ 0 \leq a_k \leq b_k
 \[\phi : \N^{*} \rightarrow \N^{*} \text{mit} \ a'_{n} = a_{\phi(n)}\] \newline
 \Satz[2.52](Dirichlet 1837) Falls \(\sum_{n=1}^{\infty} a_n\) absolut konvergiert, dann konvergiert jede Umordnung der Reihe und hat den selben Grenzwert
 \sep
-\Satz[2.53(Quotientenkriterium] Sei \((a_n)_{n \geq 1}\) mit \(a_n \neq 0 \quad \forall n \geq 1 \) Falls
+\Satz[2.53(Quotientenkriterium] \newline Sei \((a_n)_{n \geq 1}\) mit \(a_n \neq 0 \quad \forall n \geq 1 \).Falls
 \[\limsup\limits_{n \rightarrow \infty} \frac{\left|a_{n+1}\right|}{\left|a_{n}\right|}<1 \implies \sum_{n=1}^{\infty} a_{n} \ \text{konvergiert absolut}\]
 Falls
 \[\liminf\limits_{n \rightarrow \infty} \frac{\left|a_{n+1}\right|}{\left|a_{n}\right|}>1 \implies \sum_{n=1}^{\infty} a_{n} \ \text{divergiert}\]
@@ -124,20 +124,20 @@ Falls
 \sep
 \Satz[2.56 Wurzelkriterium]
 \begin{enumerate}
-    \item [1] Falls \(\limsup\limits_{n \rightarrow \infty} \sqrt[n]{\abs{a_n}} < 1\) danm konvergiert \(\sum_{n=1}^{\infty} a_n\) absolut
-    \item [2] Falls \(\limsup\limits_{n \rightarrow \infty} \sqrt[n]{\abs{a_n}} > 1\) dann diviergiert \(\sum_{n=1}^{\infty} a_n\) und \(\sum_{n=1}^{\infty}\abs{a_n} \)
+    \item [1] Falls \[\limsup\limits_{n \rightarrow \infty} \sqrt[n]{\abs{a_n}} < 1\] dann konvergiert \(\sum_{n=1}^{\infty} a_n\) absolut
+    \item [2] Falls \[\limsup\limits_{n \rightarrow \infty} \sqrt[n]{\abs{a_n}} > 1\] dann diviergiert \(\sum_{n=1}^{\infty} a_n\) und \(\sum_{n=1}^{\infty}\abs{a_n} \)
 \end{enumerate}
-\Korollar{2.57} Die Potenzreihe \[\sum_{k=0}^{\infty} c_kz^k\]
+\Korollar[2.57] Die Potenzreihe \[\sum_{k=0}^{\infty} c_kz^k\]
 \begin{itemize}
     \item konvergiert absolut für alle $\abs{z} < \rho$ 
     \item divergiert für alle $\abs{z} > \rho$
     \end{itemize}
     \[\rho = \begin{cases}
-        -\infty \quad \quad \quad \quad \quad \  \text{falls} \limsup_{k \rightarrow \infty} \sqrt[k]{\abs{c_k}} = 0 \\
+        +\infty \quad \quad \quad \quad \quad \  \text{falls} \limsup_{k \rightarrow \infty} \sqrt[k]{\abs{c_k}} = 0 \\
         \frac{1}{\limsup\limits_{c \rightarrow \infty} \sqrt[k]{\left|c_{k}\right|}}  \quad \  \ \text{falls } \limsup_{k \rightarrow \infty} \sqrt[k]{\abs{c_k}} > 0
         \end{cases}\]
-\Def{2.58} \(\sum_{k=0}^{\infty} b_k \) ist eine \textbf{lineare Anordnung} der Doppelreihe \(\sum_{i,j \geq 0} a_{i,j}\), falls es eine Bijektion \(\sigma : \N \rightarrow \N \times \N \) gibt mit \(b_k = a_{\sigma(k)}\) \newline
-\Satz{2.59} (Cauchy 1821). Wir nehmen an, dass es \(B \geq 0\) gibt, so dass
+\Def[2.58] \(\sum_{k=0}^{\infty} b_k \) ist eine \textbf{lineare Anordnung} der Doppelreihe \(\sum_{i,j \geq 0} a_{i,j}\), falls es eine Bijektion \[\sigma : \N \rightarrow \N \times \N \] gibt mit \(b_k = a_{\sigma(k)}\) \newline
+\Satz[2.59] (Cauchy 1821). Wir nehmen an, dass es \(B \geq 0\) gibt, so dass
 \[\sum_{i=0}^{m}\sum_{j=0}^{m}\abs{a_{ij}} \leq B \quad \forall m \geq 0\]
 Dann konvergieren die folgenden Reihen absolut:
 \[S_i := \sum_{j=0}^\infty a_{ij} \quad \forall i \geq 0 \  \text{und} \  U_j := \sum_{i=0}^{\infty}a_{ij} \quad \forall j \geq 0\]
