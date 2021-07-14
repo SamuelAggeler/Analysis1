@@ -154,15 +154,17 @@ ist die Reihe
 \[\sum_{i=0}^\infty a_i , \sum_{j=0}^\infty b_j\]
 absolut konvergieren, so konvergiert ihr Cauchy Produkt und es gilt:
 \[\sum_{n=0}^{\infty} (\sum_{j=0}^n a_{n-j}b_j) = (\sum_{i=0}^{\infty} a_i) (\sum_{j=0}^{\infty} b_j)\]
-\Satz{2.64}  Sei \( f_n : \N \rightarrow \R \) eine Folge. Wir nehmen an
+\Satz[2.64]  Sei \( f_n : \N \rightarrow \R \) eine Folge. Wir nehmen an :
 \begin{enumerate}
     \item [1] \(f(j) := \lim\limits_{n \rightarrow \infty} f_n(j)\) existiert \(\forall j \in \N\)
     \item [2] Es gibt eine Funktion \(g: \N \rightarrow [0, \infty[\), so dass
-    \item [2.1] \(\abs{f_n(j) \leq g(j)} \quad \forall j \geq 0, \forall n \geq 0\)
+    \begin {enumerate}
+    \item [2.1] \(\abs{f_n(j)} \leq g(j) \quad \forall j \geq 0, \forall n \geq 0\)
     \item [2.2] \(\sum_{j=0}^\infty g(j)\) konvergiert
+    \end{enumerate}
 \end{enumerate}
 Dann folgt
 \[\sum_{j=0}^\infty f(j) = \lim\limits_{n \rightarrow \infty} \sum_{j=0}^\infty f_n(j)\]
-\Korollar{2.65} Für jedes \(z \in \C \) konvergiert die Folge \(((1 + \frac{z}{n})^n)_{n \geq 1}\) und
+\Korollar[2.65] Für jedes \(z \in \C \) konvergiert die Folge \(((1 + \frac{z}{n})^n)_{n \geq 1}\) und
 \[\lim\limits_{n \rightarrow \infty} (1 + \frac{z}{n})^n = \exp(z)\]
 \sep

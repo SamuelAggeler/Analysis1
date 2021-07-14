@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=pdflatex 2021.7.12)  14 JUL 2021 11:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=pdflatex 2021.7.12)  14 JUL 2021 13:28
 entering extended mode
 **c:/Users/samue/OneDrive/Desktop/Analysis1/summary.tex
 (c:/Users/samue/OneDrive/Desktop/Analysis1/summary.tex
@@ -693,8 +693,8 @@ Overfull \hbox (12.58337pt too wide) detected at line 138
  (Stetige_Funktionen.texpdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.7     \item [3]
-                  f ist beschränkt, if \(f(D) \subseteq \R \) beschränkt [2]
+l.6     \item [2]
+                  f ist nach \textbf{unten beschränkt}, if \(f(D) \subseteq... [2]
 Underfull \hbox (badness 10000) in paragraph at lines 74--76
 [][][][][][]\OT1/cmr/m/n/8 (+20) 3.28 Der nat[]urliche Lo-ga-rith-
  []
@@ -704,16 +704,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.123 \[\sum_{k=0}^\infty c_kx^k\]
+                                   [3]
 Underfull \hbox (badness 10000) in paragraph at lines 123--126
 \OT1/cmr/m/n/8 (+20) hat \OT1/cmr/bx/n/8 (+20) po-si-ti-ven Kon-ver-genz-ra-di-us\OT1/cmr/m/n/8 (+20) , falls
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.126 \[
-        \rho = \begin{cases} [3]
+
 Overfull \hbox (12.58337pt too wide) detected at line 129
 \OML/cmm/m/it/8  \OT1/cmr/m/n/8 = []
  []
@@ -821,7 +821,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  60i,14n,66p,558b,822s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on summary.pdf (7 pages, 318676 bytes).
+Output written on summary.pdf (7 pages, 318740 bytes).
 PDF statistics:
  274 PDF objects out of 1000 (max. 8388607)
  39 named destinations out of 1000 (max. 500000)
