@@ -26,46 +26,48 @@
 \Def[3.5] Die Funktion \(f : D \rightarrow \R\) ist \textbf{stetig}, falls sie in jedem Punkt von D stetig ist. \newline
 \Satz[3.7] Sei \(x_0 \in D \subseteq \R \) und \(f: D \rightarrow \R \). Die Funktion f ist genau dann in \(x_0\) stetig falls für jede Folge \((a_n)_{n \geq 1}\) in D folgende implikation gilt:
 \[\lim\limits_{n \rightarrow \infty} a_n = x_0 \implies \lim\limits_{n \rightarrow \infty} f(a_n) = f(x_0)\]
-\Korollar{3.8} Sei \(x_0 \in D \subseteq \R, \lambda \in \R \) und \(f : D \rightarrow \R, g: D \rightarrow \R\) beide stetig in \(x_0\)
+\Korollar[3.8] Sei \(x_0 \in D \subseteq \R, \lambda \in \R \) und \(f : D \rightarrow \R, \) \newline \( g: D \rightarrow \R\) beide stetig in \(x_0\)
 \begin{enumerate}
     \item [1] Dann sind \(f+g, \lambda \cdot f, f \cdot g\) stetig in \(x_0\)
-    \item [2] Falls in \(g(x_0) \neq 0\) dann ist
+    \item [2] Falls \(g(x_0) \neq 0\) dann ist
     \[ \frac{f}{g} : D \cap \{x \in D : g(x) \neq 0\} \rightarrow \R\]
     \[x \rightarrow \frac{f(x)}{g(x)}\] stetig in \(x_0\)
 \end{enumerate}
-\Def{3.9} Eine \textbf{polynomiale Funktion} \(P: \R \rightarrow \R\) ist eine Funktion der Form
+\Def[3.9] Eine \textbf{polynomiale Funktion} \(P: \R \rightarrow \R\) ist eine Funktion der Form
 \[P(x) = a_nx^n + \dots + a_0\]
 wobei : \(a_n \dots a_0 \in \R\). Falls \(a_n \neq 0\) ist n der \textbf{Grad} von P \newline
-\Korollar{3.10} polynomiale Funktionen sind auf ganz \(\R\) stetig \newline
-\Korollar{3.11} Seien P,Q, polynomiale Funktionen auf \(\R\) mit \(Q \neq 0\). Seien \(x_1 \dots x_m\) die Nullstellen von Q. Dann ist
+\Korollar[3.10] Polynomiale Funktionen sind auf ganz \(\R\) stetig \newline
+\Korollar[3.11] Seien P,Q, polynomiale Funktionen auf \(\R\) mit \(Q \neq 0\). Seien \(x_1 \dots x_m\) die Nullstellen von Q. Dann ist
 \[\frac{P}{Q} : \R \setminus \{x_1, \dots x_m\} \rightarrow \R \]
 \[x \rightarrow \frac{P(x)}{Q(x)}\] stetig
 \sep
 \subsection{Der Zwischenwertsatz}
-\Satz{3.12} (Bolzano 1817). Sei \(I \subseteq \R \) ein Intervall, \(f : I \rightarrow \R \) eine stetige Funktion und \(a,b \in I\). Für jedes \(c\) zwischen \(f(a)\) und \(f(b)\) gibt es ein \(z\) zwischen a und b mit \(f(z) = c\) \newline
-\Korollar{3.13} Sei \(P(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_0\) ein Polynom mit \(a_n \neq 0\) und \(n\) ungerade. Dann besitzt P mindestens eine Nullstelle in \(\R\)
-\Bem{3.14} für \(c > 0\) besitzt \(Q(x) = x^2 + c\) keine Nullstelle in \(R\) \newline
+\Satz[3.12] (Bolzano 1817). Sei \(I \subseteq \R \) ein Intervall, \(f : I \rightarrow \R \) eine stetige Funktion und \(a,b \in I\). Für jedes \(c\) zwischen \(f(a)\) und \(f(b)\) gibt es ein \(z\) zwischen a und b mit \(f(z) = c\) \newline
+\Korollar[3.13] Sei \(P(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_0\) ein Polynom mit \(a_n \neq 0\) und \(n\) ungerade. Dann besitzt P mindestens eine Nullstelle in \(\R\) \newline
+\Bem[3.14] für \(c > 0\) besitzt \(Q(x) = x^2 + c\) keine Nullstelle in \(R\) \newline
 \sep
 \subsection{Der Min-Max Satz}
-\Def{3.16} Ein Intervall \(\subseteq \R\) ist \textbf{kompakt}, falls es von Form
+\Def[3.16] Ein Intervall \(\subseteq \R\) ist \textbf{kompakt}, falls es von Form
 \[I = [a.b], \quad a \leq b\] ist \newline
-\Lemma{3.17} Sei \(D \subseteq \R, x_0 \in D \) und \(f,g : D \rightarrow \R \) stetig in \(x_0\). Dann sind
+\Lemma[3.17] Sei \(D \subseteq \R, x_0 \in D \) und \(f,g : D \rightarrow \R \) stetig in \(x_0\). Dann sind
 \[ \abs{f}, \max(f,g), \min(f,g) \] stetig in \(x_0\) \newline
-\Lemma{3.18} Sei \((x_n)_{n \geq 1}\) eine konvergente Folge in \(\R\) mit Grenzwert
+\Lemma[3.18] Sei \((x_n)_{n \geq 1}\) eine konvergente Folge in \(\R\) mit Grenzwert
 \[\lim\limits_{n \rightarrow \infty} x_n \in \R \]
 sei \(a \leq b\). Falls \(\{x_n : n \geq 1\} \subseteq [a,b]\) folgt
 \[\lim\limits_{n \rightarrow \infty} x_n \in [a,b] \]
-\Satz{3.19} Sei \(f : I = [a,b] \rightarrow \R \) stetig auf dem kompakten Intervall I. Dann gibt es \(u \in I \) und \(v \in I\) mit
+\Satz[3.19] Sei \(f : I = [a,b] \rightarrow \R \) stetig auf dem kompakten Intervall I. Dann gibt es \(u \in I \) und \(v \in I\) mit
 \[f(u) \leq f(x) \leq f(v) \quad \forall x \in I\]
 Insbesondere ist f beschränkt
+\sep
 \subsection{Der Satz über  Umkehrabbildung} 
-\Satz{3.20} Seien \(D_1, D_2 \subseteq \R zwei Teilmengen, f: D_1 \rightarrow D_2, g: D_2 \rightarrow \R\) Funktionen, sowie \(x_0 \in D_1\). Falls \(f\) in \(x_0\) und \(g\) in \(f(x_0)\) stetig sind
-\[ g \circ f : D \rightarrow \R \]
+\Satz[3.20] Seien \(D_1, D_2 \subseteq \R \ zwei \ Teilmengen,\) \newline \(f: D_1 \rightarrow D_2, g: D_2 \rightarrow \R\) Funktionen, sowie \(x_0 \in D_1\). Falls \(f\) in \(x_0\) und \(g\) in \(f(x_0)\) stetig sind
+\[ g \circ f : D_1 \rightarrow \R \]
 in \(x_0\) stetig \newline
-\Korollar{3.21} Falls in Satz 3.20 \(f\) auf \(D_1\) und \(g\) auf \(D_2\) stetig sind, so ist \(g \circ f\) auf \(D_1\) stetig \newline
-\Satz{3.22} Sei \(I \subseteq \R\) ein Intervall und \(f: I \rightarrow \R\) stetig, streng monoton. Dann ist \(J:= f(I) \subseteq \R\) ein Intervall und \(f^-1 : J \rightarrow I \) ist stetig. streng monoton.
+\Korollar[3.21] Falls in Satz 3.20 \(f\) auf \(D_1\) und \(g\) auf \(D_2\) stetig sind, so ist \(g \circ f\) auf \(D_1\) stetig \newline
+\Satz[3.22] Sei \(I \subseteq \R\) ein Intervall und \(f: I \rightarrow \R\) stetig, streng monoton. Dann ist \(J:= f(I) \subseteq \R\) ein Intervall und \(f^-1 : J \rightarrow I \) ist stetig. streng monoton.
 \sep
 \subsection{Die reelle Exponentialfunktion}
+\Def{} \[ \exp(z) := \sum_{n=0}^{\infty} \frac{z^n}{n!}\]
 \Satz{3.24} \(\exp: \R \rightarrow ]0,+\infty[\) ist streng monoton wachsend, stetig und surjektiv
 \Korollar{3.25} \[ \exp(x) > 1 \forall x \in \R \]
 \[\exp(x) > 1 \forall x > 0\] Falls (\(y < z\))

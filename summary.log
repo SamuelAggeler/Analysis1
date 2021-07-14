@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=pdflatex 2021.7.12)  14 JUL 2021 13:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6.28) (preloaded format=pdflatex 2021.7.12)  14 JUL 2021 14:09
 entering extended mode
 **c:/Users/samue/OneDrive/Desktop/Analysis1/summary.tex
 (c:/Users/samue/OneDrive/Desktop/Analysis1/summary.tex
@@ -695,49 +695,49 @@ Overfull \hbox (12.58337pt too wide) detected at line 138
                    \relax 
 l.6     \item [2]
                   f ist nach \textbf{unten beschränkt}, if \(f(D) \subseteq... [2]
-Underfull \hbox (badness 10000) in paragraph at lines 74--76
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 [][][][][][]\OT1/cmr/m/n/8 (+20) 3.28 Der nat[]urliche Lo-ga-rith-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \[\sum_{k=0}^\infty c_kx^k\]
-                                   [3]
-Underfull \hbox (badness 10000) in paragraph at lines 123--126
+l.122 \[f(x) := \sum_{n=0}^{\infty} f_n(x)\]
+                                             [3]
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
 \OT1/cmr/m/n/8 (+20) hat \OT1/cmr/bx/n/8 (+20) po-si-ti-ven Kon-ver-genz-ra-di-us\OT1/cmr/m/n/8 (+20) , falls
  []
 
 
-Overfull \hbox (12.58337pt too wide) detected at line 129
+Overfull \hbox (12.58337pt too wide) detected at line 131
 \OML/cmm/m/it/8  \OT1/cmr/m/n/8 = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 []$[]\OT1/cmr/m/n/8 (+20) (\OML/cmm/m/it/8 z\OT1/cmr/m/n/8 (+20) ) = [](\OMS/cmsy/m/n/8  \OML/cmm/m/it/8 z\OT1/cmr/m/n/8 (+20) )$ und $[](\OMS/cmsy/m/n/8  \OML/cmm/m/it/8 z\OT1/cmr/m/n/8 (+20) ) =
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `math shift' on input line 152.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\pi' on input line 150.
+(hyperref)                removing `\pi' on input line 152.
 
 
-Overfull \hbox (22.96582pt too wide) detected at line 171
+Overfull \hbox (22.96582pt too wide) detected at line 173
 \OML/cmm/m/it/8 cos\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 > \OT1/cmr/m/n/8 0 \OMS/cmsy/m/n/8 8\OML/cmm/m/it/8 x \OMS/cmsy/m/n/8 2\OT1/cmr/m/n/8 ] \OMS/cmsy/m/n/8   [] \OT1/cmr/m/n/8 + 2\OML/cmm/m/it/8 k; \OMS/cmsy/m/n/8  [] \OT1/cmr/m/n/8 + (2\OML/cmm/m/it/8 k \OT1/cmr/m/n/8 + 1)\OML/cmm/m/it/8 \OT1/cmr/m/n/8 [ \OML/cmm/m/it/8 k \OMS/cmsy/m/n/8 2 \U/msb/m/n/8 Z
  []
 
 
-Overfull \hbox (38.4337pt too wide) detected at line 172
+Overfull \hbox (38.4337pt too wide) detected at line 174
 \OML/cmm/m/it/8 cos\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 < \OT1/cmr/m/n/8 0 \OMS/cmsy/m/n/8 8\OML/cmm/m/it/8 x \OMS/cmsy/m/n/8 2\OT1/cmr/m/n/8 ] \OMS/cmsy/m/n/8   [] \OT1/cmr/m/n/8 + (2\OML/cmm/m/it/8 k \OT1/cmr/m/n/8 + 1)\OML/cmm/m/it/8 ; \OMS/cmsy/m/n/8  [] \OT1/cmr/m/n/8 + (2\OML/cmm/m/it/8 k \OT1/cmr/m/n/8 + 2)\OML/cmm/m/it/8 \OT1/cmr/m/n/8 [ \OML/cmm/m/it/8 k \OMS/cmsy/m/n/8 2 \U/msb/m/n/8 Z
  []
 
@@ -747,15 +747,15 @@ Overfull \hbox (38.4337pt too wide) detected at line 172
  (Differenzierbare_Funktionen.texpdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.48 ... \quad \forall x \in ]x_0,x_0 + \delta [\]
-                                                   [4])
+l.44 \end{enumerate}
+                     [4])
 \openout2 = `Riemann_Integral.aux'.
 
  (Riemann_Integral.texpdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 \[ \int_{a}^{b} f(x) \,dx \]
-                                  [5]
+l.13 \[s(f) = S(f)\]
+                     [5]
 Overfull \hbox (34.19858pt too wide) detected at line 42
 [][]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 []f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) + \OML/cmm/m/it/8 []f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 [] [][] f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 + \OML/cmm/m/it/8 [] [][] f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx
  []
@@ -788,8 +788,8 @@ Overfull \hbox (129.95695pt too wide) detected at line 127
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.137 ...}}{216}( \frac{1}{n^2} - \frac{1}{m^2})\]
-                                                   [6])pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+l.132 \subsection{Stirling'sche Formel}
+                                        [6])pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.115 \end{multicols*}
@@ -813,15 +813,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--116
 
  ) 
 Here is how much of TeX's memory you used:
- 14128 strings out of 478847
- 215059 string characters out of 2848386
+ 14134 strings out of 478847
+ 215097 string characters out of 2848386
  675390 words of memory out of 3000000
  31595 multiletter control sequences out of 15000+600000
- 416534 words of font info for 133 fonts, out of 8000000 for 9000
+ 416697 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,14n,66p,558b,822s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,14n,66p,558b,816s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/samue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on summary.pdf (7 pages, 318740 bytes).
+Output written on summary.pdf (7 pages, 318898 bytes).
 PDF statistics:
  274 PDF objects out of 1000 (max. 8388607)
  39 named destinations out of 1000 (max. 500000)
