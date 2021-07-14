@@ -1,12 +1,12 @@
 \section{Stetige Funktionen}
 \subsection{Reellwertige Funktionen}
-\Def{3.1} Sei \( f \in \R^d\)
+\Def[3.1] Sei \( f \in \R^d\)
 \begin{enumerate}
     \item [1] f ist nach \textbf{oben beschränkt}, if \(f(D) \subseteq \R \) nach oben beschränkt ist
     \item [2] f ist nach \textbf{unten beschränkt}, if \(f(D) \subseteq \R \) nach unten beschränkt ist
-    \item [3] f ist beschränkt, if \(f(D) \subseteq \R \) beschränkt
+    \item [3] f ist beschränkt, if \(f(D) \subseteq \R \) b ist
 \end{enumerate}
-\Def{3.2} Eine funktion \(f: D \rightarrow \R\), wobei \(D \subseteq \R\) ist
+\Def[3.2] Eine funktion \(f: D \rightarrow \R\), wobei \(D \subseteq \R\) ist
 \begin{enumerate}
     \item [1] \textbf{monoton wachsend}, if \(\forall x,y \in D\)
     \[x \leq y \implies f(x) \leq f(y) \]
@@ -16,15 +16,15 @@
     \[x \leq y \implies f(x) \geq f(y)\]
     \item [4] \textbf{streng monoton fallend}, if \(\forall x,y \in D\)
     \[x < y \implies f(x) > f(y)\]
-    \item [5] \textbf{monoton}, falls monoton wachsend oder monoton fallend
+    \item [5] \textbf{monoton}, falls f monoton wachsend oder monoton fallend
     \item [6] \textbf{streng monoton}, falls f streng monoton wachsend/fallend
 \end{enumerate}
 \sep
 \subsection{Stetigkeit}
-\Def{3.4} Sei \(D \subseteq \R, x_0 \in D\). Die Funktion \(f: D \rightarrow \R \) ist in \textbf{\(x_0\) stetig}, falls es für jedes \(\epsilon > 0 \) ein \(\delta > 0\) gibt, so dass für alle \(x \in D \) die Implikation
+\Def[3.4] Sei \(D \subseteq \R, x_0 \in D\). Die Funktion \(f: D \rightarrow \R \) ist in \textbf{\(x_0\) stetig}, falls es für jedes \(\epsilon > 0 \) ein \(\delta > 0\) gibt, so dass für alle \(x \in D \) die Implikation
 \[ \abs{x - x_0} < \delta \implies \abs{f(x) - f(x_0)} < \epsilon\]
-\Def{3.5} Die Funktion \(f : D \rightarrow \R\) ist \textbf{stetig}, falls sie in jedem Punkt von D stetig ist. \newline
-\Satz{3.7} Sei \(x_0 \in D \subseteq \R \) und \(f: D \rightarrow \R \). Die Funktion f ist genau dann in \(x_0\) stetig falls für jede Folge \((a_n)_{n \geq 1}\) in D folgende implikation gilt:
+\Def[3.5] Die Funktion \(f : D \rightarrow \R\) ist \textbf{stetig}, falls sie in jedem Punkt von D stetig ist. \newline
+\Satz[3.7] Sei \(x_0 \in D \subseteq \R \) und \(f: D \rightarrow \R \). Die Funktion f ist genau dann in \(x_0\) stetig falls für jede Folge \((a_n)_{n \geq 1}\) in D folgende implikation gilt:
 \[\lim\limits_{n \rightarrow \infty} a_n = x_0 \implies \lim\limits_{n \rightarrow \infty} f(a_n) = f(x_0)\]
 \Korollar{3.8} Sei \(x_0 \in D \subseteq \R, \lambda \in \R \) und \(f : D \rightarrow \R, g: D \rightarrow \R\) beide stetig in \(x_0\)
 \begin{enumerate}
