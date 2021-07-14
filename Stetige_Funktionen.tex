@@ -68,23 +68,25 @@ in \(x_0\) stetig \newline
 \sep
 \subsection{Die reelle Exponentialfunktion}
 \Def{} \[ \exp(z) := \sum_{n=0}^{\infty} \frac{z^n}{n!}\]
-\Satz{3.24} \(\exp: \R \rightarrow ]0,+\infty[\) ist streng monoton wachsend, stetig und surjektiv
-\Korollar{3.25} \[ \exp(x) > 1 \forall x \in \R \]
-\[\exp(x) > 1 \forall x > 0\] Falls (\(y < z\))
-\[\exp(z) = \exp(y + ( z- y)) = \exp(y)\exp(z-y)\] und da (\(\exp(z-y) > 1\)) folgt
-\Korollar{3.26} \[\exp(z) > \exp(y) \forall z > y\]
-\Korollar{3.27} \[\exp(x) \geq 1 + x \quad \forall x \in \R\]
-\Korollar{3.28} Der natürliche Logarithmus(Umkehrabbildung \(\exp\) in \(\R\))
-\[\ln : ]0,+\infty[ \rightarrow \R \] ist eine streng monoton wachsende, stetige, bijektive Funktion.
+\Satz[3.24] \(\exp: \R \rightarrow ]0,+\infty[\) ist streng monoton wachsend, stetig und surjektiv \newline
+\Korollar[3.25] \[ \exp(x) > 0 \quad \forall x \in \R \]
+\[\exp(x) > 1 \quad \forall x > 0\] \newline
+\Korollar[3.26] \[\exp(z) > \exp(y) \quad \forall z > y\]
+\Korollar[3.27] \[\exp(x) \geq 1 + x \quad \forall x \in \R\]
+\Korollar[3.28] Der natürliche Logarithmus
+\[\ln : ]0,+\infty[ \longrightarrow \R \] ist eine streng monoton wachsende, stetige, bijektive Funktion. Des Weiteren gilt:
 \[\ln(a \cdot b) = \ln a + \ln b \quad \forall a,b \in ]0,+\infty[\]
-\Korollar{3.29}
+Wir können den Logarithmus und die Exponentialfunktion benutzen, um allgemeine Potenzen zu definieren. Für \(x > 0\) und \( a \in \R \) beliebig definieren wir:
+\[ x^a := \exp( a \ln x)\]
+Insbesondere \( x^0 = 1 \quad \forall x > 0\) \newline
+\Korollar[3.29]
 \begin{enumerate}
-    \item [1] Für \(a > 0\) ist \(]0,+\infty[ \rightarrow ]0,+\infty[\)
-    \[x \rightarrow x^a\] eine stetige, streng monoton wachsende Bijektion
-    \item [2] Für \(a < 0\) ist \(]0,+\infty[ \rightarrow ]0,+\infty[\)
-    \[x \rightarrow x^a\] eine stetige, streng monoton fallende Bijektion
+    \item [1] Für \(a > 0\) ist \[]0,+\infty[ \longrightarrow ]0,+\infty[\]
+    \[x \longrightarrow x^a\] eine stetige, streng monoton wachsende Bijektion \newline
+    \item [2] Für \(a < 0\) ist \[]0,+\infty[ \longrightarrow ]0,+\infty[\]
+    \[x \longrightarrow x^a\] eine stetige, streng monoton fallende Bijektion
     \item [3] \(ln(x^a) = a \ln(x) \quad \forall a \in \R, \forall x > 0\)
-    \item [4] \(x^a \cdot x^b = x^{a+b} \quad \forall a.b \in \R, \forall x > 0\)
+    \item [4] \(x^a \cdot x^b = x^{a+b} \quad \forall a,b \in \R, \forall x > 0\)
     \item [5] \((x^a)^b = x^{a \cdot b} \quad \forall a,b \in \R, \forall x > 0\)
 \end{enumerate}
 \sep
