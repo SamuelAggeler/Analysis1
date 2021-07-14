@@ -67,7 +67,7 @@ in \(x_0\) stetig \newline
 \Satz[3.22] Sei \(I \subseteq \R\) ein Intervall und \(f: I \rightarrow \R\) stetig, streng monoton. Dann ist \(J:= f(I) \subseteq \R\) ein Intervall und \(f^-1 : J \rightarrow I \) ist stetig. streng monoton.
 \sep
 \subsection{Die reelle Exponentialfunktion}
-\Def{} \[ \exp(z) := \sum_{n=0}^{\infty} \frac{z^n}{n!}\]
+\Def[Exponentialfunktion] \[ \exp(z) := \sum_{n=0}^{\infty} \frac{z^n}{n!}\]
 \Satz[3.24] \(\exp: \R \rightarrow ]0,+\infty[\) ist streng monoton wachsend, stetig und surjektiv \newline
 \Korollar[3.25] \[ \exp(x) > 0 \quad \forall x \in \R \]
 \[\exp(x) > 1 \quad \forall x > 0\] \newline
@@ -91,53 +91,59 @@ Insbesondere \( x^0 = 1 \quad \forall x > 0\) \newline
 \end{enumerate}
 \sep
 \subsection{Konvergenz v. Funktionenfolgen}
-\Def{3.30} Die Funktionenfolge \((f_n)_{n \geq 0}\) \textbf{konvergiert punktweise} gegen eine Funktion \(f: D \rightarrow \R\), falls für alle \(x \in D :\)
+Eine Funktionenfolge ist eine Abbildung 
+\[ \N \longrightarrow \R^D\]
+\[ n \longrightarrow f(n)\]
+\Def[3.30] Die Funktionenfolge \((f_n)_{n \geq 0}\) \textbf{konvergiert punktweise} gegen eine Funktion \(f: D \rightarrow \R\), falls für alle \(x \in D :\)
 \[f(x) = \lim\limits_{n \rightarrow \infty}f_n(x)\]
-\Def{3.32} (WEierstrass 1841) Die Folge
-\[f_n : D \rightarrow \R \]
+\Def[3.32] (Weierstrass 1841) Die Folge
+\[f_n : D \longrightarrow \R \]
 \textbf{konvergiert gleichmässig} in D gegen
 \[f : D  \rightarrow \R\]
 falls gilt \( \forall \epsilon > 0 \quad \exists N \geq 1\), so dass
-\[\forall n \geq N, \forall x \in D : \abs{f_n(x) - f(x) } < \epsilon \] \newline
-\Satz{3.33} Sei \(D \subseteq \R\) und \(f_n : D \rightarrow \R \) eine Funktionenfolge bestehend aus(in D) stetige Funktionen die (in D) gleichmässig gegen eine Funktion \(f: D \rightarrow \R \) konvergiert. Dann ist \(f\) (in D) stetig
-\Def{3.34} Eine Funktionenfolge
-\[f_n : D \rightarrow \R\]
+\[\forall n \geq N,\  \forall x \in D :\  \abs{f_n(x) - f(x) } < \epsilon \] \newline
+In dieser Definition ist es wichtig, dass \(N\) nur von \( \epsilon\) abhängig ist und nicht von \(x \in D\).Deswegen kommt die Bedingung \(\forall x \in D\) nach der Bedingung \(\exists N \geq 1\)
+\Satz[3.33] Sei \(D \subseteq \R\) und \(f_n : D \rightarrow \R \) eine Funktionenfolge bestehend aus(in D) stetigen Funktionen die (in D) gleichmässig gegen eine Funktion \(f: D \rightarrow \R \) konvergiert. Dann ist \(f\) (in D) stetig \newline
+\Def[3.34] Eine Funktionenfolge
+\[f_n : D \longrightarrow \R\]
 ist \textbf{gleichmässig konvergent}, falls für alle \(x \in D\) der Grenzwert
 \[f(x) := \lim\limits_{n \rightarrow \infty} f_n(x)\]
-existiert und die Folge \((f_n)_{n \geq 0}\) gleichmässig gegen \(f\) konvergiert
-\Korollar{3.35} Die Funktionenfolge
-\[f_n : D \rightarrow \R \]
+existiert und die Folge \((f_n)_{n \geq 0}\) gleichmässig gegen \(f\) konvergiert \newline
+\Korollar[3.35] Die Funktionenfolge
+\[f_n : D \longrightarrow \R \]
 konvergiert genau dann gleichmässig in D, falls
-\[\forall \epsilon > 0 \quad \exists N \geq 1 , \text{so dass} \forall n,m \geq N \text{und} \forall x \in D\] : \newline
+\[\forall \epsilon > 0 \quad \exists N \geq 1 , \text{so dass} \  \forall n,m \geq N \ \text{und} \ \forall x \in D:\]  \newline
 \[ \abs{f_n(x) - f_m(x)} < \epsilon \]
-\Korollar{3.36} Sei \(D \subseteq \R\). Falls \(f_n : D \rightarrow \R \) eine gleichmässig konvergente Folge stetiger Funktionen ist, dann ist die Funktion
-\[f(x) := \lim\limits_{n \rightarrow \infty} f_n(x)\] stetig
-\Def{3.37} Die Reihe \(\sum_{k=0}^\infty f_k(x)\) konvergiert gleichmässig (in D), falls die durch
+\Korollar[3.36] Sei \(D \subseteq \R\). Falls \(f_n : D \longrightarrow \R \) eine gleichmässig konvergente Folge stetiger Funktionen ist, dann ist die Funktion
+\[f(x) := \lim\limits_{n \rightarrow \infty} f_n(x)\] stetig \newline
+\Def[3.37] \(f_n: D \longrightarrow \R\) eine Folge von Funktionen. Die Reihe \(\sum_{k=0}^\infty f_k(x)\) konvergiert gleichmässig (in D), falls die durch
 \[S_n(x) := \sum_{k=0}^{n}f_k(x)\] definierte Funktionenfolge gleichmässig konvergiert
-\Satz{3.38} Sei \(D \subseteq \R \) und
+\Satz[3.38] Sei \(D \subseteq \R \) und
 \[f_n : D \rightarrow \R \]
-eine Folge stetiger Funktionen. Wir nehmen an, dass
+eine Folge stetiger Funktionen. Wir nehmen an
 \[\abs{f_n(x)} < c_n \quad \forall x \in D \]
-und, dass \[\sum_{n=0}^\infty c_n\] konvergiert. Dann konvergiert die Reihe
+und, dass \(\sum_{n=0}^\infty c_n\) konvergiert. Dann konvergiert die Reihe
 \[\sum_{n=0}^\infty\ f_n(x)\]
 gleichmässin in D und deren Grenzwert
 \[f(x) := \sum_{n=0}^{\infty} f_n(x)\]
 ist eine in D stetige Funktion \newline
-\Def{3.39} Die Potenzreihe
+\Def[3.39] Die Potenzreihe
 \[\sum_{k=0}^\infty c_kx^k\]
 hat \textbf{positiven Konvergenzradius}, falls \(\limsup\limits_{k \rightarrow \infty} \sqrt[k]{\abs{c_k}}\) existiert
 Der Konvergenzradius ist dann definiert als:
 \[\rho = \begin{cases}
-    -\infty \quad \quad \quad \quad \quad \  \text{falls} \limsup_{k \rightarrow \infty} \sqrt[k]{\abs{c_k}} = 0 \\
+    +\infty \quad \quad \quad \quad \quad \  \text{falls} \limsup_{k \rightarrow \infty} \sqrt[k]{\abs{c_k}} = 0 \\
     \frac{1}{\limsup\limits_{c \rightarrow \infty} \sqrt[k]{\left|c_{k}\right|}}  \quad \  \ \text{falls } \limsup_{k \rightarrow \infty} \sqrt[k]{\abs{c_k}} > 0
     \end{cases}\]
 \newline
-\Satz{3.40} Sei \(\sum_{k=0}^\infty c_kx^k \) eine Potenzreihe mit positivem Konvergenzradius \(\rho > 0\) und sei 
+\Satz[3.40] Sei \(\sum_{k=0}^\infty c_kx^k \) eine Potenzreihe mit positivem Konvergenzradius \(\rho > 0\) und sei 
 \[f(x) := \sum_{k=0}^\infty c_kx^k, \abs{x} < \rho \]
-Dann gilt: \(\forall 0 \leq r \leq \rho \) konvergiert
+Dann gilt: \(\forall 0 \leq r < \rho \) konvergiert
 \[\sum_{k=0}^\infty c_kx^k \]
-gleichmässig auf \([-r,r]\), Insbesondere ist \(f: ] -p,p[ \rightarrow \R\) stetig
-\Satz{3.41} \( \sin: \R \rightarrow \R \) und \(\cos: \R \rightarrow \R \) sind stetige Funktionen
+gleichmässig auf \([-r,r]\), insbesondere ist \newline \(f: ] -\rho,\rho [ \longrightarrow \R\) stetig \newline
+\sep
+\subsection{Trigonometrische Funktionen}
+\Satz[3.41] \( \sin: \R \rightarrow \R \) und \(\cos: \R \rightarrow \R \) sind stetige Funktionen
 \Satz{3.42}
 \begin{enumerate}
     \item [1] \( \exp iz = \cos(z) + i sin(z) \quad \forall z \in \C \)

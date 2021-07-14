@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.13)  15 JUL 2021 00:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.13)  15 JUL 2021 01:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -697,44 +697,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.121 und, dass \[\sum_{n=0}^\infty c_n\]
-                                          konvergiert. Dann konvergiert die ... [3]
-Underfull \hbox (badness 10000) in paragraph at lines 127--130
+l.122 \[f_n : D \rightarrow \R \]
+                                  [3]
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
 \OT1/cmr/m/n/8 (+20) hat \OT1/cmr/bx/n/8 (+20) po-si-ti-ven Kon-ver-genz-ra-di-us\OT1/cmr/m/n/8 (+20) , falls
  []
 
 
-Overfull \hbox (12.58337pt too wide) detected at line 133
+Overfull \hbox (12.58337pt too wide) detected at line 137
 \OML/cmm/m/it/8 ^^Z \OT1/cmr/m/n/8 = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 []$[]\OT1/cmr/m/n/8 (+20) (\OML/cmm/m/it/8 z\OT1/cmr/m/n/8 (+20) ) = [](\OMS/cmsy/m/n/8 ^^@\OML/cmm/m/it/8 z\OT1/cmr/m/n/8 (+20) )$ und $[](\OMS/cmsy/m/n/8 ^^@\OML/cmm/m/it/8 z\OT1/cmr/m/n/8 (+20) ) =
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 154.
+(hyperref)                removing `math shift' on input line 160.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\pi' on input line 154.
+(hyperref)                removing `\pi' on input line 160.
 
 
-Overfull \hbox (22.96582pt too wide) detected at line 175
+Overfull \hbox (22.96582pt too wide) detected at line 181
 \OML/cmm/m/it/8 cos\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 > \OT1/cmr/m/n/8 0 \OMS/cmsy/m/n/8 8\OML/cmm/m/it/8 x \OMS/cmsy/m/n/8 2\OT1/cmr/m/n/8 ] \OMS/cmsy/m/n/8 ^^@ [] \OT1/cmr/m/n/8 + 2\OML/cmm/m/it/8 k^^Y; \OMS/cmsy/m/n/8 ^^@[] \OT1/cmr/m/n/8 + (2\OML/cmm/m/it/8 k \OT1/cmr/m/n/8 + 1)\OML/cmm/m/it/8 ^^Y\OT1/cmr/m/n/8 [ \OML/cmm/m/it/8 k \OMS/cmsy/m/n/8 2 \U/msb/m/n/8 Z
  []
 
 
-Overfull \hbox (38.4337pt too wide) detected at line 176
+Overfull \hbox (38.4337pt too wide) detected at line 182
 \OML/cmm/m/it/8 cos\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 < \OT1/cmr/m/n/8 0 \OMS/cmsy/m/n/8 8\OML/cmm/m/it/8 x \OMS/cmsy/m/n/8 2\OT1/cmr/m/n/8 ] \OMS/cmsy/m/n/8 ^^@ [] \OT1/cmr/m/n/8 + (2\OML/cmm/m/it/8 k \OT1/cmr/m/n/8 + 1)\OML/cmm/m/it/8 ^^Y; \OMS/cmsy/m/n/8 ^^@[] \OT1/cmr/m/n/8 + (2\OML/cmm/m/it/8 k \OT1/cmr/m/n/8 + 2)\OML/cmm/m/it/8 ^^Y\OT1/cmr/m/n/8 [ \OML/cmm/m/it/8 k \OMS/cmsy/m/n/8 2 \U/msb/m/n/8 Z
  []
 
@@ -744,15 +744,15 @@ Overfull \hbox (38.4337pt too wide) detected at line 176
  (/home/samuel/Desktop/Analysis1/Analysis1/Differenzierbare_Funktionen.texpdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 ...ction{Zentrale Sätze über die Ableitung}
-                                                   [4])
-\openout2 = `Riemann_Integral.aux'.
-
- (/home/samuel/Desktop/Analysis1/Analysis1/Riemann_Integral.texpdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+l.34 \[
+       f^{-1}(y_0) = \frac{1}{f'(x_0)}\] [4]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.7     \item [1]
-                  Sei \(P^{'}\) eine Verfeinerung von P, dann gilt: [5]
+l.152     \item [2]
+                    Falls \(f^{(2)}(x_0) < 0\) ist \(x_0\) strikt lokale Max... [5])
+\openout2 = `Riemann_Integral.aux'.
+
+ (/home/samuel/Desktop/Analysis1/Analysis1/Riemann_Integral.tex
 Overfull \hbox (34.19858pt too wide) detected at line 42
 [][]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 ^^U[]f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) + \OML/cmm/m/it/8 ^^U[]f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 ^^U[] [][] f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 + \OML/cmm/m/it/8 ^^U[] [][] f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx
  []
@@ -777,16 +777,16 @@ Overfull \hbox (45.46152pt too wide) detected at line 125
 [] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 i\OT1/cmr/m/n/8 ) = [][] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 + [](\OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 n\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (0)) + [][] [](\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx
  []
 
-
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.125 ...int_{0}^{n} \tilde{B_1} (x) f'(x) \,dx \]
+                                                   [6]
 Overfull \hbox (129.95695pt too wide) detected at line 127
 [] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 i\OT1/cmr/m/n/8 ) = [][] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 + [](\OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 n\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (0)) + [] [](\OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 n\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (0)) + []
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.127 ...(j-1)}(n) - f^{(j-1)}(0)) + \tilde{R_k}\]
-                                                   [6])pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.115 \end{multicols*}
@@ -797,7 +797,7 @@ l.115 \end{multicols*}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.10}Das unbestimmte Integral}{}{subsection.5.10}\protected@file@percent }
 ] (/home/samuel/Desktop/Analysis1/Analysis1/summary.aux (/home/samuel/Desktop/Analysis1/Analysis1/Grundlagen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Folgen_Reihen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Stetige_Funktionen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Differenzierbare_Funktionen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Riemann_Integral.aux))
 Package rerunfilecheck Info: File `summary.out' has not changed.
-(rerunfilecheck)             Checksum: AB5BF2109E4EFEF2D0EB54069B6CC9D9;6393.
+(rerunfilecheck)             Checksum: B1447E78DCDC73821EFB6FE80F805445;6590.
 
 Underfull \hbox (badness 10000) in paragraph at lines 116--116
 [] [][]
@@ -810,18 +810,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--116
 
  ) 
 Here is how much of TeX's memory you used:
- 13921 strings out of 478994
- 205893 string characters out of 5864751
- 632704 words of memory out of 5000000
- 30933 multiletter control sequences out of 15000+600000
- 416697 words of font info for 136 fonts, out of 8000000 for 9000
+ 13919 strings out of 478994
+ 205899 string characters out of 5864751
+ 632718 words of memory out of 5000000
+ 30934 multiletter control sequences out of 15000+600000
+ 416586 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,14n,74p,557b,839s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,14n,74p,557b,843s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/samuel/Desktop/Analysis1/Analysis1/summary.pdf (7 pages, 274255 bytes).
+Output written on /home/samuel/Desktop/Analysis1/Analysis1/summary.pdf (7 pages, 275551 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
- 39 named destinations out of 1000 (max. 500000)
- 26921 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 236 compressed objects within 3 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 26929 words of extra memory for PDF output out of 29859 (max. 10000000)
 
