@@ -145,15 +145,15 @@ sowie
 \[\sum_{i=0}^\infty S_i \ \text{und} \ \sum_{j=0}^\infty U_j\]
 und es gilt:
 \[\sum_{i=0}^\infty S_i  =  \sum_{j=0}^\infty U_j\]
-Zudem konvergiert jede lineare Anordnung der Doppelreihe absolut, mit selbem Grenzwert
-\Def{2.60} Das \textbf{Cauchy Produkt} der Reihe
-\[\sum_{i=0}^\infty\ a_i, \sum_{j=0}^\infty\]
+Zudem konvergiert jede lineare Anordnung der Doppelreihe absolut, mit selbem Grenzwert \newline
+\Def[2.60] Das \textbf{Cauchy Produkt} der Reihe
+\[\sum_{i=0}^\infty\ a_i, \sum_{j=0}^\infty\ b_j\]
 ist die Reihe
-\[\sum_{n=0}^\infty ( \sum_{j=0}^n a_n-b_j )= a_0b_0 + (a_0b_1 + a_1b_0) + \dots \]
-\Satz{2.62} Falls die Reihen
+\[\sum_{n=0}^\infty ( \sum_{j=0}^n a_{n-j}b_j )= a_0b_0 + (a_0b_1 + a_1b_0) + \dots \] \newline
+\Satz[2.62] Falls die Reihen
 \[\sum_{i=0}^\infty a_i , \sum_{j=0}^\infty b_j\]
-absolut konvergieren, so konvergiert ihr Cauchy Produkt
-\[\sum_{n=0}^{\infty} (\sum_{j=0}^n a_n-b_j) = (\sum_{i=0}^{\infty} a_i) (\sum_{j=0}^{\infty} b_j)\]
+absolut konvergieren, so konvergiert ihr Cauchy Produkt und es gilt:
+\[\sum_{n=0}^{\infty} (\sum_{j=0}^n a_{n-j}b_j) = (\sum_{i=0}^{\infty} a_i) (\sum_{j=0}^{\infty} b_j)\]
 \Satz{2.64}  Sei \( f_n : \N \rightarrow \R \) eine Folge. Wir nehmen an
 \begin{enumerate}
     \item [1] \(f(j) := \lim\limits_{n \rightarrow \infty} f_n(j)\) existiert \(\forall j \in \N\)
