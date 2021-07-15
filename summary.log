@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.13)  15 JUL 2021 13:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.13)  15 JUL 2021 16:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -733,18 +733,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--214
 
  []
 
-)
+<./img//LR-GrenzWert.png, id=183, 356.33125pt x 296.10625pt>
+File: ./img//LR-GrenzWert.png Graphic file (type png)
+<use ./img//LR-GrenzWert.png>
+Package pdftex.def Info: ./img//LR-GrenzWert.png  used on input line 229.
+(pdftex.def)             Requested size: 80.1765pt x 66.62553pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--242
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.248 ...x_0+\delta[: f(x) < -\frac{1}{\epsilon}\]
+                                                   [4 </home/samuel/Desktop/Analysis1/Analysis1/./img//LR-GrenzWert.png>])
 \openout2 = `Differenzierbare_Funktionen.aux'.
 
  (/home/samuel/Desktop/Analysis1/Analysis1/Differenzierbare_Funktionen.texpdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 ...f'(x_0)g(x_0) - f(x_0)g'(x_0)}{g(x_0)^2}\]
-                                                   [4]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.145     \item [1]
-                    Falls n gerade ist und \(x_0\) lokale Extremstelle, folg... [5])
+l.124 \[
+        (g \circ f)^{(n)}(x) = \sum_{k=1}^n A_{n,k}(x) (g^{(k)} \circ f) (x)\] [5])
 \openout2 = `Riemann_Integral.aux'.
 
  (/home/samuel/Desktop/Analysis1/Analysis1/Riemann_Integral.tex
@@ -757,16 +767,16 @@ Overfull \hbox (17.71771pt too wide) detected at line 69
 [][] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 b\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 b\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 a\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 a\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ [][] \OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx
  []
 
-
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77 ... = \frac{1}{c} \int_{ac}^{bc} f(x) \,dx \]
+                                                   [6]
 Overfull \hbox (51.37961pt too wide) detected at line 110
 [][]
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.114 $$
-         [6]
+
 Overfull \hbox (29.30937pt too wide) detected at line 121
 []\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) = []
  []
@@ -786,13 +796,15 @@ Overfull \hbox (129.95695pt too wide) detected at line 127
                    \relax 
 l.115 \end{multicols*}
                        [7
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Integration konvergenter Reihen}{}{subsection.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Euler-McLaurin Summationsformel}{}{subsection.5.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Stirling'sche Formel}{}{subsection.5.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.8}Uneigentliche Integrale}{}{subsection.5.8}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.9}Die Gamma Funktion}{}{subsection.5.9}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.10}Das unbestimmte Integral}{}{subsection.5.10}\protected@file@percent }
 ] (/home/samuel/Desktop/Analysis1/Analysis1/summary.aux (/home/samuel/Desktop/Analysis1/Analysis1/Grundlagen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Folgen_Reihen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Stetige_Funktionen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Differenzierbare_Funktionen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Riemann_Integral.aux))
 Package rerunfilecheck Info: File `summary.out' has not changed.
-(rerunfilecheck)             Checksum: B1447E78DCDC73821EFB6FE80F805445;6590.
+(rerunfilecheck)             Checksum: 21DC60819C28FDAC3FC730FE2379568A;6590.
 
 Underfull \hbox (badness 10000) in paragraph at lines 116--116
 [] [][]
@@ -805,18 +817,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--116
 
  ) 
 Here is how much of TeX's memory you used:
- 13925 strings out of 478994
- 205935 string characters out of 5864751
- 632764 words of memory out of 5000000
- 30934 multiletter control sequences out of 15000+600000
- 416738 words of font info for 137 fonts, out of 8000000 for 9000
+ 13939 strings out of 478994
+ 206150 string characters out of 5864751
+ 633478 words of memory out of 5000000
+ 30941 multiletter control sequences out of 15000+600000
+ 416838 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,14n,74p,557b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,14n,74p,557b,848s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/samuel/Desktop/Analysis1/Analysis1/summary.pdf (7 pages, 276967 bytes).
+Output written on /home/samuel/Desktop/Analysis1/Analysis1/summary.pdf (7 pages, 285274 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 236 compressed objects within 3 object streams
+ 268 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
  40 named destinations out of 1000 (max. 500000)
- 26929 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 26934 words of extra memory for PDF output out of 29859 (max. 10000000)
 

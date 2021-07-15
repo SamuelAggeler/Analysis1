@@ -221,4 +221,30 @@ falls \( \forall \epsilon > 0 \quad \exists \delta > 0\) so dass
 existiert und \(y_0 \in E.\) Falls \(g: E \longrightarrow \R \) stetig in \(y_0\) folgt:
 \[ \lim\limits_{x \rightarrow x_0} g(f(x)) = g(y_0)\]
 \sep
-\subsection{Linkseeitige und rehcsseitige Grenzwerte}
+\subsection{Linksseitige und rechsseitige Grenzwerte}
+Betrachten wir zum Beispiel
+\[f: \R \setminus \{0\} \longrightarrow \R\]
+\[x \longrightarrow \frac{1}{x}\]
+Dann wird für \( x > 0\), x beliebig nahe an 0, \(\frac{1}{x}\) beliebig positiv gross und für \(x < 0\), x beliebig nahe an 0, \( \frac{1}{x}\) beliebig negativ "gross".In beiden Fällen hat \( \frac{1}{x}\) ein einfaches Verhalten.
+\includegraphics[scale=0.225]{LR-GrenzWert.png} \newline
+Im Fall \(a \in \R\),
+\[f: ]0,\infty[ \rightarrow \R\]
+\[x \rightarrow x^a\]
+ist f auf \(]0,\infty[\) definiert. Falls \(a > 0\) werden wir sehen, dass
+\[ \lim_{x\in ]0,\infty[\rightarrow 0} f(x) = 0\]
+Sei \(f: D \longrightarrow \R \) und \(x_0 \in \R \). Wir nehemn an, \(x_0\) ist Häufungspunkt von \(D \cap ]x_0, +\infty[;\)
+das heisst ein rechtsseitiger Häufungspunkt. Falls der Grenzwert der eingeschränkten Funktion
+\[f|_{D \cap [x_0,+\infty[}\]
+für \(x \longrightarrow x_0\) exisitert, wird er mit
+\[ \lim_{x \rightarrow x_0^+} f(x)\]
+bezeichnet und nennt sicht rechtsseitiger Grenzwert von \(f\) bei \(x_0\).\newline \newline
+Wir erweitern diese Definition auf:
+\[\lim_{x \rightarrow x_0^+} f(x) = +\infty \]
+falls gilt:
+\[ \forall \epsilon > 0 \exists \delta > 0, \ \forall x \in D \cap ]x_0,x_0 + \delta[:\ f(x) > \frac{1}{\epsilon}\]
+und analog:
+\[ \lim_{x \rightarrow x_0^+} f(x) = -\infty \]
+falls
+\[ \forall \epsilon > 0 \  \exists \delta > 0, \ \forall x \in D \cap ]x_0,x_0+\delta[: f(x) < -\frac{1}{\epsilon}\]
+Linksseitige Häufungspunkt und Grenzwerte werden analog definiert. Mit diesen Definitionen gilt:
+\[\lim_{x \rightarrow 0^+}\frac{1}{x} = +\infty, \quad\ \lim_{x \rightarrow 0^-}\frac{1}{x} = -\infty \]
