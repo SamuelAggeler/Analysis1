@@ -143,75 +143,82 @@ Dann gilt: \(\forall 0 \leq r < \rho \) konvergiert
 gleichmässig auf \([-r,r]\), insbesondere ist \newline \(f: ] -\rho,\rho [ \longrightarrow \R\) stetig \newline
 \sep
 \subsection{Trigonometrische Funktionen}
-\Satz[3.41] \( \sin: \R \rightarrow \R \) und \(\cos: \R \rightarrow \R \) sind stetige Funktionen
-\Satz{3.42}
+\Def[Sinus\&Cosinus] \[ \sin(z) = z - \frac{z^3}{2!}+\frac{z^5}{5!}-\frac{z^7}{7!}+ \dots = \sum_{n=0}^{\infty} \frac{(-1)^nz^{2n}}{(2n)!}\]
+\[ \cos(z) = 1-\frac{z^2}{2!}+\frac{z^4}{4!}-\frac{z^6}{6!}+\dots = \sum_{n=0}^{\infty} \frac{(-1)^nz^{2n}}{(2n)!}\]
+\Satz[3.41] \( \sin: \R \rightarrow \R \) und \(\cos: \R \rightarrow \R \) sind stetige Funktionen \newline
+\Satz[3.42]
 \begin{enumerate}
-    \item [1] \( \exp iz = \cos(z) + i sin(z) \quad \forall z \in \C \)
-    \item [2] \( \cos(z) = \cos(-z)\) und \(\sin(-z) = -\sin z \quad \forall z in \C \)
+    \item [1] \( \exp iz = \cos(z) + i \ sin(z) \quad \forall z \in \C \)
+    \item [2] \( \cos(z) = \cos(-z)\) und \newline \(\sin(-z) = -\sin z \quad \forall z \in \C \)
     \item [3] \( \sin z = \frac{e^{iz} - e^{-iz}}{2i}, \cos z = \frac{e^{iz} - e^{-iz}}{2}\)
     \item [4] \( \sin(z + w) = \sin(z) \cos(w) + \cos(z) \sin(w)\) \newline
     \( \cos(z + w) = \cos(z) \cos(w) - \sin(z) \sin(w) \)
     \item [5] \( \cos(z)^2 + \sin(z)^2 = 1 \quad \forall z \in \C \)
 \end{enumerate}
-\Korollar{3.34}
+\Korollar[3.34]
 \[\sin(2z) = 2 \sin(z) \cos(z)\]
-\[\cos(2z) = cos(z)^2 - \sin(z)^2\]
+\[\cos(2z) = \cos(z)^2 - \sin(z)^2\]
 \sep
 \subsection{Die Kreiszahl \( \pi \)}
-\Satz{3.44} Die Sinusfuktion hat auf \(]0,+ \infty [\) mindestens eine Nullstelle
-\[ \pi := \inf\{t > 0 : sin t = 0\}\]
+\Satz[3.44] Die Sinusfuktion hat auf \(]0,+ \infty [\) mindestens eine Nullstelle
+\[ \pi := \inf\{t > 0 : \sin t = 0\}\]
 Dann gilt:
 \begin{enumerate}
-    \item [1] \[ \sin \pi = 0, \pi \in ]2,4[\]
-    \item [2] \[ \forall x \in ]0,\pi [: \sin x > 0\]
-    \item [3] \[ e^\frac{i \pi}{2} = i\]
+    \item [1] \( \sin \pi = 0,\quad \pi \in ]2,4[\)
+    \item [2] \( \forall x \in ]0,\pi [: \sin x > 0\)
+    \item [3] \( e^\frac{i \pi}{2} = i\)
 \end{enumerate}
-\Korollar{3.45}
+\Korollar[3.45]
 \[ x \geq \sin x \geq x - \frac{x^3}{3!} \quad \forall 0 \leq x \leq \sqrt{6}\]
-\Korollar{3.46}
+\Korollar[3.46]
 \begin{enumerate}
     \item [1] \(e^{i \pi} = -1, \quad e^{2 i \pi} = 1\)
-    \item [2] \( \sin(x + \frac{\pi}{2}) = \cos(x), \quad \cos(x + \frac{\pi}{2}) = -  \sin(x) \forall x \in \R\)
-    \item [3] \( \sin(x + \pi ) = - \sin(x), \quad \sin(x + 2 \pi= =  \sin(x) \quad \forall x \in \R \)
-    \item [4] \( \cos (x + \pi) = - \cos(x), \cos(x + 2 \pi) = \cos(x) \forall x \in \R \)
+    \item [2] \( \sin(x + \frac{\pi}{2}) = \cos(x), \) \newline \(\cos(x + \frac{\pi}{2}) = -  \sin(x) \quad \forall x \in \R\)
+    \item [3] \( \sin(x + \pi ) = - \sin(x), \) \newline \( \sin(x + 2 \pi) =  \sin(x) \quad \forall x \in \R \)
+    \item [4] \( \cos (x + \pi) = - \cos(x), \) \newline \(\cos(x + 2 \pi) = \cos(x) \quad \forall x \in \R \)
     \item [5] Nullstellen von Sinus = \(\{ k \cdot \pi : k \in \Z\}\)
-    \[ \sin(x) > 0 \quad \forall x \in ]2k \pi, (2k + 1) \pi [ \quad k \in \Z\]
-    \[ \sin(x) < 0 \quad \forall x \in ](2k+1) \pi, (2k + 2) \pi [ \quad k \in \Z\]
+    \[ \sin(x) > 0 \quad \forall x \in ]2k \pi, (2k + 1) \pi [ ,\quad k \in \Z\]
+    \[ \sin(x) < 0 \quad \forall x \in ](2k+1) \pi, (2k + 2) \pi [, \quad k \in \Z\]
     \item [6] Nullstellen von Cosinus \(= \{ \frac{\pi}{2} + k \cdot \pi : k \in \Z \}\)
-    \[ cos(x) > 0 \quad \forall x \in ] -\frac{\pi}{2} + 2k \pi, -\frac{pi}{2} + (2k+1) \pi [ \quad k \in \Z\]
-    \[ cos(x) < 0 \quad \forall x \in ] -\frac{\pi}{2} + (2k+1) \pi, -\frac{\pi}{2} + (2k + 2) \pi[ \quad k \in \Z\]
+    \( cos(x) > 0 \) \newline \(\quad \forall x \in ] -\frac{\pi}{2} + 2k \pi, -\frac{\pi}{2} + (2k+1) \pi [, \quad k \in \Z\)
+    \( cos(x) < 0 \) \newline \(\forall x \in ] -\frac{\pi}{2} + (2k+1) \pi, -\frac{\pi}{2} + (2k + 2) \pi[,\quad k \in \Z\)
 \end{enumerate}
+Für \(z \notin \frac{\pi}{2} + \pi \cdot \Z \) definieren wir:
+\[\tan(z) = \frac{\sin(z)}{\tan(z)}\]
+und für \( z \notin \pi \cdot \Z\) :
+\[\cot(z) = \frac{\cos(z)}{\sin(z)}\]
 \sep
 \subsection{Grenzwerte von Funktionen}
-\Def{3.47} \(x_0 \in \R \) ist ein \textbf{Häufungspunkt} der Menge D falls \( \forall \delta > 0\) : 
+\Def[3.47] \(x_0 \in \R \) ist ein \textbf{Häufungspunkt} der Menge D falls \( \forall \delta > 0\) : 
 \[ (]x_0 - \delta, x_0 + \delta [ \setminus \{x_0\}) \cap D \neq \emptyset \]
-\Def{3.49} Sei \( F: D \rightarrow \R, x_0 \in \R \) ein Häufungspunkt von D. Dann ist \(A \in \R \) der Grenzwert von \(f(x)\) für \(x \rightarrow x_0\) bezeichnet mit
+\Def[3.49] Sei \( f: D \longrightarrow \R, x_0 \in \R \) ein Häufungspunkt von D. Dann ist \(A \in \R \) der Grenzwert von \(f(x)\) für \(x \rightarrow x_0\) bezeichnet mit
 \["\lim\limits_{x \rightarrow x_0} f(x) = A"\]
 falls \( \forall \epsilon > 0 \quad \exists \delta > 0\) so dass
 \[ \forall x \in D \cap (] x_0 - \delta, x_0 + \delta [ \setminus \{x_0\}) : \abs{f(x) - A } < \epsilon\]
 \Bem{3.50}
 \begin{enumerate}
-    \item [1] Sei \(f : D \rightarrow \R \) und \(x_0\) ein Häufungspunkt von D. Dann gilt \(\lim\limits_{x \rightarrow x_0} f(x) = A \) genau dann wenn für alle Folgen \((a_n)_{a \geq 1 }\) in \(D \setminus \{x_0\}\) mit
+    \item [1] Sei \(f : D \rightarrow \R \) und \(x_0\) ein Häufungspunkt von D. Dann gilt \(\lim\limits_{x \rightarrow x_0} f(x) = A \) genau dann wenn für alle Folgen \((a_n)_{n \geq 1 }\) in \(D \setminus \{x_0\}\) mit
     \[ \lim\limits_{n \rightarrow \infty} a_n = x_0  \]
     folgt
     \[ \lim\limits_{n \rightarrow \infty} f(a_n) = A \]
     \item [2] Sei \(x_0 \in D. \) Dann ist f stetig in \(x_0\) genau dann, falls
     \[ \lim\limits_{x \rightarrow x_0} f(x) = f(x_0)\]
-    \item [3] Mitells (1) zeigt man leicht, dass falls \(f,g : D \rightarrow \R \) und \( \lim\limits_{x \rightarrow x_0} f(x), \lim\limits_{x \rightarrow x_0} g(x)\) existieren, so folgt
-    \[\lim\limits_{x \rightarrow \infty}(f + g)(x) = \lim\limits_{x \rightarrow x_0} f(x) + \lim\limits_{x \rightarrow x_0} g(x)\]
+    \item [3] Falls \(f,g : D \rightarrow \R \) und \( \lim\limits_{x \rightarrow x_0} f(x), \lim\limits_{x \rightarrow x_0} g(x)\) existieren, so folgt
+    \[\lim\limits_{x \rightarrow x_0}(f + g)(x) = \lim\limits_{x \rightarrow x_0} f(x) + \lim\limits_{x \rightarrow x_0} g(x)\]
     und
-    \[\lim\limits_{x \rightarrow \infty}(f \cdot g)(x) = \lim\limits_{x \rightarrow x_0} f(x) \cdot \lim\limits_{x \rightarrow x_0} g(x)\]
+    \[\lim\limits_{x \rightarrow x_0}(f \cdot g)(x) = \lim\limits_{x \rightarrow x_0} f(x) \cdot \lim\limits_{x \rightarrow x_0} g(x)\]
     \item [4] Sei \(f,g : D \rightarrow \R \) mit \(f \leq g \). Dann folgt
     \[\lim\limits_{x \rightarrow x_0} f(x) \leq \lim\limits_{x \rightarrow x_0} g(x)\]
     falls beide Grenzwerte existieren
+    \newline\newline
     \item [5] Falls \(g_1 \leq f \leq g_2\) und
     \[ \lim\limits_{x \rightarrow x_0} g_1(x) = \lim\limits_{x \rightarrow x_0} g_2(x)\]
     dann existiert \(\lim\limits_{x \rightarrow x_0} f(x)\) und
     \[ \lim\limits_{x \rightarrow x_0} f(x) = \lim\limits_{x \rightarrow x_0} g_1(x )\]
 \end{enumerate}
-\Satz{3.52} Seien \(D,E \subseteq \R, x_0 \) Häufungspunkt von \(D, f: D \rightarrow E \) eine Funktion. Wir nehmen an, dass
+\Satz[3.52] Seien \(D,E \subseteq \R,\  x_0 \) Häufungspunkt von \(D, f: D \longrightarrow E \) eine Funktion. Wir nehmen an, dass
 \[y_0 := \lim\limits_{x \rightarrow x_0} f(x)\]
-existiert und \(y_0 \in E.\) Falls \(g: E \rightarrow \R \) stetig in \(y_0\) folgt:
+existiert und \(y_0 \in E.\) Falls \(g: E \longrightarrow \R \) stetig in \(y_0\) folgt:
 \[ \lim\limits_{x \rightarrow x_0} g(f(x)) = g(y_0)\]
 \sep
 \subsection{Linkseeitige und rehcsseitige Grenzwerte}
