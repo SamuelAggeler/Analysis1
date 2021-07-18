@@ -60,15 +60,33 @@ In diesem Fall gilt \(\phi(x_0) = f'(x_0)\) \newline
     Dann ist nach Satz 3.38 diese Reihe auf ganz \( \R\) gleichmässig konvergent und \(f\) ist deswegen stetig. Mittels Dezimalentwicklung kann man zeigen, dass \(f\) in keinem Punkt von \(\R\) differenzierbar ist.
 \end{enumerate}
 \Def[4.7] \(f: D \rightarrow \R\) ist \textbf{in D differenzierbar}, falls für jeden Häufungspunkt \(x_0 \in D, f\) in \(x_0\) differenzierbar ist. \newline
-\Satz{4.9} Sei \(D \subseteq \R, x_0 \in D\) ein Häufungspunkt von D und \(f,g : D \rightarrow \R \) in \(x_0\) differenzierbar. Dann gelten
+\Bsp[4.8]
+\begin{enumerate}
+    \item \( \exp : \R \rightarrow \R \) ist in \( \R\) differenzierbar und \(exp' = exp\)
+    Seien \(x_0 \in \R\) und \( h \neq 0:\)
+    \[\frac{\exp(x_0 + h)-\exp(x_0)}{h} = \] \newline
+    \[\frac{\exp(x_0)\exp(h)-\exp(x_0)}{h} = \] \newline
+    \[\exp(x_0) \left[ \frac{\exp(h)-1}{h}\right]\]
+    Also: \[ \exp'(x_0) = \exp(x_0) \lim_{h \rightarrow 0} \left[ \frac{\exp(h) - 1}{h}\right]\]
+    Aus \( \exp(h) = 1 + h + \frac{h^2}{2!}+ \dots \) folgt für \( h \neq 0\):
+    \[\frac{\exp(h) - 1}{h} = 1 + \frac{h}{2!} + \frac{h^2}{3!} + \dots\]
+    und für \( h \in [-1,1], h \neq 0\):
+    \[ \abs{\frac{\exp(h) - 1}{h}-1} \leq \abs{h} \left[ \frac{1}{2!} + \frac{\abs{h}}{3!} + \dots \right] \leq 2\abs{h}\]
+    woraus
+    \[ \lim_{h \rightarrow 0} \left( \frac{\exp(h) - 1}{h}\right) - 1 = 0\]
+    folgt.
+    \item \(\sin' = \cos und \cos' = -\sin\)
+\end{enumerate}
+\Satz[4.9] Sei \(D \subseteq \R, x_0 \in D\) ein Häufungspunkt von D und \(f,g : D \rightarrow \R \) in \(x_0\) differenzierbar. Dann gelten
 \begin{enumerate}
     \item [1] \(f + g\) ist in \(x_0 \) differenzierbar und
     \[(f + g)'(x_0) = f'(x_0) + g'(x_0)\]
     \item [2] \(f \cdot g\) ist in \(x_0\) differenzierbar und
     \( (f \cdot g)'(x_0) = f'(x_0)g(x_0) + f(x_0)g'(x_0)\)
     \item [3] Falls \(g(x_0) \neq 0 \) ist \( \frac{f}{g}\) in \(x_0\) differenzierbar und
-    \[ (\frac{f}{g})'(x_0) = \frac{f'(x_0)g(x_0) - f(x_0)g'(x_0)}{g(x_0)^2}\]
+    \[ \left(\frac{f}{g}\right)'(x_0) = \frac{f'(x_0)g(x_0) - f(x_0)g'(x_0)}{g(x_0)^2}\]
 \end{enumerate}
+\Def{} Eine Funktion \(f: \R \rightarrow \R \) heisst \newline \textbf{gerade(resp. ungerade)}, falls \( f(-x) = f(x)\) \newline (resp. \(f(-x) = -f(x)\)) gilt für alle \( x \in \R\) \newline
 \Satz{4.11} Seien \(D,E \subseteq \R\) und sei \(x_0 \in D\) ein Häufungspunkt. Sei \(f. D \rightarrow E\) eine in \(x_0\) differenzierbare Funktion so dass \(y_0 := f(x_0)\) ein Häufungspunkt von E ist, und sei \(g : E \rightarrow \R \) eine in \(y_0\) differenzierbare Funktion. Dann ist \(g \circ f : D \rightarrow \R \) in \(x_0\) differenzierbar und
 \[ (g \circ f)'(x_0) = g'(f(x_0))f'(x_0)\]
 \Korollar{4.12} Sei \(f : D \rightarrow E \) eine bijektive Funktion, \(x_0 \in D\) ein Häufungspunkt; wir nehem an \(f\) ist in \(x_0\) differenzierbar und \(f'(x) \neq 0\) ; zudem nehemn wir an \(f^{-1}\) ist in \(y_0 = f(x_0)\) stetig. Dann ist \(y_0\) Häufungspunkt von E, \(f^{-1}\) ist in \(y_0\) differenzierbar und

@@ -22,7 +22,15 @@
 \sep
 \subsection{Stetigkeit}
 \Def[3.4] Sei \(D \subseteq \R, x_0 \in D\). Die Funktion \(f: D \rightarrow \R \) ist in \textbf{\(x_0\) stetig}, falls es für jedes \(\epsilon > 0 \) ein \(\delta > 0\) gibt, so dass für alle \(x \in D \) die Implikation
-\[ \abs{x - x_0} < \delta \implies \abs{f(x) - f(x_0)} < \epsilon\]
+\[ \abs{x - x_0} < \delta \implies \abs{f(x) - f(x_0)} < \epsilon\] \newline
+\Bsp[3.6] Sei \( n \geq 0: f: \R \rightarrow \R, x \rightarrow x^n\) ist stetig.
+\hspace*{-5mm}\includegraphics[scale=0.210]{Stetigkeit.png}
+\includegraphics[scale=0.220]{Stetig2.png}
+Die Abrundungsfunktion \( \lceil \cdot \rceil : \R \rightarrow \R, x \rightarrow \lceil x \rceil := \max \{ m \in \Z: m \leq z\}\)
+ist in jedem Punkt \( x_0 \notin \Z \) stetig; sie ist in keinem Punkt \(y \in \Z \) stetig.
+\includegraphics[scale=0.200]{Stetigkeit3.png}
+Die Funktion \(f : \R \rightarrow \R \) definiert durch:
+
 \Def[3.5] Die Funktion \(f : D \rightarrow \R\) ist \textbf{stetig}, falls sie in jedem Punkt von D stetig ist. \newline
 \Satz[3.7] Sei \(x_0 \in D \subseteq \R \) und \(f: D \rightarrow \R \). Die Funktion f ist genau dann in \(x_0\) stetig falls für jede Folge \((a_n)_{n \geq 1}\) in D folgende implikation gilt:
 \[\lim\limits_{n \rightarrow \infty} a_n = x_0 \implies \lim\limits_{n \rightarrow \infty} f(a_n) = f(x_0)\]
@@ -43,6 +51,7 @@ wobei : \(a_n \dots a_0 \in \R\). Falls \(a_n \neq 0\) ist n der \textbf{Grad} v
 \sep
 \subsection{Der Zwischenwertsatz}
 \Satz[3.12] (Bolzano 1817). Sei \(I \subseteq \R \) ein Intervall, \(f : I \rightarrow \R \) eine stetige Funktion und \(a,b \in I\). Für jedes \(c\) zwischen \(f(a)\) und \(f(b)\) gibt es ein \(z\) zwischen a und b mit \(f(z) = c\) \newline
+\includegraphics[scale=0.200]{Zwischenwertsatz.png}
 \Korollar[3.13] Sei \(P(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_0\) ein Polynom mit \(a_n \neq 0\) und \(n\) ungerade. Dann besitzt P mindestens eine Nullstelle in \(\R\) \newline
 \Bem[3.14] für \(c > 0\) besitzt \(Q(x) = x^2 + c\) keine Nullstelle in \(R\) \newline
 \sep
@@ -89,6 +98,7 @@ Insbesondere \( x^0 = 1 \quad \forall x > 0\) \newline
     \item [4] \(x^a \cdot x^b = x^{a+b} \quad \forall a,b \in \R, \forall x > 0\)
     \item [5] \((x^a)^b = x^{a \cdot b} \quad \forall a,b \in \R, \forall x > 0\)
 \end{enumerate}
+\includegraphics[scale=0.255]{lnExp.png}
 \sep
 \subsection{Konvergenz v. Funktionenfolgen}
 Eine Funktionenfolge ist eine Abbildung 
