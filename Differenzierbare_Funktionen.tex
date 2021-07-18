@@ -1,24 +1,65 @@
 \section{Differenzierbare Funktionen}
-\subsection{Die Ableitung}
 \Def{4.1} Sei \( D \subseteq \R , f: D \rightarrow \R \) und \(x_0 \in D\) ein Häufungspunkt von D \newline
 f ist ist \textbf{in \(x_0\) Differenzierbar}, falls der Grenzwert
 \[ \lim\limits_{x \rightarrow x_0} \frac{f(x) - f(x_0)}{x - x_0}\]
-existiert. Ist dies der Fall, wird der Grenzwert mit \(f'(x_0)\) bezeichnet
-\Bem{4.2} Es ist oft von Vorteil in der Definiton von \(f'(x_0), x= x_0 + h \) zu setzten, so dass:
-\[f'(x_0) = \lim\limits_{h \rightarrow 0} \frac{f(x_0 + h) - f(x_0)}{h}\]
-\Satz{4.3}(Weierstrass 1861). Sei \(f: D \rightarrow \R, x_0 \in D\) Häufungspunkt von D. Folgende Aussagen sind äquivalent:
+existiert. Ist dies der Fall, wird der Grenzwert mit \(f'(x_0)\) bezeichnet \newline
+\Bem{4.2}: Es ist oft von Vorteil in der Definiton von \(f'(x_0)\), \(x = x_0 +h\) zu setzen \[f'(x_0) = \lim_{h \rightarrow 0} \frac{f(x_0+h)-f(x_0)}{h}\]
+\includegraphics[scale=0.225]{differenzierbar.png} \newline
+\( \frac{f(x) - f(x_0)}{x - x_0}\) ist die Steigung der Gerade durch \((x_0, f(x_0)), (x,f(x))\). Falls \(f'(x_0)\) existiert ist die Intuition, dass die Familien der Geraden durch \((x_0, f(x_0)), (x,f(x))\) für \(x \neq x_0, x \rightarrow x_0\) als "Grenzwert" die Tangente zum Graphen von f in \((x_0, f(x_0))\) annimmt.
+\subsection{Die Ableitung}
+\Satz[4.3](Weierstrass 1861). Sei \(f: D \rightarrow \R, x_0 \in D\) Häufungspunkt von D. Folgende Aussagen sind äquivalent:
 \begin{enumerate}
     \item [1] f ist in \(x_0\) differenzierbar.
     \item [2] Es gibt \(c \in \R \) und \(r: D \rightarrow D \) mit:
-    \item [2.1] \(f(x) = f(x_0) + c(x - x_0) + r(x)(x-x_0)\)
-    \item [2.2] \(r(x_0) = 0 \) und r ist stetig in \(x_0\)
+    \begin{enumerate}
+        \item  [2.1] \(f(x) = f(x_0) + c(x - x_0) + r(x)(x-x_0)\)
+        \item  [2.2] \(r(x_0) = 0 \) und r ist stetig in \(x_0\)
+    \end{enumerate} 
 \end{enumerate}
 Falls dies zutrifft ist \(c = f'(x_0)\) eindeutig bestimmt
-\Satz{4.4} Eine Funktion \( f: D \rightarrow \R\) ist genau dann in \(x_0\) differenzierbar, falls es eine Funktion \(\Phi : D \rightarrow \R \) gibt die stetig in \(x_0\) ist und so, dass
+Die Formulierung der Differenzierbarkeit von f mittels
+\[ f(x) = f(x_0) + f'(x_0)(x - x_0) + r(x)(x - x_0)\]
+und der Stetigkeit von r in \(x_0\) hat den Vorteil, dass sie keinen Limes enthält. Ausserdem ist dann
+\[ y = f(x_0) + f'(x_0)(x - x_0)\]
+die Gleichung der Tangente zum Graphen von f im Punkt \( (x_0, f(x_0))\).
+WIr können die Charakterisierung der Differenzierbarkeit noch vereinfachen in dem wir in Satz 4.3(2.1)
+\[ \phi(x) = f'(x_0) + r(x)\]
+setzen. Wir erhalten: \newline
+\Satz[4.4]Eine Funktion \( f: D \rightarrow \R\) ist genau dann in \(x_0\) differenzierbar, falls es eine Funktion \(\phi : D \rightarrow \R \) gibt die stetig in \(x_0\) ist und so, dass
 \[f(x) = f(x_0) + \phi(x)(x - x_0) \quad \forall x \in D\]
-In diesem Fall gilt \(\phi(x_0) = f'(x_0)\)
-\Korollar{4.5} Sei \(f : D \rightarrow \R \) und \(x_0 \in D \) ein Häufungspunkt von D. Falls \(f\) in \(x_0\) differenzierbar ist, so ist \(f\) stetig in \(x_0\)
-\Def{4.7} \(f: D \rightarrow \R\) ist \textbf{in D differenzierbar}, falls für jeden Häufungspunkt \(x_0 \in D, f\) in \(x_0\) differenzierbar ist.
+In diesem Fall gilt \(\phi(x_0) = f'(x_0)\) \newline
+\Korollar[4.5] Sei \(f : D \rightarrow \R \) und \(x_0 \in D \) ein Häufungspunkt von D. Falls \(f\) in \(x_0\) differenzierbar ist, so ist \(f\) stetig in \(x_0\) \newline
+\Bsp[4.6] \begin{enumerate}
+    \item  \( f = 1: \R \rightarrow \R\), dann ist \(f'(x) = 0 \quad  \forall x_0 \in \R \)
+    Folgt aus \(f(x) - f(x_0) = 1 - 1 = 0\)
+    \item  \( f : \R \rightarrow \R, f(x) = x\). Dann ist \(f'(x_0)=1\) \newline
+    Folgt aus \(f(x) - f(x_0) = 1 \cdot (x - x_0) \)
+    \item  \(f: \R \rightarrow \R, f(x) = x^2\). Dann ist \(f'(x_0) = 2x_0 \quad \forall x_0 \in \R\) \newline
+    Folgt aus:
+    \[ f(x) - f(x_0) = x^2 - x_0^2 = (x-x_0)(x+x_0)\]
+    Also für \( x \neq x_0:\)
+    \[ \frac{f(x) - f(x_0)}{x - x_0} = x + x_0\]
+    woraus
+    \[ \lim_{x \rightarrow x_0} \frac{f(x) - f(x_0)}{x - x_0} = \lim_{x \rightarrow x_0} (x + x_0) = 2x_0\]
+    folgt.
+    \item  \(f: \R \rightarrow \R, f(x) = \abs{x}\) \newline
+    \includegraphics[scale=0.225]{ABS-function.png}
+    \newline
+    Ist in \(x_0 = 0\) nicht differenzierbar: \newline
+    Für \( x < 0:\)
+    \[ \frac{f(x) - f(0)}{x - 0} = \frac{\abs{x}}{x} = -1\]
+    Für \( x > 0:\)
+    \[ \frac{f(x) - f(0)}{x - 0} = \frac{\abs{x}}{x} = 1\]
+    Also hat für \(x \rightarrow 0, \frac{f(x) - f(0)}{x - 0}\) keinen Grenzwert.
+    Für alle \(x_0 \neq 0\) ist \(f\) in \(x_0\) differenzierbar.
+    \item (Van der Waerden) Sei für \(x \in \R,\)
+    \[ g(x) = \min\{\abs{x - m} : m \in \Z\}\] \newline
+    \hspace*{-5mm}\includegraphics [scale=0.185]{VanDerWaerden.png} \newline
+    Sei
+    \[ f(x) = \sum_{n=0}^{\infty} \frac{g(10^nx)}{10^n}\]
+    Dann ist nach Satz 3.38 diese Reihe auf ganz \( \R\) gleichmässig konvergent und \(f\) ist deswegen stetig. Mittels Dezimalentwicklung kann man zeigen, dass \(f\) in keinem Punkt von \(\R\) differenzierbar ist.
+\end{enumerate}
+\Def[4.7] \(f: D \rightarrow \R\) ist \textbf{in D differenzierbar}, falls für jeden Häufungspunkt \(x_0 \in D, f\) in \(x_0\) differenzierbar ist. \newline
 \Satz{4.9} Sei \(D \subseteq \R, x_0 \in D\) ein Häufungspunkt von D und \(f,g : D \rightarrow \R \) in \(x_0\) differenzierbar. Dann gelten
 \begin{enumerate}
     \item [1] \(f + g\) ist in \(x_0 \) differenzierbar und

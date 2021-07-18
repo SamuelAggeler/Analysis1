@@ -64,7 +64,7 @@ Insbesondere ist f beschränkt
 \[ g \circ f : D_1 \rightarrow \R \]
 in \(x_0\) stetig \newline
 \Korollar[3.21] Falls in Satz 3.20 \(f\) auf \(D_1\) und \(g\) auf \(D_2\) stetig sind, so ist \(g \circ f\) auf \(D_1\) stetig \newline
-\Satz[3.22] Sei \(I \subseteq \R\) ein Intervall und \(f: I \rightarrow \R\) stetig, streng monoton. Dann ist \(J:= f(I) \subseteq \R\) ein Intervall und \(f^-1 : J \rightarrow I \) ist stetig. streng monoton.
+\Satz[3.22] Sei \(I \subseteq \R\) ein Intervall und \(f: I \rightarrow \R\) stetig, streng monoton. Dann ist \(J:= f(I) \subseteq \R\) ein Intervall und \(f^{-1} : J \rightarrow I \) ist stetig. streng monoton.
 \sep
 \subsection{Die reelle Exponentialfunktion}
 \Def[Exponentialfunktion] \[ \exp(z) := \sum_{n=0}^{\infty} \frac{z^n}{n!}\]
@@ -143,7 +143,7 @@ Dann gilt: \(\forall 0 \leq r < \rho \) konvergiert
 gleichmässig auf \([-r,r]\), insbesondere ist \newline \(f: ] -\rho,\rho [ \longrightarrow \R\) stetig \newline
 \sep
 \subsection{Trigonometrische Funktionen}
-\Def[Sinus\&Cosinus] \[ \sin(z) = z - \frac{z^3}{2!}+\frac{z^5}{5!}-\frac{z^7}{7!}+ \dots = \sum_{n=0}^{\infty} \frac{(-1)^nz^{2n}}{(2n)!}\]
+\Def[Sinus\&Cosinus] \[ \sin(z) = z - \frac{z^3}{2!}+\frac{z^5}{5!}-\frac{z^7}{7!}+ \dots = \sum_{n=0}^{\infty} \frac{(-1)^nz^{2n+1}}{(2n)!}\]
 \[ \cos(z) = 1-\frac{z^2}{2!}+\frac{z^4}{4!}-\frac{z^6}{6!}+\dots = \sum_{n=0}^{\infty} \frac{(-1)^nz^{2n}}{(2n)!}\]
 \Satz[3.41] \( \sin: \R \rightarrow \R \) und \(\cos: \R \rightarrow \R \) sind stetige Funktionen \newline
 \Satz[3.42]
@@ -225,7 +225,7 @@ existiert und \(y_0 \in E.\) Falls \(g: E \longrightarrow \R \) stetig in \(y_0\
 Betrachten wir zum Beispiel
 \[f: \R \setminus \{0\} \longrightarrow \R\]
 \[x \longrightarrow \frac{1}{x}\]
-Dann wird für \( x > 0\), x beliebig nahe an 0, \(\frac{1}{x}\) beliebig positiv gross und für \(x < 0\), x beliebig nahe an 0, \( \frac{1}{x}\) beliebig negativ "gross".In beiden Fällen hat \( \frac{1}{x}\) ein einfaches Verhalten.
+Dann wird für \( x > 0\), x beliebig nahe an 0, \(\frac{1}{x}\) beliebig positiv gross und für \(x < 0\), x beliebig nahe an 0, \( \frac{1}{x}\) beliebig negativ "gross".In beiden Fällen hat \( \frac{1}{x}\) ein einfaches Verhalten. \newline
 \includegraphics[scale=0.225]{LR-GrenzWert.png} \newline
 Im Fall \(a \in \R\),
 \[f: ]0,\infty[ \rightarrow \R\]
@@ -235,7 +235,7 @@ ist f auf \(]0,\infty[\) definiert. Falls \(a > 0\) werden wir sehen, dass
 Sei \(f: D \longrightarrow \R \) und \(x_0 \in \R \). Wir nehemn an, \(x_0\) ist Häufungspunkt von \(D \cap ]x_0, +\infty[;\)
 das heisst ein rechtsseitiger Häufungspunkt. Falls der Grenzwert der eingeschränkten Funktion
 \[f|_{D \cap [x_0,+\infty[}\]
-für \(x \longrightarrow x_0\) exisitert, wird er mit
+für \(x \longrightarrow x_0\) existiert, wird er mit
 \[ \lim_{x \rightarrow x_0^+} f(x)\]
 bezeichnet und nennt sicht rechtsseitiger Grenzwert von \(f\) bei \(x_0\).\newline \newline
 Wir erweitern diese Definition auf:
