@@ -318,21 +318,43 @@ für alle \( x \in ]x_0 - \rho , x_0 + \rho [\) \newline
 \[f^{(j)}(x) = \sum_{k=j}^\infty c_k \frac{k!}{(k-j)!}(x - x_0)^{k-j}\]
 Insbesondere ist
 \[c_j = \frac{f^{(j)}(x_0)}{j!}\]
-\Bsp[4.42](Cauchy 1823)
-\[ \]
-\Satz{4.43} Sei \(f: [a,b] \rightarrow \R\) stetig und in \(]a,b[\) (n+1)-mal differenzierbar. Für jedes \(a < x \leq b \) gibt es \(\mathcal{E} \in ]a,x[ \) mit:
-\[ f(x) = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x -a)^k + \frac{f^{(n+1)}\mathcal{E}}{(n+1)!}(x - a)^{n+1} \]
-\Korollar{4.44} (Taylor Approximatio)
-Sei \(f : [c,d] \rightarrow \R \) stetig und in \(]c,d[ \) (n+1)-mal differenzierbar. Sei \( c < a < d\). Für alle \(x \in [c,d]\) gibt es \( \mathcal{E}\) zwischen x und so dass
-\[f(x) = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!} (x-a)^k + \frac{f^{(n+1)}\mathcal{E}}{(n+1)} (x-a)^{(n+1)}\]
-\Korollar{4.45} Sei \( n \geq 0,  a < x_0 < b \) und \(f: [a,b] \rightarrow \R\) in \(]a,b[\) (n+1)-mal stetig differenzierbar. Annahme: \(f'(x_0) = f^{(2)}(x_0) = \dots = f^{(n)}(x_0) = 0\)
+\Bsp[4.42](Cauchy 1823)\newline
+Das nicht jede glatte Funktion Summe einer Potenzreihe ist, folgt aus diesem Beispiel
+\[f(x)=\left\{\begin{array}{cc}
+\exp \left(\frac{-1}{x^{2}}\right) & x \neq 0 \\
+0 & x=0
+\end{array}\right. \]
+Diese Funktion ist auf ganz \( \R \) glatt und \newline \( f^{(k)}(0) = 0 \quad \forall k \geq 0\).
+Da andererseits  \newline \( f(x) > 0 \quad \forall x \neq 0\), gibt es keine Potenzreihe mit positivem Konvergenzradius \( \rho \), die in \( ]-\rho, \rho [\) gegen f konvergiert. \newline
+Aus Satz 4.37 folgt, dass \( \forall k \geq 0\)
+\[ f^{(k)}(x) = \mathcal{P}_k \left( \frac{1}{x}\right) \exp \left( \frac{-1}{x^2}\right) \quad \forall x \neq 0\]
+wobei \( \mathcal{P}_k\) ein Polynom ist.
+Unter Benützung von:
+\[ \lim_{x \rightarrow 0} \frac{1}{x^m} \exp \left( \frac{-1}{x^2}\right) = 0 \quad \forall m \geq 0\]
+folgt mit \( f^{(k)}(0) = 0:\)
+\[ f^{(k+1)}(0) = \lim_{x \rightarrow 0} \frac{f^{k}(x) - f^{(k)}(0)}{x} = \lim_{x \rightarrow 0} \frac{f^{(k)}(x)}{x} = 0\]
+\Satz[4.43] Sei \(f: [a,b] \rightarrow \R\) stetig und in \(]a,b[\) \newline (n+1)-mal differenzierbar. Für jedes \(a < x \leq b \) gibt es \(\mathcal{E} \in ]a,x[ \) mit:
+\[ f(x) = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x -a)^k + \frac{f^{(n+1)}(\mathcal{E})}{(n+1)!}(x - a)^{n+1} \]
+\Korollar[4.44] (Taylor Approximatio)
+Sei \(f : [c,d] \rightarrow \R \) stetig und in \(]c,d[ \) (n+1)-mal differenzierbar. Sei \( c < a < d\). Für alle \(x \in [c,d]\) gibt es \( \mathcal{E}\) zwischen x und a so dass
+\[f(x) = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!} (x-a)^k + \frac{f^{(n+1)}(\mathcal{E})}{(n+1)} (x-a)^{n+1}\]
+Anhand dieses Korollars können wir eine präzisere Aussage über lokale Extremalstellen einer \((n+1)\)-mal differenzierbaren Funktion machen.
+\Korollar[4.45] Sei \( n \geq 0,  a < x_0 < b \) und \(f: [a,b] \rightarrow \R\) in \(]a,b[\) (n+1)-mal stetig differenzierbar. Annahme: \(f'(x_0) = f^{(2)}(x_0) = \dots = f^{(n)}(x_0) = 0\)
 \begin{enumerate}
-    \item [1] Falls n gerade ist und \(x_0\) lokale Extremstelle, folgt \(f^{(n+1)}(x_0) = 0\)
+    \item [1] Falls n gerade ist und \(x_0\) lokale Extremalstelle, folgt \(f^{(n+1)}(x_0) = 0\)
     \item [2] Falls n ungerade ist und \(f^{(n+1)}(x_0) > 0\) so ist \(x_0\) eine strikt lokale Minimalstelle
     \item [3] Falls n ungerade ist und \(f^{(n+1)}(x_0) < 0\) so ist \(x_0\) eine strikt lokale Maximalstelle
 \end{enumerate}
-\Korollar{4.46} Sei \(f : [a.b] \rightarrow \R \) stetig und in \(]a,b[\) zweimal stetig differenzierbar. Sei \(x < x_0 < b\). Annahme: \(f'(x) = 0\)
+\Korollar[4.46] Sei \(f : [a.b] \rightarrow \R \) stetig und in \(]a,b[\) zweimal stetig differenzierbar. Sei \(x < x_0 < b\). Annahme: \(f'(x) = 0\)
 \begin{enumerate}
-    \item [1] Falls \(f^{(2)}(x_0) > 0\) ist \(x_0\) strikt lokale Minimalstelle
-    \item [2] Falls \(f^{(2)}(x_0) < 0\) ist \(x_0\) strikt lokale Maximalstelle
+    \item [1] Falls \(f^{(2)}(x_0) > 0\) ist \(x_0\) strikte lokale Minimalstelle
+    \item [2] Falls \(f^{(2)}(x_0) < 0\) ist \(x_0\) strikte lokale Maximalstelle
 \end{enumerate}
+\Bsp[4.47] Sei \(f(x) = x^4 - x^2 +1\). Wir bestimmen die lokalen Extremalstellen von f. Sei \(x_0\) eine solche; dann folgt nacht Satz 4.15(3):
+\[f'(x_0) = 0, \]
+das heisst
+\[ 4x_0^3 - 2x_0 = 0.\]
+Also gilt \(x_0 \in \left\{ -\frac{1}{\sqrt{2}}, 0, \frac{1}{\sqrt{2}}\right\}\). Nun ist \newline \( f^{(2)}(x) = 12x^2 - 2\);
+\[ f^{(2)} \left( -\frac{1}{\sqrt{2}}\right) = f^{(2)}\left( \frac{1}{\sqrt{2}}\right) = 4 > 0\]
+\[ f^{(2)}(0) = -2 < 0\]
+Also sind \( -\frac{1}{\sqrt{2}}\) und \( \frac{1}{\sqrt{2}}\) strikte lokale Minimalstellen, und 0 strikte lokale Maximalstelle.
