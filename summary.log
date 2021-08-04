@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.13)  19 JUL 2021 19:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.13)  4 AUG 2021 15:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -901,11 +901,16 @@ File: ./img//arctan.png Graphic file (type png)
 <use ./img//arctan.png>
 Package pdftex.def Info: ./img//arctan.png  used on input line 185.
 (pdftex.def)             Requested size: 187.17122pt x 104.24496pt.
+<./img//Konvexität.png, id=234, 642.4pt x 342.27875pt>
+File: ./img//Konvexität.png Graphic file (type png)
+<use ./img//Konvexität.png>
+Package pdftex.def Info: ./img//Konvexität.png  used on input line 257.
+(pdftex.def)             Requested size: 163.81473pt x 87.28253pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.276 ...k=1}^n A_{n,k}(x) (g^{(k)} \circ f) (x)\]
-                                                   [7 </home/samuel/Desktop/Analysis1/Analysis1/./img//arctan.png>])
+l.271     \item [3]
+                    Die Funktion f ist in D \textbf{glatt}, falls sie \( \fo... [7 </home/samuel/Desktop/Analysis1/Analysis1/./img//arctan.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//Konvexität.png>])
 \openout2 = `Riemann_Integral.aux'.
 
  (/home/samuel/Desktop/Analysis1/Analysis1/Riemann_Integral.tex
@@ -913,16 +918,16 @@ Overfull \hbox (34.19858pt too wide) detected at line 42
 [][]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 ^^U[]f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) + \OML/cmm/m/it/8 ^^U[]f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 ^^U[] [][] f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 + \OML/cmm/m/it/8 ^^U[] [][] f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx
  []
 
-
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.67 \[ \int_{a}^{b} f(x) \,dx = F(b) - F(a)\]
+                                               [8]
 Overfull \hbox (17.71771pt too wide) detected at line 69
 [][] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 b\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 b\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 a\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 a\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ [][] \OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.77 ... = \frac{1}{c} \int_{ac}^{bc} f(x) \,dx \]
-                                                   [8]
+
 Overfull \hbox (51.37961pt too wide) detected at line 110
 [][]
  []
@@ -968,18 +973,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--116
 
  ) 
 Here is how much of TeX's memory you used:
- 14037 strings out of 478994
- 208108 string characters out of 5864751
- 634201 words of memory out of 5000000
- 31008 multiletter control sequences out of 15000+600000
- 416938 words of font info for 141 fonts, out of 8000000 for 9000
+ 14043 strings out of 478994
+ 208254 string characters out of 5864751
+ 634269 words of memory out of 5000000
+ 31013 multiletter control sequences out of 15000+600000
+ 416888 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,14n,74p,557b,850s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,14n,74p,557b,840s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/samuel/Desktop/Analysis1/Analysis1/summary.pdf (9 pages, 535155 bytes).
+Output written on /home/samuel/Desktop/Analysis1/Analysis1/summary.pdf (9 pages, 552288 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 259 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
- 26999 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 322 PDF objects out of 1000 (max. 8388607)
+ 261 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 27004 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -168,7 +168,7 @@ In diesem Fall gilt \(\phi(x_0) = f'(x_0)\) \newline
     \[\cos x = \sqrt{1 - y^2}\]
     Wir erhalten also \( \forall y \in \left] -1,1 \right [\)
     \[ \arcsin'(y) = \frac{1}{\sqrt{1-y^2}}\]
-    \item \underline{arctan}: Eine analoge Diskussion zeigt, dass \( \cos : \left[0,\pi\right] \rightarrow \left[-1,1\right]\) strikt monoton fallend ist, und \(\left[0,\pi\right]\) auf \( \left[-1,1\right]\) bijektiv abbildet. Sei:
+    \item \underline{arccos}: Eine analoge Diskussion zeigt, dass \( \cos : \left[0,\pi\right] \rightarrow \left[-1,1\right]\) strikt monoton fallend ist, und \(\left[0,\pi\right]\) auf \( \left[-1,1\right]\) bijektiv abbildet. Sei:
     \[ \arccos : \left[-1,1\right] \rightarrow \left[0,\pi\right]\]
     die Umkehrfunktion. Sie ist auf \( \left] -1,1\right[\) differenzierbar und:
     \[ \arccos'(y) = \frac{-1}{\sqrt{1-y^2}} \quad \forall y \in \left]-1,1\right[\]
@@ -221,37 +221,45 @@ Die Funktion \(\tanh : \R \rightarrow \left] -1,1\right[ \) ist bijektiv. Ihre U
 \[\text{artanh} : \left]-1,1\right[ \rightarrow \R \]
 bezeichnet. Es gilt dann:
 \[ \text{artanh}'(y) = \frac{1}{1-y^2} \quad \forall y \in \left]-1,1\right[\]
-\Satz{4.22} (Cauchy). Seien \(f,g : [a,b] \rightarrow \R \) stetig und in \(]a,b[\) differenzierbar. Dann gibt es \( \mathcal{E} \in ]a.b[ \) mit 
+\Satz[4.22] (Cauchy). Seien \(f,g : [a,b] \rightarrow \R \) stetig und in \(]a,b[\) differenzierbar. Dann gibt es \( \mathcal{E} \in ]a.b[ \) mit 
 \[ g'(\mathcal{E}) (f(b) - f(a)) = f'(\mathcal{E}) (g(b) - g(a))\]
 Falls \(g'(x) \neq 0 \quad \forall x \in ]a,b[ \) folgt
 \[g(a) \neq g(b)\]
 und
 \[\frac{f(b) - f(a)}{g(b) - g(a) } = \frac{f'(\mathcal{E})}{g'(\mathcal{E})}\]
-Randnotiz: Man erhält den Satz von Lagrange mit \(g(x) = x\)
-\Satz{4.23} (l'Hospital 1696) Seien \(f,g : ]a,b[ \rightarrow \R \) differenzierbar mit \(g'(x) \neq 0 \quad \forall x \in ]a,b[\)
-\[ \lim\limits_{x \rightarrow b-}f(x) = 0, \lim\limits_{x \rightarrow b-} g(x) = 0\]
+Randnotiz: Man erhält den Satz von Lagrange mit \(g(x) = x\) \newline
+\Satz[4.23] (l'Hospital 1696) Seien \(f,g : ]a,b[ \rightarrow \R \) differenzierbar mit \(g'(x) \neq 0 \quad \forall x \in ]a,b[\)\newline Falls
+\[ \lim\limits_{x \rightarrow b^-}f(x) = 0, \lim\limits_{x \rightarrow b^-} g(x) = 0\]
 und
-\[ \lim\limits_{x \rightarrow b-} \frac{f'(x)}{g'(x)} =: \lambda\]
+\[ \lim\limits_{x \rightarrow b^-} \frac{f'(x)}{g'(x)} =: \lambda\]
 existiert, folgt
-\[ \lim\limits_{x \rightarrow b-} \frac{f(x)}{g(x)} = \lim\limits_{x \rightarrow b-} \frac{f'(x)}{g'(x)}\]
+\[ \lim\limits_{x \rightarrow b^-} \frac{f(x)}{g(x)} = \lim\limits_{x \rightarrow b^-} \frac{f'(x)}{g'(x)}\]
 \Bem{4.24} Der Satz gilt auch 
 \begin{enumerate}
     \item [$\bullet$] falls \(b = + \infty\)
     \item [$\bullet$] falls \( \lambda = + \infty\)
     \item [$\bullet$] falls \( x \rightarrow a^{+}\)
 \end{enumerate}
-\Def{4.26} Sei \(I \subseteq \R \) ein Intervall und \(f: I \rightarrow \R \) eine Funktion.
+\Bsp[4.25]
 \begin{enumerate}
-    \item [1] f ist \textbf{konvex} (auf I) falls es für alle \(x \leq y, \quad x,y \in I \) und \(\lambda \in [0,1]\)
+    \item Für \( a > 0\) folgt aus S4.13 (1), (2) und l'Hospital:
+    \[ \lim_{x \rightarrow \infty} \frac{\ln x }{x^a} = \lim_{x \rightarrow \infty} \frac{\left( \frac{1}{x}\right)}{ax^{a-1}} = \lim_{x \rightarrow \infty} \frac{1}{ax^a} = 0\]
+    \item \[ \lim_{x \rightarrow 0^+} x \cdot \ln x = \lim_{x \rightarrow 0^+} \frac{\ln x }{\left( \frac{1}{x}\right)} = \] 
+    \[\lim_{x \rightarrow 0^+} \frac{\frac{1}{x}}{-\frac{1}{x^2}} = \lim_{x \rightarrow 0^+} (-x) = 0\]
+\end{enumerate}
+\Def[4.26] Sei \(I \subseteq \R \) ein Intervall und \(f: I \rightarrow \R \) eine Funktion.
+\begin{enumerate}
+    \item [1] f ist \textbf{konvex} (auf I) falls es für alle \newline \(x \leq y, \quad x,y \in I \) und \(\lambda \in [0,1]\) \newline
     \(f(\lambda x + (1 - \lambda)y) \leq \lambda f(x) + (1 - \lambda) f(y)\) gilt
-    \item [2] f ist \textbf{streng konvex} falls für alle \(x < y, \quad x,y \in I \) und \( \lambda \in ]0,1[\)
+    \item [2] f ist \textbf{streng konvex} falls für alle \newline \(x < y, \quad x,y \in I \) und \( \lambda \in ]0,1[\) \newline
     \(f(\lambda x + (1 - \lambda)y) < \lambda f(x) + (1 - \lambda)f(y)\)
 \end{enumerate}
-\Bem{4.27} Sei \(f : I \rightarrow \R \) konvex. Ein einfacher Induktionsbeweis zeigt, dass für alle \(n \geq 1, \{x_1, \dots x_n \} \subseteq I \) und \(\lambda_1, \dots, \lambda_n\) in \([0,1]\) mit \(\sum_{i=1}^n \lambda_i f(x_i) = 1\)
-\[f(\sum_{i=1}^n \lambda_i x_i) \leq \sum_{i=1}^n \lambda_i f(x_i)\]
-\Lemma{4.28} Sei \(f : I \rightarrow \R \) eine beliebige Funktion. Die Funktion f ist genau dann konvex, falls für alle \(x_0 < x < x_1 \) in I
+\includegraphics[scale=0.255]{Konvexität.png} \newline
+\Bem{4.27} Sei \(f : I \rightarrow \R \) konvex. Ein einfacher Induktionsbeweis zeigt, dass für alle \newline \(n \geq 1, \ \{x_1, \dots x_n \} \subseteq I \) und \(\lambda_1, \dots, \lambda_n\) in \([0,1]\) mit \(\sum_{i=1}^n \lambda_i = 1\)
+\[f\left(\sum_{i=1}^n \lambda_i x_i\right) \leq \sum_{i=1}^n \lambda_i f(x_i)\]
+\Lemma[4.28] Sei \(f : I \rightarrow \R \) eine beliebige Funktion. Die Funktion f ist genau dann konvex, falls für alle \(x_0 < x < x_1 \) in I
 \[ \frac{f(x) - f(x_0)}{x - x_0} \leq \frac{f(x_1) - f(x)}{x_1 - x}\]
-gilt. f ist streng konvex wenn \( < \) gilt in obiger Ungleichung
+gilt.\newline f ist streng konvex wenn \( < \) gilt \newline
 \Satz{4.29} Sei \(f : ]a,b[ \rightarrow \R \) in \(]a,b[\) differenzierbar. Die Funktion f ist genau dann (streng) konvex, falls f' (streng) monoton wachsend ist.
 \Korollar{4.30} Sei \(f : ]a,b[ \rightarrow \R \) zweimal differenzierbar in \(]a.b[\). Die Funktion f ist (streng) konvex, falls \(f'' \leq 0\) (bzw \(f'' > 0\)) auf \(]a,b[\)
 \sep
