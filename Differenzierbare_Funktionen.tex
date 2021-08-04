@@ -260,41 +260,66 @@ existiert, folgt
 \Lemma[4.28] Sei \(f : I \rightarrow \R \) eine beliebige Funktion. Die Funktion f ist genau dann konvex, falls für alle \(x_0 < x < x_1 \) in I
 \[ \frac{f(x) - f(x_0)}{x - x_0} \leq \frac{f(x_1) - f(x)}{x_1 - x}\]
 gilt.\newline f ist streng konvex wenn \( < \) gilt \newline
-\Satz{4.29} Sei \(f : ]a,b[ \rightarrow \R \) in \(]a,b[\) differenzierbar. Die Funktion f ist genau dann (streng) konvex, falls f' (streng) monoton wachsend ist.
-\Korollar{4.30} Sei \(f : ]a,b[ \rightarrow \R \) zweimal differenzierbar in \(]a.b[\). Die Funktion f ist (streng) konvex, falls \(f'' \leq 0\) (bzw \(f'' > 0\)) auf \(]a,b[\)
+\Satz[4.29] Sei \(f : ]a,b[ \rightarrow \R \) in \(]a,b[\) differenzierbar. Die Funktion f ist genau dann (streng) konvex, falls f' (streng) monoton wachsend ist. \newline \newline \newline
+\Korollar[4.30] Sei \(f : ]a,b[ \rightarrow \R \) zweimal differenzierbar in \(]a.b[\). Die Funktion f ist (streng) konvex, falls \(f'' \leq 0\) (bzw \(f'' > 0\)) auf \(]a,b[\) \newline
+\Bsp[4.31] Für alle \( n \geq 1 \) und \( x_1 \dots x_n\) in \( ]0, \infty [\) gilt
+\[ \sqrt[n]{x_1 \dots x_n} \leq \frac{x_1 + \dots + x_n}{n}\]
+Wir betrachten \( f(x) = - \ln x\), dann ist
+\[ f'(x) = -\frac{1}{x}\]
+und
+\[ f''(x) = \frac{1}{x^2}, \ x \in ]0,\infty [\]
+Folglich ist f konvex und aus Bem. 4.27 mit \newline \( I = ]0,\infty [\) und \( \lambda_1 = \dots = \lambda_n = \frac{1}{n}\) folgt:
+\[ -\ln \left( \frac{1}{n} \sum_{i = 1}^{n} x_i\right) \leq \sum_{i=1}^{n} -\frac{1}{n} \ln x_i = -\frac{1}{n} \ln (x_1, \dots x_n)\]
 \sep
 \subsection{Höhere Ableitungen}
-\Def{4.32} Sei \(D \subseteq \R \), so dass jedes \(x_0 \in D \) Häufungspunkt der Menge D ist. Sei \(f : D \rightarrow \R \) differenzierbar in D und f' ihre Ableitung; wir setzen \(f^{(1)} = f'\)
+\Def[4.32] Sei \(D \subseteq \R \), so dass jedes \(x_0 \in D \) Häufungspunkt der Menge D ist. Sei \(f : D \rightarrow \R \) differenzierbar in D und f' ihre Ableitung; wir setzen \(f^{(1)} = f'\)
 \begin{enumerate}
     \item [1] Für \(n \geq 2\) ist f \textbf{n-mal differenzierbar in D} falls \(f^{(n-1)}\) in D differenzierbar ist. Dann ist \( f^{(n)} := (f^{(n-1)})^{'}\) und nennt sich die n-te Ableitung von f
     \item [2] Die Funktion f ist \textbf{n-mal stetig differenzierbar in D}, falls sie n-mal differenzierbar ist und falls \( f^{(n)}\) in D stetig ist
     \item [3] Die Funktion f ist in D \textbf{glatt}, falls sie \( \forall n \geq 1\), n-mal differenzierbar ist. 
 \end{enumerate}
-\Bem{4.33} Es folgt aus Korollar 4.5, dass für \(n \geq 1\), eine n-mal differenzierbare Funktion (n-1)-mal differenzierbar ist.
-\Satz{4.34} Sei \( D \subseteq \R \) wie in Def. 4.32, \(n \geq 1\) und \( f,g : D \rightarrow \R \) n-mal differenzierbar in D
+\Bem{4.33} Es folgt aus Korollar 4.5, dass für \(n \geq 1\), eine n-mal differenzierbare Funktion \newline \((n-1)\)-mal differenzierbar ist. \newline
+\Satz[4.34] Sei \( D \subseteq \R \) wie in Def. 4.32, \(n \geq 1\) und \( f,g : D \rightarrow \R \) n-mal differenzierbar in D
 \begin{enumerate}
     \item [1] \(f+g\) ist n-mal differenzierbar und
     \[(f+g)^{(n)} = f^{(n)} + g^{(n)}\]
     \item [2] \(f \cdot g\) ist n-mal differenzierbar und
     \[(f \cdot g)^{(n)} = \sum_{k=0}^{n} \binom{n}{k} f^{(k)}g^{(n-k)}\]
 \end{enumerate}
-\Satz{4.36} Sei \( D \subseteq \R \) wie in Def. 4.32, \( n \geq 1 \) und \(f, g: D \rightarrow \R\) n-mal differenzierbar in D
+\Bsp[4.35]
+\begin{enumerate}
+    \item Die Funktionen \(\exp, \sin, \cos, \sinh, \cosh, \tanh \) sind glatt auf ganz \( \R\)
+    \item Polynome sind auf ganz \( \R \) glatt.
+    \item \( \ln : ]0,+\infty [ \rightarrow \R \) ist glatt;
+    \[ (\ln)'(x) = \frac{1}{x} = x^{-1}, \ (\ln)''(x) = (-1)x^{-2}, \dots\]
+    \[\ln^{(n)}(x) = (-1)^{n-1}(n-1)!x^{-n}, \  n \geq 1\]
+\end{enumerate}
+\Satz[4.36] Sei \( D \subseteq \R \) wie in Def. 4.32, \( n \geq 1 \) und \(f, g: D \rightarrow \R\) n-mal differenzierbar in D
 Falls \(g(x) \neq 0 \quad \forall x \in D\), ist \(\frac{f}{g}\) in D n-mal differenzierbar
-\Satz{4.37} Seien \(E,D \subseteq \R \) Teilmengen für die jeder Punkt Häufungspunkt ist. Seien \(f:D \rightarrow E\) und \(g: E \rightarrow \R \) n-mal differenzierbar. Dann ist \( g \circ f\) n-mal differenzierbar und
+\Satz[4.37] Seien \(E,D \subseteq \R \) Teilmengen für die jeder Punkt Häufungspunkt ist. Seien \(f:D \rightarrow E\) und \(g: E \rightarrow \R \) n-mal differenzierbar. Dann ist \( g \circ f\) n-mal differenzierbar und
 \[(g \circ f)^{(n)}(x) = \sum_{k=1}^n A_{n,k}(x) (g^{(k)} \circ f) (x)\]
 wobei \( A_{n,k}\) ein Polynom in den Funktionen \( f', f^{(2)}, \dots , f^{(n+1-k)}\) ist
+\[( g \circ f)' = (g' \circ f) \cdot f'\]
+\[(g \circ f)^{(2)} = ( g^{(2)} \circ f)(f')^2 + ( g' \circ f) \cdot f^{(2)}\]
+\[(g \circ f)^{(3)} = \]
+\[(g^{(3)} \circ f) (f')^3 + 3(g^{(2)} \circ f)f'f^{(2)} + (g' \circ f) f^{(3)}\]
+
 \sep
 \subsection{Potenzreihen \& Taylor Approx.}
-\Satz{4.39} Seien  \(f_n: ]a,b[ \rightarrow \R \) eine Funktionsfolge wobei \(f_n\) einmal in \(]a,b[\) stetig differenzierbar ist \( \forall n \geq 1\). Wir nehemen an, dass sowohl die Folge \((f_n)_{n \geq 1}\) wie \((f'_n)_{n \geq 1}\) gleichmässig in \(]a,b[\) konvergieren mit \(\lim\limits_{n \rightarrow \infty} f_n =: f \) und \((\lim\limits_{n \rightarrow \infty} f'_n =: p \). Dann ist f stetig differenzierbar und \(f' = p\)
-\Satz{4.40} Sei \(\sum_{k=0}^\infty c_kx^k\) eine Potenzreihen mit positivem Konvergenzradius \(\rho > 0\). Dann ist
+In diesem Abschnitt zeigen wir, dass grob gesagt, konvergente Potenzreihen glatte Funktionen ergeben. Die Umkehrung gilt im Allgemeinen nicht und wird durch eine schwächere Aussage (Taylor Approximation) ersetzt. \newline
+\Satz[4.39] Seien  \(f_n: ]a,b[ \rightarrow \R \) eine Funktionsfolge wobei \(f_n\) einmal in \(]a,b[\) stetig differenzierbar ist \( \forall n \geq 1\). Wir nehemen an, dass sowohl die Folge \((f_n)_{n \geq 1}\) wie \((f'_n)_{n \geq 1}\) gleichmässig in \(]a,b[\) konvergieren (Def. 3.34) mit \(\lim\limits_{n \rightarrow \infty} f_n =: f \) und \(\lim\limits_{n \rightarrow \infty} f'_n =: p \). \newline
+Dann ist f stetig differenzierbar und \(f' = p\) \newline
+\Satz[4.40] Sei \(\sum_{k=0}^\infty c_kx^k\) eine Potenzreihen mit positivem Konvergenzradius (3.39) \(\rho > 0\). Dann ist
 \[f(x) = \sum_{k=0}^\infty c_k(x - x_0)^k\]
 auf \(] x_0 - \rho, x_0 + \rho [\) differenzierbar und
 \[f'(x) = \sum_{k=1}^\infty kc_k(x - x_0)^{k-1}\]
-für alle \( x \in ]x_0 - \rho , x_0 + \rho [\)
-\Korollar{4.41} Unter der Voraussetzung von Satz 4.39 ist f auf \(] x_0 - \rho, x_0 + \rho \) glatt und
-\[f^(j)(x) = \sum_{k=h}^\infty c_k \frac{k!}{(k-j)!}(x - x_0)^{k-j}\]
+für alle \( x \in ]x_0 - \rho , x_0 + \rho [\) \newline
+\Korollar[4.41] Unter der Voraussetzung von Satz 4.39 ist f auf \(] x_0 - \rho, x_0 + \rho[ \) glatt und
+\[f^{(j)}(x) = \sum_{k=j}^\infty c_k \frac{k!}{(k-j)!}(x - x_0)^{k-j}\]
 Insbesondere ist
-\[c_j = \frac{f^{(j)}(x_0)}{j!}\].
+\[c_j = \frac{f^{(j)}(x_0)}{j!}\]
+\Bsp[4.42](Cauchy 1823)
+\[ \]
 \Satz{4.43} Sei \(f: [a,b] \rightarrow \R\) stetig und in \(]a,b[\) (n+1)-mal differenzierbar. Für jedes \(a < x \leq b \) gibt es \(\mathcal{E} \in ]a,x[ \) mit:
 \[ f(x) = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x -a)^k + \frac{f^{(n+1)}\mathcal{E}}{(n+1)!}(x - a)^{n+1} \]
 \Korollar{4.44} (Taylor Approximatio)
