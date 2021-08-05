@@ -15,6 +15,11 @@ die Menge \(\{n \in \N^* : a_n \notin ]l-\epsilon, l+\epsilon [\}\) endlich ist.
     \item [2] \(\forall \epsilon > 0 \ \exists N \geq 1\) that
     \[ \abs{a_n - l} < \epsilon \quad \forall n \geq N \]
 \end{enumerate}
+\Bsp[2.7] Sei \( a_n = \frac{n}{n+1}, n \geq 1\). \newline Dann gilt: \( \lim_{n \rightarrow \infty} a_n = 1\) \newline
+Begründung: \( a_n -1 = \frac{n}{n+1}-1 = \frac{-1}{n+1 }\). Es folgt \( \abs{a_n -1} = \frac{1}{n+1}\)
+Sei \(  \epsilon > 0;\) Nach Archimedes gibt es \( N \in \N \) mit \( \frac{1}{N+1} < \epsilon \). \newline
+Dann folgt \( \forall n \geq N\):
+\[ \abs{a_n-1} = \frac{1}{n+1} \leq \frac{1}{N+1} < \epsilon \]
 \Satz[2.8] Seien \((a_n)_{n \geq 1}\) und \((b_n)_{n \geq 1}\) konvergent Folgen mit \(a= \lim\limits_{n \rightarrow \infty} a_n\), $b = \lim\limits_{n \rightarrow \infty} b_n$
 \begin{enumerate} 
     \item [1] \((a_n + b_n)_{n \geq 1}\) ist konvergent und \newline \(\lim\limits_{n \rightarrow \infty} (a_n + b_n) = a+b\)
@@ -22,6 +27,8 @@ die Menge \(\{n \in \N^* : a_n \notin ]l-\epsilon, l+\epsilon [\}\) endlich ist.
     \item [3] if \(b_n \neq 0 \ \forall n \geq 1, b \neq 0 \ (\frac{a_n}{b_n})_{n\geq 1}\) konvergent, \(\lim\limits_{n \rightarrow \infty} (\frac{a_n}{b_n}) = \frac{a}{b}\)
     \item [4] Falls existiert K \(\geq 1\) mit \(a_n \leq b_n \ \forall n \geq K \implies a \leq b\)
 \end{enumerate}
+\Bsp[2.9] \( b \in \Z: \lim_{n \rightarrow \infty } \left( 1 + \frac{1}{n}\right)^b = 1\) \newline
+Das folgt aus \( \lim_{n \rightarrow \infty } \left( 1 + \frac{1}{n}\right) = 1 \) und wiederholter Anwendung von Satz 2.8 (2) \& (3)
 \sep
 \subsection{Satz von Weierstrass}
 \Def[2.10]
@@ -39,20 +46,35 @@ die Menge \(\{n \in \N^* : a_n \notin ]l-\epsilon, l+\epsilon [\}\) endlich ist.
     \item [\(\bullet\)] Sei \((a_n)_{n \geq 1}\) monoton wachsend und nach oben beschränkt. Dann konvergiert \((a_n)_{n \geq 1}\) nach \[\lim\limits_{n \rightarrow \infty} a_n = \sup\{a_n : n \geq 1\}\]
     \item [\(\bullet\)] Sei \((a_n)_{n \geq 1}\) monoton fallend und nach unten beschränkt. Dann konvergiert \((a_n)_{n \geq 1}\) nach \[\lim\limits_{n \rightarrow \infty} a_n = \inf\{a_n : n \geq 1\}\]
 \end{enumerate}
+\Bsp[2.12] Sei \( a \in \Z\) und \( 0 \leq q < 1\). Dann gilt \( \lim_{n \rightarrow \infty} n^a q^n = 0\).
+Sei \( x_n = n^a q^n\) dann folgt
+\[ x_{n+1} = (n+1)^a q^{n+1} = \left( \frac{n+1}{n}\right)^a q \cdot n^a q^n =\] 
+\[\left( 1 + \frac{1}{n}\right)^a \cdot q \cdot x_n\] Also:
+\[ x_{n+1} = \left( 1 + \frac{1}{n}\right)^a \cdot q \cdot x_n\]
+Da \( \lim_{n \rightarrow \infty} \left( 1 + \frac{1}{n}\right)^a = 1\) gibt es ein \(n_0\), so dass \( \left( 1 + \frac{1}{n}\right)^a < \frac{1}{q} \ \forall n \geq n_0\). Es folgt:
+Da \( x_n > 0 \ \forall n \geq 1\) ist die Folge nach unten beschränkt und für \( n \geq n_0\) monoton fallend. Sei
+\[ l = \lim_{ n \rightarrow \infty} x_n = \lim_{n \rightarrow \infty} x_{n+1} = \lim_{n \rightarrow \infty} \left( 1 + \frac{1}{n}\right)^a \cdot qx_n \] 
+\[= q \cdot \lim_{n \rightarrow \infty} x_n = q \cdot l\]
+Also \( (1-q) \cdot l = 0\) woraus l=0 folgt. \newline
 \Bem[2.13] Sei \((a_n)_{n \geq 1}\) eine konvergent Folge mit $\lim\limits_{n \rightarrow \infty} a_n = a$ und $k \in \N$. Dann ist \newline $b_n := a_{n+k}$ $n \geq 1$ konvergent und $\lim\limits_{n \rightarrow \infty} b_n = a$
 \Lemma[2.16 (Bernoulli Ungleichung)]
 \[(1+x)^n \geq 1 + n \cdot x \quad \forall n \in \N, x > -1\]  
 \sep
 
 \subsection{Limes inferior, Limes superior}
+Eine wichtige Anwendung des Satzes von Weierstrass ist, wie man mit jeder beschränkten Folge \( (a_n)_{n \geq 1}\) zwei monotone Folgen \( (b_n)_{n \geq 1}\) und \( (c_n)_{n \geq 1}\) definieren kann, welche dann einen Grenzwert besitzen.
 
 \[\lim\limits_{n \rightarrow \infty} \inf a_n = \lim\limits_{n \rightarrow \infty} b_n, (b_n = inf \{a_k : k \geq n\})\]
 
 
 \[\lim\limits_{n \rightarrow \infty} \sup a_n = \lim\limits_{n \rightarrow \infty} c_n, \ (c_n = sup \{a_k : k \geq n\})\]
 \[\lim\limits_{n \rightarrow \infty} \inf a_n \leq \lim\limits_{n \rightarrow \infty} \sup a_n\]
+\Bsp[2.18] \( a_n = (-1)^n + \frac{1}{n}, \ n \geq 1\). \newline
+Dann: \( b_n = -1\) und \( c_n = 1 + \frac{1}{n_g}\) wobei \( n_g\) die kleinste gerade Zahl \( \geq n\) bezeichnet. Also: \newline
+\(\lim\limits_{n \rightarrow \infty} \inf a_n = -1 \) und \(\lim\limits_{n \rightarrow \infty} \sup a_n = +1\)
 \sep
 \subsection{Cauchy Kriterium}
+Wie sieht man einer Folge an, ob sie konvergent ist, ohne ihren Grenzwert zu kennen? Dafür wird das Cauchy Kriterium angewendet.
 \Lemma[2.19] \((a_n)_{n \geq 1}\) konvergiert if only if \((a_n)_{n \geq 1}\) beschränkt und \[\lim\limits_{n \rightarrow \infty} \inf a_n = \lim\limits_{n \rightarrow \infty} \sup a_n\] 
 \Satz[2.20 (Cauchy Kriterium)]. \newline Die Folge \((a_n)_{n \geq 1}\) ist genau dann konvergent if \[\forall \epsilon > 0 \ \exists N \geq 1 \  \text{so dass} \abs{a_n - a_m} < \epsilon \ \forall n,m \geq N\]
 \sep
