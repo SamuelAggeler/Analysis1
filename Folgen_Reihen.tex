@@ -56,9 +56,34 @@ Da \( x_n > 0 \ \forall n \geq 1\) ist die Folge nach unten beschränkt und für
 \[ l = \lim_{ n \rightarrow \infty} x_n = \lim_{n \rightarrow \infty} x_{n+1} = \lim_{n \rightarrow \infty} \left( 1 + \frac{1}{n}\right)^a \cdot qx_n \] 
 \[= q \cdot \lim_{n \rightarrow \infty} x_n = q \cdot l\]
 Also \( (1-q) \cdot l = 0\) woraus l=0 folgt. \newline
-\Bem[2.13] Sei \((a_n)_{n \geq 1}\) eine konvergent Folge mit $\lim\limits_{n \rightarrow \infty} a_n = a$ und $k \in \N$. Dann ist \newline $b_n := a_{n+k}$ $n \geq 1$ konvergent und $\lim\limits_{n \rightarrow \infty} b_n = a$
+\Bem[2.13] Oben haben wir folgede Tatsache benützt: Sei \( (a_n)_{n \geq 1}\) eine konvergente Folge mit \( \lim_{n \rightarrow \infty} a_n = a\) und \(k \in \N\). Dann ist die durch
+\[b_n:= a_{n+k} \quad n \geq 1\]
+definierte Folge konvergent und
+\[ lim_{n \rightarrow \infty} b_n = a\]
+\Bsp[2.14] \( \lim_{n \rightarrow \infty} \sqrt[n]{n} = 1\) \newline
+\Bsp[2.15] Die Folge \( \left( 1 + \frac{1}{n}\right)^n, n \geq 1\) konvergiert. Der Limes ist
+\[ e = \lim_{n \rightarrow \infty } \left( 1 + \frac{1}{n} \right)^n\]
+die Eulersche Konstante \( e \approx 2.71828\)
 \Lemma[2.16 (Bernoulli Ungleichung)]
-\[(1+x)^n \geq 1 + n \cdot x \quad \forall n \in \N, x > -1\]  
+\[(1+x)^n \geq 1 + n \cdot x \quad \forall n \in \N, x > -1\]
+\Bsp[2.17] Sei \( c > 1\). Wir definieren \( (a_n)_{n \geq 1}\) durch:
+\[ a_1 = c, \quad a_{n+1} = \frac{1}{2} \left( a_n + \frac{c}{a_n}\right) \quad n \geq 1\]
+Dann existiert \( a:= \lim_{n \rightarrow \infty} a_n > 0\) und es gilt \( a^2 = c\)
+\begin{enumerate}
+    \item \( (a_n)_{n \geq 1}\) ist monoton fallend.
+    \[ a_{n+1} = a_n + \frac{1}{2} \left( \frac{c}{a_n} - a_n\right) = a_n + \left( \frac{c - a_{n}^2}{2a_n}\right)\]
+    Wir zeigen zunächst: \( a_n^2 \geq c \quad \forall n \geq 1\)
+    Für \( n = 1: a_1^2 = c^2 > c\), da \( c > 1\). Und für \( n \geq 1\):
+    \[ a_{n+1}^2 = a_n^2 + (c - a_n^2) + \left( \frac{c - a_n^2}{2 a_n}\right)^2 = \]
+    \[ c + \left( \frac{c - a_n^2}{2 a_n}\right)^2 \geq c\]
+    Aus \( a_n^2 \geq c \) folgt:
+    \[ a_{n+1} = a_n + \left( \frac{c - a_n^2}{2 a_n }\right) \leq a_n \]
+    \item Es ist klar: \( a_n > 0 \quad \forall n \geq 1\)
+    Aus \( a_n^2 \geq c > 1\) folgt dann \( a_n \geq 1 \ \forall n \geq 1\)
+    \item Nach Weierstrass: \( a = \lim_{n \rightarrow \infty } a_n\), dann folgt aus (2) \( a \geq 1 \& a \neq 0\)
+    \[ a = \lim_{n \rightarrow \infty} a_{n+1} = \frac{1}{2} \left(\lim_{ n \rightarrow \infty } a_n + \frac{c}{\lim_{n \rightarrow \infty a_n}} \right)\] 
+    \[= \frac{1}{2} \left( a + \frac{c}{a}\right) \implies a^2 = c\]
+\end{enumerate}
 \sep
 
 \subsection{Limes inferior, Limes superior}
@@ -74,11 +99,12 @@ Dann: \( b_n = -1\) und \( c_n = 1 + \frac{1}{n_g}\) wobei \( n_g\) die kleinste
 \(\lim\limits_{n \rightarrow \infty} \inf a_n = -1 \) und \(\lim\limits_{n \rightarrow \infty} \sup a_n = +1\)
 \sep
 \subsection{Cauchy Kriterium}
-Wie sieht man einer Folge an, ob sie konvergent ist, ohne ihren Grenzwert zu kennen? Dafür wird das Cauchy Kriterium angewendet.
+Wie sieht man einer Folge an, ob sie konvergent ist, ohne ihren Grenzwert zu kennen? Dafür wird das Cauchy Kriterium angewendet. \newline
 \Lemma[2.19] \((a_n)_{n \geq 1}\) konvergiert if only if \((a_n)_{n \geq 1}\) beschränkt und \[\lim\limits_{n \rightarrow \infty} \inf a_n = \lim\limits_{n \rightarrow \infty} \sup a_n\] 
-\Satz[2.20 (Cauchy Kriterium)]. \newline Die Folge \((a_n)_{n \geq 1}\) ist genau dann konvergent if \[\forall \epsilon > 0 \ \exists N \geq 1 \  \text{so dass} \abs{a_n - a_m} < \epsilon \ \forall n,m \geq N\]
+\Satz[2.20 (Cauchy Kriterium)]. \newline Die Folge \((a_n)_{n \geq 1}\) ist genau dann konvergent wenn \[\forall \epsilon > 0 \ \exists N \geq 1 \  \text{so dass} \abs{a_n - a_m} < \epsilon \ \forall n,m \geq N\]
 \sep
 \subsection{Satz von Bolzano-Weierstrass}
+In diesem Abschnitt zeigen wir, dass jede beschränkte Folge eine konvergente Teilfolge besitzt.
 \Def[2.21] Ein abgeschlossenes Intervall ist \(I \subseteq \R\)
 \begin{enumerate}
     \item [1] \([a,b] \quad a \leq b,\  a,b \in \R\)
@@ -111,32 +137,55 @@ Dann gilt \[ {\bigcap}_{n\geq1} I_{n} \neq \emptyset \] Falls zudem \(\lim\limit
 \sep
 \subsection{Reihen}
 \Def[2.7.0] Eine Reihe ist eine unendliche Summe
-\[S_{n} := a_{1}  + \cdots + a_{n} = \sum_{k=1}^{n} a_{k}\] \newline \newline \newline \newline \newline \newline \newline
+\[S_{n} := a_{1}  + \cdots + a_{n} = \sum_{k=1}^{n} a_{k}\]
 \Def[2.37] Die Reihe \[\sum_{k=1}^{\infty} a_{k}\] ist \textbf{konvergent}, falls die Folge \((S_n)_{n \geq 1}\) der Partialsummen konvergiert. In diesem Fall : \[\sum_{k=1}^{\infty} a_{k} := \lim\limits_{n \rightarrow \infty} S_n\]
+\Bsp[2.38](Geometrische Reihe). Sei \( q \in \C \) mit \( \abs{q} < 1\). Dann konvergiert \( \sum_{k=0}^{\infty} q^k \) und der Wert ist:
+\[ \sum_{k=0}^{\infty} q^k = \frac{1}{1-q}\]
+Sei \( S_n = \sum_{k=0}^n q^k = 1 + q + \dots + q^n\)
+\[ q \cdot S_n = q + \dots q^n + q^{n+1}\]
+woraus
+\[(1-q)S_n = 1 - q^{n+1}\]
+folgt. Es gilt also: \( S_n = \frac{1 - q^{n+1}}{1 - q}\) \newline
+Nun zeigen wir die Konvergenz:
+\[ \abs{S_n - \frac{1}{1-q}} = \abs{\frac{-q^{n+1}}{1-q}}= \frac{\abs{q}^{n+1}}{\abs{1-q}}\]
+Aus Bsp 2.12 und \( 0 \leq \abs{q} < 1\) folgt:
+\[ \lim_{n \rightarrow \infty} \abs{S_n-\frac{1}{1-q}} = \lim_{n \rightarrow \infty} \frac{\abs{q}^{n+1}}{\abs{1-q}} =0\]
+Somit konvergiert \( (S_n)_{n \geq 1} \) gegen \( \frac{1}{1-q}\)
 \Satz[2.40] Seien \(\sum_{k=1}^{\infty} a_{k}\) und \(\sum_{j=1}^{\infty} b_{j}\) konvergent, sowie \(\alpha \in \C \)
 \begin{enumerate}
     \item [1] \(\sum_{k=1}^{\infty} (a_k + b_k)\) konvergent und \newline \(\sum_{k=1}^{\infty} (a_k + b_k) = (\sum_{k=1}^{\infty} a_{k}) + (\sum_{j=1}^{\infty} b_{j})\)
     \item [2] \(\sum_{k=1}^{\infty} \alpha \cdot a_k\) konvergent und \newline \(\sum_{k=1}^{\infty} \alpha \cdot a_k = \alpha \cdot \sum_{k=1}^{\infty}  a_k\)
 \end{enumerate}
 \sep
-\Satz[2.41 (\textbf{Cauchy Kriterium})]  \newline Die Reihe \(\sum_{k=1}^{\infty} a_k \) ist konvergent if onyl if :
-\[ \forall \epsilon > 0 \ \exists N \geq 1 \ \text{mit} \abs{\sum_{k=n}^{\infty} a_k} < \epsilon \quad \forall m \geq n \geq N\]
+\Satz[2.41 (\textbf{Cauchy Kriterium})]  \newline Die Reihe \(\sum_{k=1}^{\infty} a_k \) konvergiert genau dann, wenn:
+\[ \forall \epsilon > 0 \ \exists N \geq 1 \ \text{mit} \abs{\sum_{k=n}^{m} a_k} < \epsilon \quad \forall m \geq n \geq N\]
+Anmerkung: Aus dem Cauchy Kriterium folgt das Nullfolgenkriterium.
+Bildet die Folge der Summanden einer Reihe keine Nullfolge, dann divergiert die Reihe.
+Also falls \( \lim_{n \rightarrow \infty} \abs{a_n} \neq 0 \implies \sum_{n=0}^\infty a_n \) divergiert. \newline
 \Satz[2.42] Sei \(\sum_{k=1}^{\infty} a_{k}\) eine Reihe mit \newline \(a_k \geq 0 \quad \forall k \in \N^*\). Die Reihe \(\sum_{k=1}^{\infty} a_{k}\) konvergiert if only if \((S_n)_{n \geq 1}, S_n = \sum_{k=1}^{n} a_{k}\) der Partialsummen nach oben beschränkt ist. \newline
 \sep
 \Korollar[2.43 (\textbf{Vergleichssatz})] \newline Seien $\sum_{k=1}^{\infty} a_{k}$ und $\sum_{k=1}^{\infty} b_{k}$ Reihen mit: \[0 \leq a_{k} \leq b_{k} \quad \forall k \geq 1\]
 \[ \sum_{k=1}^{\infty} b_{k} \text{ konvergent} \implies \sum_{k=1}^{\infty} a_{k} \text{ konvergent} \]
 \[ \sum_{k=1}^{\infty} a_{k} \text{ divergent} \implies \sum_{k=1}^{\infty} b_{k} \text{ divergent} \]
 Diese Implikation gilt auch, wenn \[K \geq 1 \  \text{mit} \ 0 \leq a_k \leq b_k \quad \forall k \geq K\]
+\Bsp[2.44] \( \sum_{k=1}^\infty \frac{1}{k^2}\) konvergiert. \newline
+Sei \( a_k = \frac{1}{k^2}, b_k = \frac{1}{(k-1)k},\  k \geq 1\). Dann gilt \( 0 \leq a_k \leq b_k, k \geq 2\) und
+\[ \sum_{k=2}^{n}b_k = \sum_{k=2}^n\left( \frac{1}{k-1}- \frac{1}{k}\right) = \dots \left(\frac{1}{n-1} - \frac{1}{n}\right)\]
+\[ = 1 - \frac{1}{n} < 1 \quad \forall n \geq 1\]
 \sep
 \Def[2.45] Die Reihe \(\sum_{k=1}^{\infty} a_{k}\) heisst \textbf{absolut konvergent}
 \[\text{falls} \sum_{k=1}^{\infty} \abs{a_{k}} \text{konvergiert}\] \newline
 \Satz[2.46] Eine absolut konvergente Reihe  \(\sum_{k=1}^{\infty} a_{k}\) ist auch konvergent und:
 \[\abs{\sum_{k=1}^{\infty} a_{k}} \leq \sum_{k=1}^{\infty} \abs{a_{k}}\] \newline
-\Satz[4.8 (Leibniz 1682)] Sei \((a_n)_{n \geq 1}\) monoton fallend mit \(a_n \geq 0 \quad \forall n \geq 1\) und \(\lim\limits_{n \rightarrow \infty} a_n = 0\). Dann konvergiert
+\Bsp[2.47] \( \sum_{k=1}^\infty(-1)^{k+1} \frac{1}{k} \) konvergiert, ist aber nicht absolut konvergent.
+\Satz[2.48 (Leibniz 1682)] Sei \((a_n)_{n \geq 1}\) monoton fallend mit \(a_n \geq 0 \quad \forall n \geq 1\) und \(\lim\limits_{n \rightarrow \infty} a_n = 0\). Dann konvergiert
 \[S := \sum_{k=1}^{\infty} (-1)^{k+1}a_k \text{und es gilt} \  a_1 - a_2 \leq S \leq a_1\]
+\Bsp[2.49] Betrachten wir nochmals Bsp 2.47
+\[ S = 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \dots\]
+\[ \frac{1}{2} = 1 - \frac{1}{2} \leq S \leq 1\]
 \Def[2.50] Eine Reihe \(\sum_{n=1}^{\infty} a'_n\) ist eine \textbf{Umordnung} der Reihe \(\sum_{n=1}^{\infty} a_n\), falls eine bijektive Abbildung
 \[\phi : \N^{*} \rightarrow \N^{*} \text{mit} \ a'_{n} = a_{\phi(n)}\] \newline
-\Satz[2.52](Dirichlet 1837) Falls \(\sum_{n=1}^{\infty} a_n\) absolut konvergiert, dann konvergiert jede Umordnung der Reihe und hat den selben Grenzwert
+\Satz[2.52](Dirichlet 1837) Falls \(\sum_{n=1}^{\infty} a_n\) absolut konvergiert, dann konvergiert jede Umordnung (oder auch Teilfolge) der Reihe und hat den selben Grenzwert
 \sep
 \Satz[2.53(Quotientenkriterium] \newline Sei \((a_n)_{n \geq 1}\) mit \(a_n \neq 0 \quad \forall n \geq 1 \).Falls
 \[\limsup\limits_{n \rightarrow \infty} \frac{\left|a_{n+1}\right|}{\left|a_{n}\right|}<1 \implies \sum_{n=1}^{\infty} a_{n} \ \text{konvergiert absolut}\]
