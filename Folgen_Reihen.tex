@@ -191,6 +191,14 @@ Sei \( a_k = \frac{1}{k^2}, b_k = \frac{1}{(k-1)k},\  k \geq 1\). Dann gilt \( 0
 \[\limsup\limits_{n \rightarrow \infty} \frac{\left|a_{n+1}\right|}{\left|a_{n}\right|}<1 \implies \sum_{n=1}^{\infty} a_{n} \ \text{konvergiert absolut}\]
 Falls
 \[\liminf\limits_{n \rightarrow \infty} \frac{\left|a_{n+1}\right|}{\left|a_{n}\right|}>1 \implies \sum_{n=1}^{\infty} a_{n} \ \text{divergiert}\]
+\Bsp[2.54](Exponentialfunktion). Für \( z \in \C \) betrachte die Reihe
+\[ 1 + z \frac{z^2}{2!} + \frac{z^3}{3!} + \dots\]
+mit allgemeinem Glied
+\[ a_n = \frac{z^n}{n!}\]
+Dann folgt für \( z \neq 0:\)
+\[ \frac{\abs{a_{n+1}}}{\abs{a_n}} = \frac{\abs{z}}{n+1}\]
+also gilt \( \lim_{n \rightarrow \infty} \frac{\abs{a_{n+1}}}{\abs{a_n}} = 0\)
+und die Reihe konvergiert für alle \( z \in \C\) \newline
 \Bem{2.55} Das Quotientenkriterium versagt, z.B wenn unendliche viele Glieder der Reihe verschwinden
 \sep
 \Satz[2.56 Wurzelkriterium]
@@ -198,15 +206,26 @@ Falls
     \item [1] Falls \[\limsup\limits_{n \rightarrow \infty} \sqrt[n]{\abs{a_n}} < 1\] dann konvergiert \(\sum_{n=1}^{\infty} a_n\) absolut
     \item [2] Falls \[\limsup\limits_{n \rightarrow \infty} \sqrt[n]{\abs{a_n}} > 1\] dann diviergiert \(\sum_{n=1}^{\infty} a_n\) und \(\sum_{n=1}^{\infty}\abs{a_n} \)
 \end{enumerate}
+\Def[Kovergenzradius]
+Gibt den Bereich an, in welchem für eine Potenzreihe Konvergenz garantiert ist.
+Sei \((c_k)_{k \geq 0} \) eine Folge in \( \R \) oder \( \C \). Falls \( \lim_{n \rightarrow \infty} \sup \sqrt[k]{\abs{c_k}}\) existiert, definieren wir
+\begin{equation}
+    \rho=\left\{\begin{array}{cc}
+    +\infty \quad \quad \limsup _{k \rightarrow \infty} \sqrt[k]{\left|c_{k}\right|}=0 \\
+    \frac{1}{\limsup _{k \rightarrow \infty} \sqrt[k]{\left|c_{k}\right|}} \limsup _{k \rightarrow \infty} \sqrt[k]{\left|c_{k}\right|}>0
+    \end{array}\right.
+    \end{equation}
+Falls ab einem bestimmten Index all \(a_n \neq 0\) und der folge limes definiert ist, kann man den Konvergenzradius auch mit dem Quotientenkriterium ausrechen.
+\[ \rho = \lim_{n \rightarrow \infty} \abs{\frac{a_n}{a_{n+1}}}\]
 \Korollar[2.57] Die Potenzreihe \[\sum_{k=0}^{\infty} c_kz^k\]
 \begin{itemize}
     \item konvergiert absolut für alle $\abs{z} < \rho$ 
     \item divergiert für alle $\abs{z} > \rho$
-    \end{itemize}
-    \[\rho = \begin{cases}
-        +\infty \quad \quad \quad \quad \quad \  \text{falls} \limsup_{k \rightarrow \infty} \sqrt[k]{\abs{c_k}} = 0 \\
-        \frac{1}{\limsup\limits_{c \rightarrow \infty} \sqrt[k]{\left|c_{k}\right|}}  \quad \  \ \text{falls } \limsup_{k \rightarrow \infty} \sqrt[k]{\abs{c_k}} > 0
-        \end{cases}\]
+\end{itemize}
+\Def[] Die Zeta Funktion
+Sei \( s > 1\) und
+\[ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}\]
+Für \(s > 1\) konvergiert die obige Reihe
 \Def[2.58] \(\sum_{k=0}^{\infty} b_k \) ist eine \textbf{lineare Anordnung} der Doppelreihe \(\sum_{i,j \geq 0} a_{i,j}\), falls es eine Bijektion \[\sigma : \N \rightarrow \N \times \N \] gibt mit \(b_k = a_{\sigma(k)}\) \newline
 \Satz[2.59] (Cauchy 1821). Wir nehmen an, dass es \(B \geq 0\) gibt, so dass
 \[\sum_{i=0}^{m}\sum_{j=0}^{m}\abs{a_{ij}} \leq B \quad \forall m \geq 0\]

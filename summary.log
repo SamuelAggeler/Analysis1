@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.13)  6 AUG 2021 20:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.13)  8 AUG 2021 00:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -710,8 +710,8 @@ Overfull \hbox (3.85463pt too wide) detected at line 191
  []
 
 
-Overfull \hbox (12.58337pt too wide) detected at line 209
-\OML/cmm/m/it/8 ^^Z \OT1/cmr/m/n/8 = []
+Underfull \hbox (badness 5302) in paragraph at lines 227--229
+\OT1/cmr/m/n/8 (+20) F[]ur $\OML/cmm/m/it/8 s > \OT1/cmr/m/n/8 (+20) 1$ kon-ver-giert die obi-ge Rei-he
  []
 
 )
@@ -747,8 +747,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.33 
-      [3 </home/samuel/Desktop/Analysis1/Analysis1/./img//Stetigkeit.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//Stetig2.png>]
-<./img//Zwischenwertsatz.png, id=200, 818.05624pt x 515.9275pt>
+      [3]
+<./img//Zwischenwertsatz.png, id=199, 818.05624pt x 515.9275pt>
 File: ./img//Zwischenwertsatz.png Graphic file (type png)
 <use ./img//Zwischenwertsatz.png>
 Package pdftex.def Info: ./img//Zwischenwertsatz.png  used on input line 54.
@@ -763,7 +763,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
-<./img//lnExp.png, id=201, 798.985pt x 784.9325pt>
+<./img//lnExp.png, id=200, 798.985pt x 784.9325pt>
 File: ./img//lnExp.png Graphic file (type png)
 <use ./img//lnExp.png>
 Package pdftex.def Info: ./img//lnExp.png  used on input line 101.
@@ -773,16 +773,16 @@ Overfull \hbox (17.44128pt too wide) in paragraph at lines 101--102
 []
  []
 
-
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.118 \[
+        f_n : D \longrightarrow \R\] [4 </home/samuel/Desktop/Analysis1/Analysis1/./img//Stetigkeit.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//Stetig2.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//Stetigkeit3.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//Zwischenwertsatz.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//lnExp.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.126 \[ \abs{f_n(x) - f_m(x)} < \epsilon \]
-                                             [4 </home/samuel/Desktop/Analysis1/Analysis1/./img//Stetigkeit3.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//Zwischenwertsatz.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//lnExp.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 141--144
 \OT1/cmr/m/n/8 (+20) hat \OT1/cmr/bx/n/8 (+20) po-si-ti-ven Kon-ver-genz-ra-di-us\OT1/cmr/m/n/8 (+20) , falls
  []
@@ -792,7 +792,7 @@ Overfull \hbox (12.58337pt too wide) detected at line 147
 \OML/cmm/m/it/8 ^^Z \OT1/cmr/m/n/8 = []
  []
 
-<./img//SinCos.png, id=208, 1012.78375pt x 379.4175pt>
+<./img//SinCos.png, id=209, 1012.78375pt x 379.4175pt>
 File: ./img//SinCos.png Graphic file (type png)
 <use ./img//SinCos.png>
 Package pdftex.def Info: ./img//SinCos.png  used on input line 158.
@@ -820,16 +820,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--225
 
  []
 
-<./img//LR-GrenzWert.png, id=209, 356.33125pt x 296.10625pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.237 \[f: \R \setminus \{0\} \longrightarrow \R\]
+                                                   [5 </home/samuel/Desktop/Analysis1/Analysis1/./img//SinCos.png>]
+<./img//LR-GrenzWert.png, id=215, 356.33125pt x 296.10625pt>
 File: ./img//LR-GrenzWert.png Graphic file (type png)
 <use ./img//LR-GrenzWert.png>
 Package pdftex.def Info: ./img//LR-GrenzWert.png  used on input line 240.
 (pdftex.def)             Requested size: 80.1765pt x 66.62553pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.248 \[
-        f|_{D \cap [x_0,+\infty[}\] [5 </home/samuel/Desktop/Analysis1/Analysis1/./img//SinCos.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//LR-GrenzWert.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 250--253
 
  []
@@ -876,8 +877,8 @@ Overfull \hbox (4.64441pt too wide) detected at line 74
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 ...= \frac{\cos x}{\sin x}, x \notin \pi \Z\]
-                                                   [6 </home/samuel/Desktop/Analysis1/Analysis1/./img//differenzierbar.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//ABS-function.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//VanDerWaerden.png>]
+l.82     \item
+               [1] \(f + g\) ist in \(x_0 \) differenzierbar und [6 </home/samuel/Desktop/Analysis1/Analysis1/./img//LR-GrenzWert.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//differenzierbar.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//ABS-function.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//VanDerWaerden.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 105--108
 
  []
@@ -930,9 +931,9 @@ Package pdftex.def Info: ./img//arctan.png  used on input line 185.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.197 \[ \sinh x = \frac{e^x - e^{-x}}{2}\]
-                                            [7 </home/samuel/Desktop/Analysis1/Analysis1/./img//MaximaMinima.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//SatzVonRolle.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//Lagrange.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//arctan.png>]
-<./img//Konvexität.png, id=252, 642.4pt x 342.27875pt>
+l.186     \item \underline
+                          {arccot}: Für \(x \notin \pi \cdot \Z \) [7 </home/samuel/Desktop/Analysis1/Analysis1/./img//MaximaMinima.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//SatzVonRolle.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//Lagrange.png>]
+<./img//Konvexität.png, id=251, 642.4pt x 342.27875pt>
 File: ./img//Konvexität.png Graphic file (type png)
 <use ./img//Konvexität.png>
 Package pdftex.def Info: ./img//Konvexität.png  used on input line 257.
@@ -955,8 +956,8 @@ Overfull \hbox (5.96146pt too wide) detected at line 272
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.313 \[
-        f(x) = \sum_{k=0}^\infty c_k(x - x_0)^k\] [8 </home/samuel/Desktop/Analysis1/Analysis1/./img//Konvexität.png>]
+l.300 \[
+        (g \circ f)^{(n)}(x) = \sum_{k=1}^n A_{n,k}(x) (g^{(k)} \circ f) (x)\] [8 </home/samuel/Desktop/Analysis1/Analysis1/./img//arctan.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//Konvexität.png>]
 Overfull \hbox (9.69194pt too wide) detected at line 335
 \OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (0) = [] [] = [] [] = 0
  []
@@ -977,8 +978,8 @@ Overfull \hbox (34.19858pt too wide) detected at line 42
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.67 \[
-        \int_{a}^{b} f(x) \,dx = F(b) - F(a)\] [9]
+l.53 ...) \,dx} \sqrt{\int_{a}^{b} g^2(x) \,dx }\]
+                                                   [9]
 Overfull \hbox (17.71771pt too wide) detected at line 69
 [][] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 b\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 b\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 a\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 a\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ [][] \OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx
  []
@@ -1014,6 +1015,11 @@ l.115 \end{multicols*}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Stirling'sche Formel}{}{subsection.5.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.8}Uneigentliche Integrale}{}{subsection.5.8}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.9}Die Gamma Funktion}{}{subsection.5.9}\protected@file@percent }
+]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.115 \end{multicols*}
+                       [11
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.10}Das unbestimmte Integral}{}{subsection.5.10}\protected@file@percent }
 ] (/home/samuel/Desktop/Analysis1/Analysis1/summary.aux (/home/samuel/Desktop/Analysis1/Analysis1/Grundlagen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Folgen_Reihen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Stetige_Funktionen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Differenzierbare_Funktionen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Riemann_Integral.aux))
 Package rerunfilecheck Info: File `summary.out' has not changed.
@@ -1030,18 +1036,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--116
 
  ) 
 Here is how much of TeX's memory you used:
- 14064 strings out of 478994
- 208749 string characters out of 5864751
- 636915 words of memory out of 5000000
+ 14065 strings out of 478994
+ 208761 string characters out of 5864751
+ 636512 words of memory out of 5000000
  31023 multiletter control sequences out of 15000+600000
  416888 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,14n,74p,528b,834s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/samuel/Desktop/Analysis1/Analysis1/summary.pdf (10 pages, 577600 bytes).
+Output written on /home/samuel/Desktop/Analysis1/Analysis1/summary.pdf (11 pages, 580458 bytes).
 PDF statistics:
- 339 PDF objects out of 1000 (max. 8388607)
- 273 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
+ 344 PDF objects out of 1000 (max. 8388607)
+ 277 compressed objects within 3 object streams
+ 67 named destinations out of 1000 (max. 500000)
  27014 words of extra memory for PDF output out of 29859 (max. 10000000)
 
