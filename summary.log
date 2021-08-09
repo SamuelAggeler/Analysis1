@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.13)  9 AUG 2021 10:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.13)  9 AUG 2021 10:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1051,40 +1051,40 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
                    \relax 
 l.98 \[
         \int_{a}^{b} f(x) \,dx = F(b) - F(a)\] [10 </home/samuel/Desktop/Analysis1/Analysis1/./img//Untersumme.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//Obersumme.png>]
-Overfull \hbox (17.71771pt too wide) detected at line 101
-[][] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 b\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 b\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 a\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 a\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ [][] \OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx
- []
+<./img//Stammfunktion1.png, id=281, 487.8225pt x 396.48125pt>
+File: ./img//Stammfunktion1.png Graphic file (type png)
+<use ./img//Stammfunktion1.png>
+Package pdftex.def Info: ./img//Stammfunktion1.png  used on input line 102.
+(pdftex.def)             Requested size: 124.3968pt x 101.1044pt.
+<./img//Stammfunktion2.png, id=282, 443.6575pt x 364.36125pt>
+File: ./img//Stammfunktion2.png Graphic file (type png)
+<use ./img//Stammfunktion2.png>
+Package pdftex.def Info: ./img//Stammfunktion2.png  used on input line 106.
+(pdftex.def)             Requested size: 113.13454pt x 92.91367pt.
+<./img//Integration_konvergenterReihe.png, id=283, 596.2275pt x 783.92876pt>
+File: ./img//Integration_konvergenterReihe.png Graphic file (type png)
+<use ./img//Integration_konvergenterReihe.png>
+Package pdftex.def Info: ./img//Integration_konvergenterReihe.png  used on input line 125.
+(pdftex.def)             Requested size: 140.11348pt x 184.22328pt.
 
-
-Overfull \hbox (51.37961pt too wide) detected at line 142
-[][]
- []
-
-
-Overfull \hbox (29.30937pt too wide) detected at line 153
+Overfull \hbox (29.30937pt too wide) detected at line 171
 []\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) = []
  []
 
 
-Overfull \hbox (45.46152pt too wide) detected at line 157
-[] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 i\OT1/cmr/m/n/8 ) = [][] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 + [](\OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 n\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (0)) + [][] [](\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+[]$[][] \OML/cmm/m/it/8 e[]dx \OT1/cmr/m/n/8 (+20) = [][] [][] \OML/cmm/m/it/8 e[]dx \OT1/cmr/m/n/8 (+20) =
  []
 
-
-Overfull \hbox (129.95695pt too wide) detected at line 159
-[] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 i\OT1/cmr/m/n/8 ) = [][] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 + [](\OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 n\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (0)) + [] [](\OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 n\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (0)) + []
- []
-
-)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.205     \item $
+                 \int_{1}^{b} \frac{1}{x^{\alpha}} d x= \begin{cases}\ln b &... [11 </home/samuel/Desktop/Analysis1/Analysis1/./img//Stammfunktion1.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//Stammfunktion2.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//Integration_konvergenterReihe.png>])pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.115 \end{multicols*}
-                       [11
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Fundamentalsatz}{}{subsection.5.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Integration konvergenter Reihen}{}{subsection.5.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Euler-McLaurin Summationsformel}{}{subsection.5.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Stirling'sche Formel}{}{subsection.5.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.8}Uneigentliche Integrale}{}{subsection.5.8}\protected@file@percent }
+                       [12
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.9}Die Gamma Funktion}{}{subsection.5.9}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.10}Das unbestimmte Integral}{}{subsection.5.10}\protected@file@percent }
 ] (/home/samuel/Desktop/Analysis1/Analysis1/summary.aux (/home/samuel/Desktop/Analysis1/Analysis1/Grundlagen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Folgen_Reihen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Stetige_Funktionen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Differenzierbare_Funktionen.aux) (/home/samuel/Desktop/Analysis1/Analysis1/Riemann_Integral.aux))
@@ -1102,18 +1102,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--116
 
  ) 
 Here is how much of TeX's memory you used:
- 14097 strings out of 478994
- 209379 string characters out of 5864751
+ 14118 strings out of 478994
+ 209981 string characters out of 5864751
  634755 words of memory out of 5000000
- 31048 multiletter control sequences out of 15000+600000
- 416888 words of font info for 140 fonts, out of 8000000 for 9000
+ 31063 multiletter control sequences out of 15000+600000
+ 416838 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,14n,74p,528b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,14n,74p,528b,878s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/samuel/Desktop/Analysis1/Analysis1/summary.pdf (11 pages, 775952 bytes).
+Output written on /home/samuel/Desktop/Analysis1/Analysis1/summary.pdf (12 pages, 845859 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
- 279 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 27039 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 372 PDF objects out of 1000 (max. 8388607)
+ 288 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 27054 words of extra memory for PDF output out of 29859 (max. 10000000)
 

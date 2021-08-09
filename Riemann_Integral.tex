@@ -97,11 +97,23 @@ ist in \([a,b]\) stetig differenzierbar und
 \Satz[5.28] (Fundamentalsatz der Differentialrechnung) Sei \(f:[a.b] \rightarrow \R \) stetig. Dann gibt es eine Stammfunktion F von f, die bis auf eine additive Konstante eindeutig bestimmt ist und es gilt: 
 \[ \int_{a}^{b} f(x) \,dx = F(b) - F(a)\]
 \Bsp[5.29]
-\Satz{5.30}(Partielle Integration) Seien \(a < b\) reele Zahlen und \(f,g : [a,b] \rightarrow \R \) stetig differenzierbar. Dann gilt
-\[\int_{a}^{b} f(x)g'(x) \,dx = f(b)g(b) - f(a)g(a) - \int_{a}^{b} f'(x)g(x) \,dx\]
-\Satz{5.31}(Substitution) Sei \(a < b, \phi : [a,b] \rightarrow \R \) stetig differenzierbar, \( I \subseteq \R\) ein Intervall mit \( \phi ([a,b]) \subseteq I \) und \(f: I \rightarrow \R \) eine stetige Funktion. Dann gilt:
+\begin{enumerate}
+    \item \(f(x) = x\)
+    \includegraphics[scale=0.255]{Stammfunktion1.png}
+    Dann ist \( \frac{x^2}{2}\) eine Stammfunktion von f und folglich:
+    \[ \int_0^a x \,dx = \frac{a^2}{2} \]
+    \item \(f(x) = x^2 \)
+    \includegraphics[scale=0.255]{Stammfunktion2.png}
+    Dann ist \( \frac{x^3}{3}\) Stammfunktion von f und folglich
+    \[ \int_{0}^{a} x^2 \,dx = \frac{a^3}{3}\]
+\end{enumerate}
+Zur Berechnung von Integralen und Stammfunktionen werden wir zwei Rechenregeln aus dem Fundamentalsatz herleiten. Es handelt sich um Partielle Integration und Substitution. \newline
+\Satz[5.30](Partielle Integration) Seien \(a < b\) reele Zahlen und \(f,g : [a,b] \rightarrow \R \) stetig differenzierbar. Dann gilt
+\[\int_{a}^{b} f(x)g'(x) \,dx = \] 
+\[f(b)g(b) - f(a)g(a) - \int_{a}^{b} f'(x)g(x) \,dx\]
+\Satz[5.31](Substitution) Sei \(a < b, \phi : [a,b] \rightarrow \R \) stetig differenzierbar, \( I \subseteq \R\) ein Intervall mit \( \phi ([a,b]) \subseteq I \) und \(f: I \rightarrow \R \) eine stetige Funktion. Dann gilt:
 \[ \int_{\phi(a)}^{\phi(b)} f(x) \,dx = \int_{a}^{b} f(\phi(t))\phi'(t) \,dt\]
-\Korollar{5.33} Sei \( I \subseteq \R \) ein Intervall und \(f: I \rightarrow \R\) stetig.
+\Korollar[5.33] Sei \( I \subseteq \R \) ein Intervall und \(f: I \rightarrow \R\) stetig.
 \begin{enumerate}
     \item [1] Seien \(a,b,c \in \R \) so dass das abgeschlossene Intervall mit Endpunkten a+c, b+c in I enthalten ist. Dann gilt:
     \[ \int_{a+c}^{b+c} f(x) \,dx = \int_{a}^{b} f(t+c) \,dt\]
@@ -110,36 +122,42 @@ ist in \([a,b]\) stetig differenzierbar und
 \end{enumerate}
 \sep
 \subsection{Integration konvergenter Reihen}
-\Satz{5.34} Sei \(f_n : [a,b] \rightarrow \R \) eine Folge von beschränkten, integrierbaren Funktionen die gleichmässig gegen eine Funktion \(f:[a,b] \rightarrow \R \) konvergiert. Dann ist f beschränkt integrierbar und
+\includegraphics[scale=0.235]{Integration_konvergenterReihe.png} \newline
+\Satz[5.34] Sei \(f_n : [a,b] \rightarrow \R \) eine Folge von beschränkten, integrierbaren Funktionen die gleichmässig gegen eine Funktion \(f:[a,b] \rightarrow \R \) konvergiert. Dann ist f beschränkt integrierbar und
 \[ \lim\limits_{n \rightarrow \infty} \int_{a}^{b} f_n(x) \,dx = \int_{a}^{b} f(x) \,dx \]
-\Korollar{5.35} Sei \(f_n : [a,b] \rightarrow \R\) eine Folge beschränkter integrierbarer Funktionen so dass
+\Korollar[5.35] Sei \(f_n : [a,b] \rightarrow \R\) eine Folge beschränkter integrierbarer Funktionen so dass
 \[ \sum_{n=0}^\infty f_n\]
 auf \([a.b]\) gleichmässig konvergiert. Dann gilt :
-\[ \sum_{n=0}^\infty \int_{a}^{b} f_n(x) \,dx = \int_{a}^{b} ( \sum_{n=0}^{\infty} f_n(x)) \,dx \]
-\Korollar{5.36} Sei
+\[ \sum_{n=0}^\infty \int_{a}^{b} f_n(x) \,dx = \int_{a}^{b} \left( \sum_{n=0}^{\infty} f_n(x) \right) \,dx \]
+\Korollar[5.36] Sei
 \[ f(x) = \sum_{n=0}^{\infty} c_kx^k\]
 eine Potenzreihe mit positivem Konvergenzradius \( \rho > 0\). Dann ist für jedes \( 0 \leq r < \rho\), f auf \([-r,r]\) integrierbar und es gilt \( \forall x \in ] -\rho, \rho[:\)
 \[ \int_{0}^{x} f(t) dt = \sum_{n=0}^{\infty} \frac{c_n}{n+1} x^{n+1}\]
 \sep
 \subsection{Euler-McLaurin Summationsformel}
-\Def{5.40} \( \forall k \geq 0 \) ist das k'te Bernoulli Polynom \(B_k(x) = k!P_k(x)\)
-\Def{5.41} Sei \(B_0 = 1\) für alle \( k \geq 2 \) definieren wir \(B_{k-1}\) rekursiv:
+Diese Formel, ist ein sehr nützliches Instrument um Summen wie  \( 1 + \frac{1}{2} + \dots + \frac{1}{n}\)
+oder \( \ln 1 + \ln 2 + \dots + \ln n = \ln n!\) abzuschätzen \newline
+\Def[5.40] \( \forall k \geq 0 \) ist das k'te Bernoulli Polynom \(B_k(x) = k!P_k(x)\) Mit dieser Definition folgt: \(B_0(x) = 1, B_1(x) = x - \frac{1}{2}, B_2(x) = x^2 - x + \frac{1}{6}\)
+\Def[5.41] Sei \(B_0 = 1\) für alle \( k \geq 2 \) definieren wir \(B_{k-1}\) rekursiv:
 \[ \sum_{i=0}^{k-1} \binom{k}{i} B_i = 0\]
-\Satz{5.42} \[ B_k(x) = \sum_{i=0}^{k} \binom{k}{i} B_ix^{k-i}\]
+Also: \( B_0 = 1, B_0 + 2B_1 = 0, B_0 + 3B_1 + 3B_2 =0 \)
+\Satz[5.42] \[ B_k(x) = \sum_{i=0}^{k} \binom{k}{i} B_ix^{k-i}\]
 \Bem{5.43} Für \( k \geq 2\):
-$$
+
+\begin{equation}
 \begin{aligned}
-B_{k}(1) &=\sum_{i=0}^{k}\left(\begin{array}{l}
+B_{k}(1) &=\sum_{i=0}^{k}\left(\begin{array}{c}
 k \\
 i
-\end{array}\right) & B_{i}=\sum_{i=0}^{k-1}\left(\begin{array}{l}
+\end{array}\right) B_{i}=\sum_{i=0}^{k-1}\left(\begin{array}{l}
 k \\
 i
 \end{array}\right) B_{i}+B_{k} \\
-&=B_{k} \quad \text { (nach 5.41) } \\
-&=B_{k}(0) \quad \text { (nach Satz 5.42). }
+&=B_{k} \quad(\text { nach } 5.41) \\
+&=B_{k}(0) \quad(\text { nach Satz } 5.42)
 \end{aligned}
-$$
+\end{equation}
+
 Zur Aussage der Summationsformel definieren wir für $k \geq 1$
 $$
 \widetilde{B}_{k}:[0, \infty[\longrightarrow \mathbb{R}
@@ -151,33 +169,46 @@ B_{k}(x) & \text { für } \quad 0 \leq x<1 \\
 B_{k}(x-n) & \text { für } n \leq x<n+1 \text { wobei } n \geq 1
 \end{array}\right.
 $$
-\Satz{5.44} Sei \(f:[0,n] \rightarrow \R \) k-mal stetig differenzierbar, \(k \geq 1\). Dann gilt :
+
+\Satz[5.44] Sei \(f:[0,n] \rightarrow \R \) k-mal stetig differenzierbar, \(k \geq 1\). Dann gilt :
 \begin{enumerate}
     \item [1] Für k = 1:
-    \[ \sum_{i=1}^{n} f(i) = \int_{0}^{n} f(x) \,dx + \frac{1}{2} (f(n) - f(0)) + \int_{0}^{n} \tilde{B_1} (x) f'(x) \,dx \]
+    \[ \sum_{i=1}^{n} f(i) = \int_{0}^{n} f(x) \,dx + \frac{1}{2} (f(n) - f(0))\]
+    \[ + \int_{0}^{n} \tilde{B_1} (x) f'(x) \,dx \]
     \item [2] Für \( k \geq 2\):
-    \[ \sum_{i=1}^{n}f(i) = \int_{0}^{n} f(x) \,dx + \frac{1}{2}(f(n) - f(0)) + \sum_{J=2}^{k} \frac{(-1)^jB_j}{j!}(f^{(j-1)}(n) - f^{(j-1)}(0)) + \tilde{R_k}\]
+    \[ \sum_{i=1}^{n}f(i) = \int_{0}^{n} f(x) \,dx + \frac{1}{2}(f(n) - f(0)) + \] 
+    \[\sum_{J=2}^{k} \frac{(-1)^jB_j}{j!}(f^{(j-1)}(n) - f^{(j-1)}(0)) + \tilde{R_k}\]
     wobei
     \[ \tilde{R_k} = \frac{(-1)^{k-1}}{k!} \int_{0}^{n} \tilde{B_k}(x)f^{(k)}(x) \,dx \]
 \end{enumerate}
 \sep
 \subsection{Stirling'sche Formel}
-\Satz{5.47} \[n! = \frac{\sqrt{2 \pi n} n^n}{e^n} \cdot \exp(\frac{1}{12n}+ R_3(n))\]
+Die Stirling'sche Formel ist eine qualitative Aussage über das Verhalten der Fakultät
+Nämlich:
+\[ n! \approx \frac{\sqrt{2 \pi n} n^n}{e^n}\]
+\Satz[5.47] \[n! = \frac{\sqrt{2 \pi n} n^n}{e^n} \cdot \exp(\frac{1}{12n}+ R_3(n))\]
 wobei
 \[ \abs{R_3(n)} \leq \frac{\sqrt{3}}{216 \cdot \frac{1}{n^2}} \quad \forall n \geq 1\]
-\Lemma{5.48} \( \forall m \geq n + 1 \geq 1\):
+\Lemma[5.48] \( \forall m \geq n + 1 \geq 1\):
 \[ \abs{R_3(m,n)} \leq \frac{\sqrt{3}}{216}( \frac{1}{n^2} - \frac{1}{m^2})\]
 \sep
 \subsection{Uneigentliche Integrale}
-\Def{5.49} Sei \(f:[a, \infty[ \rightarrow \R \) beschränkt und integrierbar auf \([a,b]\) für alle \( b > a\). Falls
+Der Begriff des Riemann Integrals setzt voraus, dass \( [a,b]\) ein kompaktes Intervall und \(f: [a,b] \rightarrow \R \) beschränkt ist. Unter gewissen Vouraussetzungen kann man diese Einschränkung umgehen. \newline
+\Def[5.49] Sei \(f:[a, \infty[ \rightarrow \R \) beschränkt und integrierbar auf \([a,b]\) für alle \( b > a\). Falls
 \[ \lim\limits_{b \rightarrow \infty} \int_{a}^{b} f(x) \,dx \]
 existiert, bezeichnen wir den Grenzwert mit
 \[ \int_{a}^{\infty} f(x \,dx )\]
 und sagen, dass f auf \([a, +\infty[ \) integrierbar ist.
+\Bsp[5.50]
+\begin{enumerate}
+    \item $\int_{0}^{\infty} e^{-x} d x=\lim _{b \rightarrow \infty} \int_{0}^{b} e^{-x} d x=\lim _{b \rightarrow \infty}\left(1-e^{-b}\right)=1$.
+    \item $\int_{1}^{b} \frac{1}{x^{\alpha}} d x= \begin{cases}\ln b & \alpha=1 \\ \frac{b^{1-\alpha}-1}{1-\alpha} & \text { sonst. }\end{cases}$
+\end{enumerate}
+Somit: $\int_{1}^{\infty} \frac{1}{x^{\alpha}} d x=\left\{\begin{array}{cc}\text { divergiert, } & \alpha \leq 1 \\ \frac{1}{\alpha-1} & \alpha>1\end{array}\right.$
 \Lemma{5.51} Sei \(f:[a, \infty [ \rightarrow \R \) beschränkt und integrierbar auf \([a,b] \quad \forall b > a\)
 \begin{enumerate}
     \item [1] Falls \( \abs{f(x)} \leq g(x) \quad \forall x \geq a \) und \(g(x)\) ist auf \([a, \infty[ \) integrierbar, so ist f auf \([a, \infty[ \) integrierbar
-    \item [2] Falls \( 0 \leq g(x) \leq f(x)\) und \(\int_{a}^{\infty}\) divergiert, so divergiert auch \( \int_{a}^{\infty} f(x) \,dx \)
+    \item [2] Falls \( 0 \leq g(x) \leq f(x)\) und \(\int_{a}^{\infty} g(x)\) divergiert, so divergiert auch \( \int_{a}^{\infty} f(x) \,dx \)
 \end{enumerate}
 \Satz{5.53} (McLaurin 1742) Sei \(f : [1 , \infty[ \rightarrow [0, \infty[ \) monoton fallend. Die Reihe
 \[ \sum_{n=1}^{\infty} f(n)\]
