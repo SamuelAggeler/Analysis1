@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.13)  9 AUG 2021 00:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.13)  9 AUG 2021 10:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1021,36 +1021,57 @@ l.354 \[f'(x_0) = 0, \]
 \openout2 = `Riemann_Integral.aux'.
 
  (/home/samuel/Desktop/Analysis1/Analysis1/Riemann_Integral.tex
-Overfull \hbox (34.19858pt too wide) detected at line 42
-[][]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 ^^U[]f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) + \OML/cmm/m/it/8 ^^U[]f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 ^^U[] [][] f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 + \OML/cmm/m/it/8 ^^U[] [][] f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx
+<./img//Untersumme.png, id=273, 760.8425pt x 452.69125pt>
+File: ./img//Untersumme.png Graphic file (type png)
+<use ./img//Untersumme.png>
+Package pdftex.def Info: ./img//Untersumme.png  used on input line 9.
+(pdftex.def)             Requested size: 194.01807pt x 115.43819pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--11
+\OT1/cmr/m/n/8 (+20) 1$, die L[]ange des Teil-in-ter-valls $[\OML/cmm/m/it/8 x[]\OT1/cmr/m/n/8 (+20) ]$
  []
 
 
-Overfull \hbox (17.71771pt too wide) detected at line 69
-[][] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 b\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 b\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 a\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 a\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ [][] \OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx
+Overfull \hbox (7.71478pt too wide) in paragraph at lines 7--11
+[]
  []
 
+<./img//Obersumme.png, id=274, 851.18pt x 484.81125pt>
+File: ./img//Obersumme.png Graphic file (type png)
+<use ./img//Obersumme.png>
+Package pdftex.def Info: ./img//Obersumme.png  used on input line 14.
+(pdftex.def)             Requested size: 195.76727pt x 111.50424pt.
 
-Overfull \hbox (51.37961pt too wide) detected at line 110
-[][]
+Overfull \hbox (0.92818pt too wide) in paragraph at lines 13--16
+| []
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.114 $$
-         [10]
-Overfull \hbox (29.30937pt too wide) detected at line 121
+l.98 \[
+        \int_{a}^{b} f(x) \,dx = F(b) - F(a)\] [10 </home/samuel/Desktop/Analysis1/Analysis1/./img//Untersumme.png> </home/samuel/Desktop/Analysis1/Analysis1/./img//Obersumme.png>]
+Overfull \hbox (17.71771pt too wide) detected at line 101
+[][] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 b\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 b\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 a\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 a\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ [][] \OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 g\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx
+ []
+
+
+Overfull \hbox (51.37961pt too wide) detected at line 142
+[][]
+ []
+
+
+Overfull \hbox (29.30937pt too wide) detected at line 153
 []\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) = []
  []
 
 
-Overfull \hbox (45.46152pt too wide) detected at line 125
+Overfull \hbox (45.46152pt too wide) detected at line 157
 [] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 i\OT1/cmr/m/n/8 ) = [][] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 + [](\OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 n\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (0)) + [][] [](\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx
  []
 
 
-Overfull \hbox (129.95695pt too wide) detected at line 127
+Overfull \hbox (129.95695pt too wide) detected at line 159
 [] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 i\OT1/cmr/m/n/8 ) = [][] \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) \OML/cmm/m/it/8 dx \OT1/cmr/m/n/8 + [](\OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 n\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (0)) + [] [](\OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 n\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 f[]\OT1/cmr/m/n/8 (0)) + []
  []
 
@@ -1059,6 +1080,9 @@ Overfull \hbox (129.95695pt too wide) detected at line 127
                    \relax 
 l.115 \end{multicols*}
                        [11
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Fundamentalsatz}{}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Integration konvergenter Reihen}{}{subsection.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Euler-McLaurin Summationsformel}{}{subsection.5.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Stirling'sche Formel}{}{subsection.5.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.8}Uneigentliche Integrale}{}{subsection.5.8}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.9}Die Gamma Funktion}{}{subsection.5.9}\protected@file@percent }
@@ -1078,18 +1102,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--116
 
  ) 
 Here is how much of TeX's memory you used:
- 14084 strings out of 478994
- 209097 string characters out of 5864751
- 636475 words of memory out of 5000000
- 31038 multiletter control sequences out of 15000+600000
+ 14097 strings out of 478994
+ 209379 string characters out of 5864751
+ 634755 words of memory out of 5000000
+ 31048 multiletter control sequences out of 15000+600000
  416888 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,14n,74p,528b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/samuel/Desktop/Analysis1/Analysis1/summary.pdf (11 pages, 613463 bytes).
+Output written on /home/samuel/Desktop/Analysis1/Analysis1/summary.pdf (11 pages, 775952 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
- 68 named destinations out of 1000 (max. 500000)
- 27029 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 356 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 27039 words of extra memory for PDF output out of 29859 (max. 10000000)
 

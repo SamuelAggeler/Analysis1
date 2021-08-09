@@ -1,70 +1,102 @@
 \sep
 \section{Das Riemann Integral}
 \subsection{Integrabilitätskriterien}
-\Def{5.1} Eine \textbf{Partition} von I ist eine endliche Teilmenge \(P \subsetneq[a, b]\) wobei \(\{a,b\} \subseteq P\)
-\Lemma{5.2}
+\Def[5.1] Eine \textbf{Partition} von I ist eine endliche Teilmenge \(P \subsetneq[a, b]\) wobei \(\{a,b\} \subseteq P\)
+Eine Partition \(P'\) ist eine Verfeinerung von P falls \( P \subseteq P'\). Offensichtlich ist die Vereinigung \( P_1 \cup P_2\) zweier Partitionen wieder eine Partition, insbesondere haben zwei Partitionen immer eine gemeinsame Verfeinerung.
+Sei nun \( f:[a,b] \rightarrow \R\) eine beschränkte Funktion(Def3.1(3)), das heisst es gibt \( M \geq 0\) mit \( \abs{f(x)} \leq M \ \forall x \in [a,b]\). Sei auch \( P= \{x_0, x_1, \dots, x_n\}\) eine Partition von I. Insbesondere gilt:
+\[ x_0 = a < a_1 < \dots < x_n =b\]
+Wir bezeichnen mit \( \delta_i := x_i - x_{i-1}, \ i \geq 1\), die Länge des Teilintervalls \([x_{i-1,x_i}] \)
+\includegraphics[scale=0.255]{Untersumme.png}
+Wir definieren die Untersumme
+\[s(f,P) := \sum_{i=1}^n f_i \delta_i, \quad f_i = \inf_{x_{i-1} \leq x \leq x_i} f(x)\]
+und die Obersumme
+\[S(f,P) := \sum_{i=1}^n F_i \delta_i, \quad F_i = \sup_{x_{i-1} \leq x \leq x_i} f(x)\]
+\hspace*{-3mm}\includegraphics[scale=0.230]{Obersumme.png}
+Bemerke, dass
+\[ -M \leq f_i \leq F_i \leq M\]
+somit sind \(s(f,P)\) und \(S(f,P)\) wohldefiniert und es gilt:
+\[ -M(b-a) \leq s(f,P) \leq S(f,P) \leq M(b-a)\]
+\Lemma[5.2]
 \begin{enumerate}
     \item [1] Sei \(P^{'}\) eine Verfeinerung von P, dann gilt:
     \[s(f.P) \leq s(f,P^{'}) \leq S(f, P^{'}) \leq S(f,P)\]
     \item [2] Für beliebige Partitionen \(P_1, P_2\) gilt:
     \[s(f,P_1) \leq S(f, P_2)\]
 \end{enumerate}
-\Def{5.3} Eine beschränkte Funktion \(f: [a,b] \rightarrow \R \) ist \textbf{Riemann integrierbar} falls
+\Def[5.3] Eine beschränkte Funktion \(f: [a,b] \rightarrow \R \) ist \textbf{Riemann integrierbar} falls
 \[s(f) = S(f)\]
 In diesem Fall bezeichnen wir den gemeinsamen Wert von \(s(f)\) und \(S(f)\) mit
 \[ \int_{a}^{b} f(x) \,dx \]
-\Satz{5.4} Eine beschränkte Funtkion ist genau dann integrierbar, falls
-\[ \forall \epsilon > 0 \quad \exists P \in \mathcal{P}(I)\] mit \(S(f,P) - s(f,P) < \epsilon\)
-\Satz{5.8}(Du Bois-Reymond 1875)
+\Satz[5.4] Eine beschränkte Funtkion ist genau dann integrierbar, falls
+\[ \forall \epsilon > 0 \quad \exists P \in \mathcal{P}(I) \ \text{mit} \ S(f,P) - s(f,P) < \epsilon \] 
+\Satz[5.8](Du Bois-Reymond 1875)
 Eine beschränkte Funktion \(f : [a,b] \rightarrow \R \) ist genau dann integrierbar, falls \( \forall \epsilon > 0 \quad \exists \delta > 0\) so dass
 \[ \forall P \in P_{\delta}(I), S(f, P) - s(f, P ) < \epsilon \]
-\Korollar{5.9} Die beschränkte Funktion \(f: [a,b] \rightarrow \R \) ist genau dann integrierbar mit \(A:= \int_{a}^{b} f(x) \,dx\) falls:
+Hier bezeichnet \( P_\delta (I)\) die Menge der Partitionen P für welche \( \max_{1 \leq i \leq n} \delta_i \leq \delta\) \newline
+\Korollar[5.9] Die beschränkte Funktion \(f: [a,b] \rightarrow \R \) ist genau dann integrierbar mit \(A:= \int_{a}^{b} f(x) \,dx\) falls:
 \( \forall \epsilon > 0 \quad \exists \delta > 0 \) so dass \( \forall P \in p(I) \) Partition mit \( \delta(P) < \delta \) und \( \epsilon_1, \dots, \epsilon_n\) mit
 \(\mathcal{E}_i \in [x_{i-1}, x_i], P= \{x_0, \dots, x_n\}\)
-\[\abs{ A - \sum_{i=1}^n f(\mathcal{E_i}) ( x_i - x_{i-1}) } < <epsilon \]
+\[\abs{ A - \sum_{i=1}^n f(\mathcal{E_i}) ( x_i - x_{i-1}) } < \epsilon \]
 \sep
 \subsection{Integrierbare Funktionen}
-\Satz{5.10} Seien \(f,g : [a,b] \rightarrow \R \) beschränkt, integrierbar und \( \lambda \in \R \). Dann sind \(f+g, \lambda \cdot f, f \cdot g, \abs{f}, \max(f,g), \min(f,g) \) und \( \frac{f}{g}\) ( falls \( \abs{g(x) \geq \beta > 0 \quad \forall x \in [a,b]}\)) integrierbar
+Bis jetzt haben wir gesehen, dass konstante Funktionen sowie die Funktion \( f(x) = x\) auf jedem kompakten Intervall integrierbar sind. \newline
+\Satz[5.10] Seien \(f,g : [a,b] \rightarrow \R \) beschränkt, integrierbar und \( \lambda \in \R \). Dann sind \(f+g, \lambda \cdot f, f \cdot g, \abs{f}, \max(f,g), \min(f,g) \) und \( \frac{f}{g}\) ( falls \( \abs{g(x)} \geq \beta > 0 \quad \forall x \in [a,b]\)) integrierbar \newline
 \Bem{5.11} Sei \( \phi : [c,d] \rightarrow \R \) eine beschränkte Funktion. Dann ist
 \[\sup_{x,y \in [c,d]} \abs{\phi(x) - \phi(y )} = \sup_{ x \in [c,d]} \phi(x) - \inf_{ x \in [c,d]} \phi(x)\]
-\Korollar{5.12} Seien P,< Polynome und \([a,b]\) ein Intervall in dem Q keine Nullstelle besitzt. Dann ist
+\Korollar[5.12] Seien P,Q Polynome und \([a,b]\) ein Intervall in dem Q keine Nullstelle besitzt. Dann ist
 \[ [a,b] \rightarrow \R \]
 \[ x \rightarrow \frac{P(x)}{Q(x)}\]
-integrierbar
-\Def{5.13} Eine Funktion \(f: D \rightarrow \R, \quad D \subseteq \R  \) ist in D \textbf{gleichmässig stetig}, falls \( \forall \epsilon > 0 \quad \exists \delta > 0 \quad \forall x,y \in D : \)
+integrierbar \newline
+\Def[5.13] Eine Funktion \(f: D \rightarrow \R, \quad D \subseteq \R  \) ist in D \textbf{gleichmässig stetig}, falls
+ \[ \forall \epsilon > 0 \quad \exists \delta > 0 \quad \forall x,y \in D : \]
 \[ \abs{x-y} < \delta \implies \abs{f(x) - f(y)} < \epsilon \]
-\Satz{5.15} (Heine 1872). Sei \(f : [a,b] \rightarrow \R\) stetig in dem kompakten Intervall \([a,b]\). Dann ist f in \([a,b]\) gleichmässig stetig.
-\Satz{5.16} Sei \(f: [a,b] \rightarrow \R \) stetig. Dann ist f integrierbar
-\Satz{5.17} Sei \(f: [a,b] \rightarrow \R\) monoton. Dann ist f integrierbar
-\Bem{5.18} Seien \(a < b < c \) und \(f : [a.c] \rightarrow \R \) beschränkt mit \(f |_{[a,b]}\) und \(f |_{[b,c]}\) integrierbar. Dann ist f integrierbar und
+\Bsp[5.14] Die Funktion \( f: \R \rightarrow \R, \  x \rightarrow x^2\) ist auf \( \R \) stetig aber nicht gleichmässig stetig. \newline
+\Satz[5.15] (Heine 1872). Sei \(f : [a,b] \rightarrow \R\) stetig in dem kompakten Intervall \([a,b]\). Dann ist f in \([a,b]\) gleichmässig stetig. \newline
+\Satz[5.16] Sei \(f: [a,b] \rightarrow \R \) stetig. Dann ist f integrierbar \newline
+\Satz[5.17] Sei \(f: [a,b] \rightarrow \R\) monoton. Dann ist f integrierbar \newline
+\Bem[5.18] Seien \(a < b < c \) und \(f : [a.c] \rightarrow \R \) beschränkt mit \(f |_{[a,b]}\) und \(f |_{[b,c]}\) integrierbar. Dann ist f integrierbar und
 \[ \int_{a}^{c} f(x) \,dx = \int_{a}^{c} f(x) \,dx + \int_{b}^{c} f(x) \,dx \]
-\Satz{5.19} Sei \(I \subsetneq \R \) ein kompaktes Intervall mit Endpunkten a,b sowie \(f_1, f_2 : I \rightarrow \R \)  beschränkt integrierbar und \( \lambda_1, \lambda_2 \in \R \). Dann gilt:
-\[ \int_{a}^{b} ( \lambda_1 f_1(x) + \lambda_2 f_2(x)) \,dx = \lambda_1 \int_{a}^{b} f_1(x) \,dx + \lambda_2 \int_{a}^{b} f_2(x) \,dx \]
+\Def{} Wir erweitern unsere Definiton von Integralen
+\[ \int_a^a f(x) dx = 0  \ \text{und falls} \ a < b\]
+\[ \int_b^a f(x) dx := - \int_a^b f(x) dx\]
+\Satz[5.19] Sei \(I \subsetneq \R \) ein kompaktes Intervall mit Endpunkten a,b sowie \(f_1, f_2 : I \rightarrow \R \)  beschränkt integrierbar und \( \lambda_1, \lambda_2 \in \R \). Dann gilt:
+\[ \int_{a}^{b} ( \lambda_1 f_1(x) + \lambda_2 f_2(x)) \,dx = \]
+\[\lambda_1 \int_{a}^{b} f_1(x) \,dx + \lambda_2 \int_{a}^{b} f_2(x) \,dx \]
 \sep
 \subsection{Ungleichungen und Mittelwertsatz}
-\Satz{5.20} Seien \(f,g : [a,b] \rightarrow \R \) beschränkt integrierbar, und
+Nebst Linearität(S5.19) hat das Riemann Integral auch eine Monotonieeigenschaft; diese wiederum führt zum Mittelwertsatz der die basis des Fundamentalsatzes der Differentialrechnung bildet.
+\Satz[5.20] Seien \(f,g : [a,b] \rightarrow \R \) beschränkt integrierbar, und
 \[ f(x) \leq g(x) \quad \forall x \in [a,b]\]
 Dann folgt:
 \[ \int_{a}^{b} f(x) \,dx \leq \int_{a}^{b} g(x) \,dx \]
-\Korollar{ 5.21} Falls \(f: [a,b] \rightarrow \R \) beschränkt integrierbar, folgt
+\Korollar[5.21] Falls \(f: [a,b] \rightarrow \R \) beschränkt integrierbar, folgt
 \[ \abs{ \int_{a}^{b} f(x) \,dx} \leq \int_{a}^{b} \abs{f(x)} \,dx \]
-\Satz{5.22}(Cauchy-Schwarz Ungleichung 1821)
+\Satz[5.22](Cauchy-Schwarz Ungleichung 1821)
 Seien \(f,g : [a,b] \rightarrow \R \) beschränkt integrierbar. Dann gilt:
 \[ \abs{\int_{a}^{b} f(x) g(x) \,dx} \leq \sqrt{\int_{a}^{b} f^2(x) \,dx} \sqrt{\int_{a}^{b} g^2(x) \,dx }\]
-\Satz{5.23}(Mittelwertsatz, Cauchy 1821)
+\Satz[5.23](Mittelwertsatz, Cauchy 1821) \newline
 Sei \(f: [a,b] \rightarrow \R \) stetig. Dann gibt es \(\mathcal{E} \in [a,b]\) mit:
 \[ \int_{a}^{b} f(x) \,dx = f(\mathcal{E})(b-a)\]
-\Satz{5.25}(Cauchy 1821) SEien \(f,g : [a,b] \rightarrow \R \) wobei f stetig, g beschränkt integrierbar mit \(g(x) \geq 0 \quad \forall x \in [a,b]\). Dann gibt es \(\mathcal{E} \in [a,b] \) mit
+\Bsp[5.24] Die Stetigkeit ist eine wichtige Vouraussetzung:
+Sei
+\begin{equation}
+f:[0,1] \longrightarrow \mathbb{R}, \quad f(x)= \begin{cases}0 & 0 \leq x<\frac{1}{2} \\ 1 & \frac{1}{2} \leq x \leq 1\end{cases}
+\end{equation}
+Dann ist
+\[ \int_0^1 f(x) \,dx = \int_0^{\frac{1}{2}} 0 \,dx + \int_{\frac{1}{2}}^1 1 \,dx = \frac{1}{2}\]
+\Satz[5.25](Cauchy 1821) Seien \(f,g : [a,b] \rightarrow \R \) wobei f stetig, g beschränkt integrierbar mit \(g(x) \geq 0 \quad \forall x \in [a,b]\). Dann gibt es \(\mathcal{E} \in [a,b] \) mit
 \[ \int_{a}^{b} f(x)g(x) \,dx = f(\mathcal{E}) \int_{a}^{b} g(x) \,dx \]
 \sep
 \subsection{Fundamentalsatz}
-\Satz{5.26} Seien \(a < b\) und \(f: [a,b] \rightarrow \R \) stetig. Die Funktion
+Dieser Satz, auch Fundamentalsatz der Analysis genannt, besagt, dass die Ableitung die Umkehrung des Integrals ist. Dieser Satz hat vielseitige Anwendungen, unter anderem die Berechnung von Flächeninhalten und Längen von Kurven \newline
+\Satz[5.26] Seien \(a < b\) und \(f: [a,b] \rightarrow \R \) stetig. Die Funktion
 \[F(x) = \int_{a}^{x} f(t) \,dt \quad a \leq x \leq b\]
 ist in \([a,b]\) stetig differenzierbar und
 \[ F'(x) = f(x) \quad \forall x \in [a,b]\]
-\Def{5.27} Sei \( a < b\) und \(f: [a,b] \rightarrow \R\) stetig. Eine Funktion \(F: [a,b] \rightarrow \R\) heisst \textbf{Stammfunktion} von f, falls F (stetig) differenzierbar in \([a,b]\) ist und \(F'=f\) in \([a,b]\) gilt
-\Satz{5.28} (Fundamentalsatz der Differentialrechnung) Sei \(f:[a.b] \rightarrow \R \) stetig. Dann gibt es eine Stammfunktion F von f, die bis auf eine additive Konstante eindeutig bestimmt ist und es gilt: 
+\Def[5.27] Sei \( a < b\) und \(f: [a,b] \rightarrow \R\) stetig. Eine Funktion \(F: [a,b] \rightarrow \R\) heisst \textbf{Stammfunktion} von f, falls F (stetig) differenzierbar in \([a,b]\) ist und \(F'=f\) in \([a,b]\) gilt \newline
+\Satz[5.28] (Fundamentalsatz der Differentialrechnung) Sei \(f:[a.b] \rightarrow \R \) stetig. Dann gibt es eine Stammfunktion F von f, die bis auf eine additive Konstante eindeutig bestimmt ist und es gilt: 
 \[ \int_{a}^{b} f(x) \,dx = F(b) - F(a)\]
+\Bsp[5.29]
 \Satz{5.30}(Partielle Integration) Seien \(a < b\) reele Zahlen und \(f,g : [a,b] \rightarrow \R \) stetig differenzierbar. Dann gilt
 \[\int_{a}^{b} f(x)g'(x) \,dx = f(b)g(b) - f(a)g(a) - \int_{a}^{b} f'(x)g(x) \,dx\]
 \Satz{5.31}(Substitution) Sei \(a < b, \phi : [a,b] \rightarrow \R \) stetig differenzierbar, \( I \subseteq \R\) ein Intervall mit \( \phi ([a,b]) \subseteq I \) und \(f: I \rightarrow \R \) eine stetige Funktion. Dann gilt:
