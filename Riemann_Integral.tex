@@ -201,45 +201,57 @@ existiert, bezeichnen wir den Grenzwert mit
 und sagen, dass f auf \([a, +\infty[ \) integrierbar ist.
 \Bsp[5.50]
 \begin{enumerate}
-    \item $\int_{0}^{\infty} e^{-x} d x=\lim _{b \rightarrow \infty} \int_{0}^{b} e^{-x} d x=\lim _{b \rightarrow \infty}\left(1-e^{-b}\right)=1$.
+    \item \[\int_{0}^{\infty} e^{-x} d x=\lim _{b \rightarrow \infty} \int_{0}^{b} e^{-x} d x=\]
+    \[\lim _{b \rightarrow \infty}\left(1-e^{-b}\right)=1\]
     \item $\int_{1}^{b} \frac{1}{x^{\alpha}} d x= \begin{cases}\ln b & \alpha=1 \\ \frac{b^{1-\alpha}-1}{1-\alpha} & \text { sonst. }\end{cases}$
 \end{enumerate}
 Somit: $\int_{1}^{\infty} \frac{1}{x^{\alpha}} d x=\left\{\begin{array}{cc}\text { divergiert, } & \alpha \leq 1 \\ \frac{1}{\alpha-1} & \alpha>1\end{array}\right.$
-\Lemma{5.51} Sei \(f:[a, \infty [ \rightarrow \R \) beschränkt und integrierbar auf \([a,b] \quad \forall b > a\)
+\Lemma[5.51] Sei \(f:[a, \infty [ \rightarrow \R \) beschränkt und integrierbar auf \([a,b] \quad \forall b > a\)
 \begin{enumerate}
     \item [1] Falls \( \abs{f(x)} \leq g(x) \quad \forall x \geq a \) und \(g(x)\) ist auf \([a, \infty[ \) integrierbar, so ist f auf \([a, \infty[ \) integrierbar
     \item [2] Falls \( 0 \leq g(x) \leq f(x)\) und \(\int_{a}^{\infty} g(x)\) divergiert, so divergiert auch \( \int_{a}^{\infty} f(x) \,dx \)
 \end{enumerate}
-\Satz{5.53} (McLaurin 1742) Sei \(f : [1 , \infty[ \rightarrow [0, \infty[ \) monoton fallend. Die Reihe
+\Satz[5.53] (McLaurin 1742) Sei \(f : [1 , \infty[ \rightarrow [0, \infty[ \) monoton fallend. Die Reihe
 \[ \sum_{n=1}^{\infty} f(n)\]
 konvergiert genau dann, wenn
 \[ \int_{1}^{\infty} f(x) \,dx \]
-konvergiert
-\Def{5.56} In dieser Siutation ist \( f: ]a,b[ \rightarrow \R \) integrierbar falls
+konvergiert \newline
+Eine Situation die zu einem uneigentlichen Integral führt ist, falls
+\[ f:]a,b[ \rightarrow \R\]
+auf jedem Intervall \([a+\epsilon, b],\  \epsilon > 0 \) beschränkt und integrabel ist aber nicht notwendigerweise beschränkt auf \( ]a,b[\) \newline
+\Def[5.56] In dieser Siutation ist \( f: ]a,b[ \rightarrow \R \) integrierbar falls
 \[ \lim\limits_{\epsilon \rightarrow 0^{+}} \int_{a + \epsilon}^{b} f(x) \,dx \]
 existiert; in diesem Fall wird der Grenzwert mit \(\int_{a}^{b} f(x) \,dx \) bezeichnet
 \sep
 \subsection{Die Gamma Funktion}
-\Def{5.59} Für s > 0 definieren wir
+\Def[5.59] Für \(s > 0\) definieren wir
 \[ \Gamma(s) := \int_{0}^{\infty} e^{-x}x^{s-1} \,dx\]
-\Satz{5.60}(Bohr-Mollerup)
+\Satz[5.60](Bohr-Mollerup)
 \begin{enumerate}
     \item [1] Die Gamme Funktion erfüllt die Relationen
     \begin{enumerate}
         \item [(a)] \( \Gamma(1) = 1\)
         \item [(b)] \(\Gamma(s+1) = s\Gamma(s) \quad \forall s > 0 \)
-        \item [(c)] \( \Gamma\) ist logarithmisch, das heisst
+        \item [(c)] \( \Gamma\) ist logarithmisch konvex, das heisst
         \[\Gamma( \lambda x + (1 - \lambda)y) \leq \Gamma(x)^{\lambda}\Gamma(y)^{1-\lambda}\]
         für alle \(x,y > 0\) und \(0 \leq \lambda \leq 1\)
     \end{enumerate}
     \item [2] Die Gamme Funktion ist die einzige Funktion \( 0, \infty[ \rightarrow ]0, \infty [\) die (a), (b) und (c) erfüllt. Darüber hinaus gilt:
     \[\Gamma(x) = \lim\limits_{n \rightarrow +\infty} \frac{n!n^x}{x(x+1) \dots (x+n)} \quad \forall x > 0\] 
 \end{enumerate}
-\Lemma{5.61} Sei \( \rho > 1\) und \(q > 1\) mit
+\Lemma[5.61] Sei \( \rho > 1\) und \(q > 1\) mit
 \[ \frac{1}{p} + \frac{1}{q} = 1\]
 Dann gilt \(\forall a,b \geq 0 \)
 \[ a \cdot b \leq \frac{a^p}{p} + \frac{b^q}{q}\]
-\Satz{5.62}(Hölder Ungleichung). Seien \( \rho > 1\) und \( q > 1\) mit \( \frac{1}{p} + \frac{1}{q} = 1\). Für alle \(f,g : [a,b] \rightarrow \R \) stetig gilt:
+\Satz[5.62](Hölder Ungleichung). Seien \( \rho > 1\) und \( q > 1\) mit \( \frac{1}{p} + \frac{1}{q} = 1\). Für alle \(f,g : [a,b] \rightarrow \R \) stetig gilt:
 \[ \int_{a}^{b} \abs{f(x)g(x)} \,dx \leq \abs{\abs{f}}_p \abs{\abs{g}}_q\]
 \sep
 \subsection{Das unbestimmte Integral}
+\Def[Produktzerlegung]
+Seien \( \alpha \pm i\beta_1. \dots , \alpha_l \pm i\beta_l\) sowie \( \gamma_1 \dots \gamma_k \) die paarweise verschiedene Wurzeln(Nullstellen) von Q,
+wobei \( \alpha_j, \beta_j, \gamma_j\) reell und \(\beta_j \neq 0\). Dann lässt sich Q in ein Produkt zerlegen:
+\[ Q(x) = \prod_{j=1}^l ((x- \alpha_j)^2 + \beta_j^2)^{m_j} \prod_{i=1}^k (x - \gamma_i)^{n_i}\]
+\Satz[5.65] Seien P,Q Polynome mit grad(p) < grad(Q) und Q mit Produktzerlegung. Dann gibt es \( A_{ij}, B_{ij}, C_{ij}\) reelle Zahlen mit
+\[ \frac{P(x)}{Q(x)} = \sum_{i=1}^l \sum_{j=1}^{m_i} \frac{(A_{ij} + B_{ij}x)}{((x - \alpha_i)^2 + \beta_i^2)^j} + \sum_{i=1}^k \sum_{j=1}^{n_i} \frac{C_{ij}}{(x - \gamma_i)^j}\]
+\sep
+\section{Tipps und Tricks}
