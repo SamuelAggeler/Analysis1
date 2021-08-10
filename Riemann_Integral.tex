@@ -6,12 +6,10 @@ Eine Partition \(P'\) ist eine Verfeinerung von P falls \( P \subseteq P'\). Off
 Sei nun \( f:[a,b] \rightarrow \R\) eine beschränkte Funktion(Def3.1(3)), das heisst es gibt \( M \geq 0\) mit \( \abs{f(x)} \leq M \ \forall x \in [a,b]\). Sei auch \( P= \{x_0, x_1, \dots, x_n\}\) eine Partition von I. Insbesondere gilt:
 \[ x_0 = a < a_1 < \dots < x_n =b\]
 Wir bezeichnen mit \( \delta_i := x_i - x_{i-1}, \ i \geq 1\), die Länge des Teilintervalls \([x_{i-1,x_i}] \)
-\includegraphics[scale=0.255]{Untersumme.png}
 Wir definieren die Untersumme
 \[s(f,P) := \sum_{i=1}^n f_i \delta_i, \quad f_i = \inf_{x_{i-1} \leq x \leq x_i} f(x)\]
 und die Obersumme
 \[S(f,P) := \sum_{i=1}^n F_i \delta_i, \quad F_i = \sup_{x_{i-1} \leq x \leq x_i} f(x)\]
-\hspace*{-3mm}\includegraphics[scale=0.230]{Obersumme.png}
 Bemerke, dass
 \[ -M \leq f_i \leq F_i \leq M\]
 somit sind \(s(f,P)\) und \(S(f,P)\) wohldefiniert und es gilt:
@@ -255,3 +253,4 @@ wobei \( \alpha_j, \beta_j, \gamma_j\) reell und \(\beta_j \neq 0\). Dann lässt
 \[ \frac{P(x)}{Q(x)} = \sum_{i=1}^l \sum_{j=1}^{m_i} \frac{(A_{ij} + B_{ij}x)}{((x - \alpha_i)^2 + \beta_i^2)^j} + \sum_{i=1}^k \sum_{j=1}^{n_i} \frac{C_{ij}}{(x - \gamma_i)^j}\]
 \sep
 \section{Tipps und Tricks}
+\includegraphics[scale=0.500]{RandomGrenzwerte.png}
